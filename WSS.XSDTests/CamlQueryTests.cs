@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using Microsoft.Schemas.SharePoint;
+using Microsoft.Schemas.SharePoint.Caml;
 using NUnit.Framework;
 
 namespace Tests
@@ -20,44 +21,41 @@ namespace Tests
                 Untyped = XElement.Parse("<Value>Queensland</Value>")
             };
 
-            var t = new ViewDefinition {
-                Untyped = XElement.Parse("<View> </View>"),
-                Query = new CamlQueryRoot {
-                    Where = new LogicalJoinDefinition {
-                        Eq = new List<LogicalTestDefinition> {
-                            new LogicalTestDefinition {
-                                FieldRef = new List<FieldRefDefinition> {
-                                    new FieldRefDefinition { Name = "State" }
-                                },
-                                Value = new List<ValueDefinition> {
-                                    valueDefinition
-                                }
+            var query = new Query() {
+                Where = new LogicalJoinDefinition {
+                    Eq = new List<LogicalTestDefinition> {
+                        new LogicalTestDefinition {
+                            FieldRef = new List<FieldRefDefinition> {
+                                new FieldRefDefinition {Name = "State"}
+                            },
+                            Value = new List<ValueDefinition> {
+                                valueDefinition
                             }
                         }
                     }
                 }
             };
 
-            var tString = t.ToString();
-            Assert.Pass();
+            var queryString = query.ToString();
+            Assert.IsFalse(string.IsNullOrWhiteSpace(queryString));
+            Assert.IsFalse(string.IsNullOrEmpty(queryString));
         }
 
         [Test]
         public void ReadViewDefinitionQueryTest()
         {
             Assert.DoesNotThrow(delegate {
-                var queryString = "<View> <Query> <Where> <Eq> <FieldRef Name=\"State\" /> <Value>Queensland</Value> </Eq> </Where> </Query> </View>";
+                var queryString = "<Query> <Where> <Eq> <FieldRef Name=\"State\" /> <Value>Queensland</Value> </Eq> </Where> </Query>";
                 
-                var queryDef = new ViewDefinition {
-                    Query = new CamlQueryRoot() {
-                        
-                    }
-                };
+                var queryDef = Query.ChameleonParse(queryString);
+                var _q = Query.Parse("<s:Query xmlns:s=\"http://schemas.microsoft.com/sharepoint/caml\"> <s:Where xmlns:s=\"http://schemas.microsoft.com/sharepoint/caml\"> " +
+                                     "<s:Eq xmlns:s=\"http://schemas.microsoft.com/sharepoint/caml\" />" +
+                                     "</s:Where> </s:Query>");
 
-                Assert.IsNotNull(queryDef.Query);
-                Assert.IsNotNull(queryDef.Query.Where);
-                Assert.IsNotNull(queryDef.Query.Where.Eq);
-                Assert.IsTrue(queryDef.Query.Where.Eq.Any());
+                Assert.IsNotNull(queryDef);
+                Assert.IsNotNull(queryDef.Where);
+                Assert.IsNotNull(queryDef.Where.Eq);
+                Assert.IsTrue(queryDef.Where.Eq.Any());
             });
         }
     }
