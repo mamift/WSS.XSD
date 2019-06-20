@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Remotion.Linq" Version="2.2.0" />
     <PackageReference Include="XObjectsCore" Version="3.0.0.2" />
   </ItemGroup>
 

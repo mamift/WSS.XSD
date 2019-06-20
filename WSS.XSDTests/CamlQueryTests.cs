@@ -18,10 +18,13 @@ namespace Tests
         public void TestViewDefinitionQuery()
         {
             var valueDefinition = new ValueDefinition {
-                Untyped = XElement.Parse("<Value>Queensland</Value>")
+                Untyped = XElement.Parse("<Value>Queensland </Value>"),
+                XML = new List<string>() { "<XML>This is custom xml</XML>" }
             };
 
-            var query = new Query() {
+            var empty = new EmptyQueryDefinition();
+
+            var queryDef = new CamlQueryRoot {
                 Where = new LogicalJoinDefinition {
                     Eq = new List<LogicalTestDefinition> {
                         new LogicalTestDefinition {
@@ -36,27 +39,12 @@ namespace Tests
                 }
             };
 
+            var query = new Query(queryDef);
+
             var queryString = query.ToString();
+
             Assert.IsFalse(string.IsNullOrWhiteSpace(queryString));
             Assert.IsFalse(string.IsNullOrEmpty(queryString));
-        }
-
-        [Test]
-        public void ReadViewDefinitionQueryTest()
-        {
-            Assert.DoesNotThrow(delegate {
-                var queryString = "<Query> <Where> <Eq> <FieldRef Name=\"State\" /> <Value>Queensland</Value> </Eq> </Where> </Query>";
-                
-                var queryDef = Query.ChameleonParse(queryString);
-                var _q = Query.Parse("<s:Query xmlns:s=\"http://schemas.microsoft.com/sharepoint/caml\"> <s:Where xmlns:s=\"http://schemas.microsoft.com/sharepoint/caml\"> " +
-                                     "<s:Eq xmlns:s=\"http://schemas.microsoft.com/sharepoint/caml\" />" +
-                                     "</s:Where> </s:Query>");
-
-                Assert.IsNotNull(queryDef);
-                Assert.IsNotNull(queryDef.Where);
-                Assert.IsNotNull(queryDef.Where.Eq);
-                Assert.IsTrue(queryDef.Where.Eq.Any());
-            });
         }
     }
 }
