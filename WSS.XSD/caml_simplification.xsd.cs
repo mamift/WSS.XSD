@@ -18,6 +18,7 @@ namespace Microsoft.Schemas.SharePoint {
     using System.Xml.Schema;
     using System.Xml.Linq;
     using Xml.Schema.Linq;
+    using Microsoft.Schemas.SharePoint.Caml;
     
     
     public sealed class TRUEFALSE {
@@ -205,7 +206,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator CamlQueryRoot(XElement xe) { return XTypedServices.ToXTypedElement<CamlQueryRoot>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CamlQueryRoot(XElement xe) { return XTypedServices.ToXTypedElement<CamlQueryRoot>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CamlQueryRoot() {
             BuildElementDictionary();
@@ -441,7 +442,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -487,7 +488,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator LogicalTestDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalTestDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LogicalTestDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static LogicalTestDefinition() {
             BuildElementDictionary();
@@ -515,7 +516,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldRefDefinition> FieldRef {
             get {
                 if ((this.FieldRefField == null)) {
-                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldRefField;
             }
@@ -525,7 +526,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldRefField == null)) {
-                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldRefDefinition>(this.FieldRefField, value);
@@ -548,7 +549,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ValueDefinition> Value {
             get {
                 if ((this.ValueField == null)) {
-                    this.ValueField = new XTypedList<ValueDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ValueField = new XTypedList<ValueDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ValueField;
             }
@@ -558,7 +559,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ValueField == null)) {
-                        this.ValueField = XTypedList<ValueDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ValueField = XTypedList<ValueDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ValueDefinition>(this.ValueField, value);
@@ -624,7 +625,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -662,7 +663,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator LogicalMultiTestDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalMultiTestDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LogicalMultiTestDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalMultiTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static LogicalMultiTestDefinition() {
             BuildElementDictionary();
@@ -690,7 +691,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldRefDefinition> FieldRef {
             get {
                 if ((this.FieldRefField == null)) {
-                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldRefField;
             }
@@ -700,7 +701,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldRefField == null)) {
-                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldRefDefinition>(this.FieldRefField, value);
@@ -723,7 +724,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ValueDefinitions> Values {
             get {
                 if ((this.ValuesField == null)) {
-                    this.ValuesField = new XTypedList<ValueDefinitions>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Values", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ValuesField = new XTypedList<ValueDefinitions>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Values", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ValuesField;
             }
@@ -733,7 +734,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ValuesField == null)) {
-                        this.ValuesField = XTypedList<ValueDefinitions>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Values", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ValuesField = XTypedList<ValueDefinitions>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Values", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ValueDefinitions>(this.ValuesField, value);
@@ -799,7 +800,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -873,7 +874,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator LogicalJoinDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalJoinDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LogicalJoinDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalJoinDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static LogicalJoinDefinition() {
             BuildElementDictionary();
@@ -901,7 +902,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Eq {
             get {
                 if ((this.EqField == null)) {
-                    this.EqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.EqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.EqField;
             }
@@ -911,7 +912,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.EqField == null)) {
-                        this.EqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.EqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.EqField, value);
@@ -934,7 +935,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Geq {
             get {
                 if ((this.GeqField == null)) {
-                    this.GeqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GeqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GeqField;
             }
@@ -944,7 +945,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GeqField == null)) {
-                        this.GeqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GeqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.GeqField, value);
@@ -967,7 +968,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Gt {
             get {
                 if ((this.GtField == null)) {
-                    this.GtField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GtField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GtField;
             }
@@ -977,7 +978,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GtField == null)) {
-                        this.GtField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GtField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.GtField, value);
@@ -1000,7 +1001,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Leq {
             get {
                 if ((this.LeqField == null)) {
-                    this.LeqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LeqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LeqField;
             }
@@ -1010,7 +1011,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LeqField == null)) {
-                        this.LeqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LeqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.LeqField, value);
@@ -1033,7 +1034,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Lt {
             get {
                 if ((this.LtField == null)) {
-                    this.LtField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LtField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LtField;
             }
@@ -1043,7 +1044,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LtField == null)) {
-                        this.LtField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LtField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.LtField, value);
@@ -1066,7 +1067,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Neq {
             get {
                 if ((this.NeqField == null)) {
-                    this.NeqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.NeqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.NeqField;
             }
@@ -1076,7 +1077,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.NeqField == null)) {
-                        this.NeqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.NeqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.NeqField, value);
@@ -1099,7 +1100,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ExtendedLogicalJoinDefinition> And {
             get {
                 if ((this.AndField == null)) {
-                    this.AndField = new XTypedList<ExtendedLogicalJoinDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
+                    this.AndField = new XTypedList<ExtendedLogicalJoinDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.AndField;
             }
@@ -1109,7 +1110,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.AndField == null)) {
-                        this.AndField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
+                        this.AndField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ExtendedLogicalJoinDefinition>(this.AndField, value);
@@ -1132,7 +1133,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ExtendedLogicalJoinDefinition> Or {
             get {
                 if ((this.OrField == null)) {
-                    this.OrField = new XTypedList<ExtendedLogicalJoinDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
+                    this.OrField = new XTypedList<ExtendedLogicalJoinDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.OrField;
             }
@@ -1142,7 +1143,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.OrField == null)) {
-                        this.OrField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
+                        this.OrField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ExtendedLogicalJoinDefinition>(this.OrField, value);
@@ -1165,7 +1166,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MembershipDefinition> Membership {
             get {
                 if ((this.MembershipField == null)) {
-                    this.MembershipField = new XTypedList<MembershipDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MembershipField = new XTypedList<MembershipDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MembershipField;
             }
@@ -1175,7 +1176,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MembershipField == null)) {
-                        this.MembershipField = XTypedList<MembershipDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MembershipField = XTypedList<MembershipDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MembershipDefinition>(this.MembershipField, value);
@@ -1198,7 +1199,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> IsNull {
             get {
                 if ((this.IsNullField == null)) {
-                    this.IsNullField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IsNullField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IsNullField;
             }
@@ -1208,7 +1209,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IsNullField == null)) {
-                        this.IsNullField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IsNullField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.IsNullField, value);
@@ -1231,7 +1232,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> IsNotNull {
             get {
                 if ((this.IsNotNullField == null)) {
-                    this.IsNotNullField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IsNotNullField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IsNotNullField;
             }
@@ -1241,7 +1242,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IsNotNullField == null)) {
-                        this.IsNotNullField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IsNotNullField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.IsNotNullField, value);
@@ -1264,7 +1265,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<UnlimitedLogicalTestDefinition> DateRangesOverlap {
             get {
                 if ((this.DateRangesOverlapField == null)) {
-                    this.DateRangesOverlapField = new XTypedList<UnlimitedLogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DateRangesOverlapField = new XTypedList<UnlimitedLogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DateRangesOverlapField;
             }
@@ -1274,7 +1275,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DateRangesOverlapField == null)) {
-                        this.DateRangesOverlapField = XTypedList<UnlimitedLogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DateRangesOverlapField = XTypedList<UnlimitedLogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<UnlimitedLogicalTestDefinition>(this.DateRangesOverlapField, value);
@@ -1297,7 +1298,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> BeginsWith {
             get {
                 if ((this.BeginsWithField == null)) {
-                    this.BeginsWithField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
+                    this.BeginsWithField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.BeginsWithField;
             }
@@ -1307,7 +1308,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.BeginsWithField == null)) {
-                        this.BeginsWithField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
+                        this.BeginsWithField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.BeginsWithField, value);
@@ -1330,7 +1331,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Contains {
             get {
                 if ((this.ContainsField == null)) {
-                    this.ContainsField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContainsField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContainsField;
             }
@@ -1340,7 +1341,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContainsField == null)) {
-                        this.ContainsField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContainsField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.ContainsField, value);
@@ -1363,7 +1364,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalMultiTestDefinition> @In {
             get {
                 if ((this.@InField == null)) {
-                    this.@InField = new XTypedList<LogicalMultiTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
+                    this.@InField = new XTypedList<LogicalMultiTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.@InField;
             }
@@ -1373,7 +1374,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.@InField == null)) {
-                        this.@InField = XTypedList<LogicalMultiTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
+                        this.@InField = XTypedList<LogicalMultiTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalMultiTestDefinition>(this.@InField, value);
@@ -1406,7 +1407,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -1439,7 +1440,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FieldRefDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FieldRefDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldRefDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldRefDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldRefDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FieldRefDefinition() {
         }
@@ -1666,7 +1667,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -1708,7 +1709,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ValueDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ValueDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ValueDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ValueDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ValueDefinitions() {
             BuildElementDictionary();
@@ -1736,7 +1737,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ValueDefinition> Value {
             get {
                 if ((this.ValueField == null)) {
-                    this.ValueField = new XTypedList<ValueDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ValueField = new XTypedList<ValueDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ValueField;
             }
@@ -1746,7 +1747,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ValueField == null)) {
-                        this.ValueField = XTypedList<ValueDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ValueField = XTypedList<ValueDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ValueDefinition>(this.ValueField, value);
@@ -1779,7 +1780,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -1824,7 +1825,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ValueDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ValueDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ValueDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ValueDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ValueDefinition() {
             BuildElementDictionary();
@@ -1918,7 +1919,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<QueryListProperty> ListProperty {
             get {
                 if ((this.ListPropertyField == null)) {
-                    this.ListPropertyField = new XTypedList<QueryListProperty>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListPropertyField = new XTypedList<QueryListProperty>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListPropertyField;
             }
@@ -1928,7 +1929,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListPropertyField == null)) {
-                        this.ListPropertyField = XTypedList<QueryListProperty>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListPropertyField = XTypedList<QueryListProperty>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<QueryListProperty>(this.ListPropertyField, value);
@@ -2075,7 +2076,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -2110,7 +2111,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator LogicalNullDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalNullDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LogicalNullDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LogicalNullDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static LogicalNullDefinition() {
             BuildElementDictionary();
@@ -2170,7 +2171,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -2242,7 +2243,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ExtendedLogicalJoinDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExtendedLogicalJoinDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ExtendedLogicalJoinDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExtendedLogicalJoinDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ExtendedLogicalJoinDefinition() {
             BuildElementDictionary();
@@ -2270,7 +2271,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Eq {
             get {
                 if ((this.EqField == null)) {
-                    this.EqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.EqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.EqField;
             }
@@ -2280,7 +2281,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.EqField == null)) {
-                        this.EqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.EqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.EqField, value);
@@ -2303,7 +2304,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Geq {
             get {
                 if ((this.GeqField == null)) {
-                    this.GeqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GeqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GeqField;
             }
@@ -2313,7 +2314,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GeqField == null)) {
-                        this.GeqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GeqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.GeqField, value);
@@ -2336,7 +2337,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Gt {
             get {
                 if ((this.GtField == null)) {
-                    this.GtField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GtField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GtField;
             }
@@ -2346,7 +2347,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GtField == null)) {
-                        this.GtField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GtField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.GtField, value);
@@ -2369,7 +2370,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Leq {
             get {
                 if ((this.LeqField == null)) {
-                    this.LeqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LeqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LeqField;
             }
@@ -2379,7 +2380,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LeqField == null)) {
-                        this.LeqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LeqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.LeqField, value);
@@ -2402,7 +2403,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Lt {
             get {
                 if ((this.LtField == null)) {
-                    this.LtField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LtField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LtField;
             }
@@ -2412,7 +2413,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LtField == null)) {
-                        this.LtField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LtField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.LtField, value);
@@ -2435,7 +2436,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Neq {
             get {
                 if ((this.NeqField == null)) {
-                    this.NeqField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
+                    this.NeqField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.NeqField;
             }
@@ -2445,7 +2446,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.NeqField == null)) {
-                        this.NeqField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
+                        this.NeqField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.NeqField, value);
@@ -2468,7 +2469,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ExtendedLogicalJoinDefinition> And {
             get {
                 if ((this.AndField == null)) {
-                    this.AndField = new XTypedList<ExtendedLogicalJoinDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
+                    this.AndField = new XTypedList<ExtendedLogicalJoinDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.AndField;
             }
@@ -2478,7 +2479,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.AndField == null)) {
-                        this.AndField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
+                        this.AndField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ExtendedLogicalJoinDefinition>(this.AndField, value);
@@ -2501,7 +2502,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ExtendedLogicalJoinDefinition> Or {
             get {
                 if ((this.OrField == null)) {
-                    this.OrField = new XTypedList<ExtendedLogicalJoinDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
+                    this.OrField = new XTypedList<ExtendedLogicalJoinDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.OrField;
             }
@@ -2511,7 +2512,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.OrField == null)) {
-                        this.OrField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
+                        this.OrField = XTypedList<ExtendedLogicalJoinDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ExtendedLogicalJoinDefinition>(this.OrField, value);
@@ -2534,7 +2535,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalNullDefinition> IsNull {
             get {
                 if ((this.IsNullField == null)) {
-                    this.IsNullField = new XTypedList<LogicalNullDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IsNullField = new XTypedList<LogicalNullDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IsNullField;
             }
@@ -2544,7 +2545,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IsNullField == null)) {
-                        this.IsNullField = XTypedList<LogicalNullDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IsNullField = XTypedList<LogicalNullDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalNullDefinition>(this.IsNullField, value);
@@ -2567,7 +2568,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalNullDefinition> IsNotNull {
             get {
                 if ((this.IsNotNullField == null)) {
-                    this.IsNotNullField = new XTypedList<LogicalNullDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IsNotNullField = new XTypedList<LogicalNullDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IsNotNullField;
             }
@@ -2577,7 +2578,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IsNotNullField == null)) {
-                        this.IsNotNullField = XTypedList<LogicalNullDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IsNotNullField = XTypedList<LogicalNullDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalNullDefinition>(this.IsNotNullField, value);
@@ -2600,7 +2601,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> DateRangesOverlap {
             get {
                 if ((this.DateRangesOverlapField == null)) {
-                    this.DateRangesOverlapField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DateRangesOverlapField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DateRangesOverlapField;
             }
@@ -2610,7 +2611,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DateRangesOverlapField == null)) {
-                        this.DateRangesOverlapField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DateRangesOverlapField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.DateRangesOverlapField, value);
@@ -2633,7 +2634,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> BeginsWith {
             get {
                 if ((this.BeginsWithField == null)) {
-                    this.BeginsWithField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
+                    this.BeginsWithField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.BeginsWithField;
             }
@@ -2643,7 +2644,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.BeginsWithField == null)) {
-                        this.BeginsWithField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
+                        this.BeginsWithField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.BeginsWithField, value);
@@ -2666,7 +2667,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalTestDefinition> Contains {
             get {
                 if ((this.ContainsField == null)) {
-                    this.ContainsField = new XTypedList<LogicalTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContainsField = new XTypedList<LogicalTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContainsField;
             }
@@ -2676,7 +2677,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContainsField == null)) {
-                        this.ContainsField = XTypedList<LogicalTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContainsField = XTypedList<LogicalTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalTestDefinition>(this.ContainsField, value);
@@ -2699,7 +2700,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MembershipDefinition> Membership {
             get {
                 if ((this.MembershipField == null)) {
-                    this.MembershipField = new XTypedList<MembershipDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MembershipField = new XTypedList<MembershipDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MembershipField;
             }
@@ -2709,7 +2710,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MembershipField == null)) {
-                        this.MembershipField = XTypedList<MembershipDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MembershipField = XTypedList<MembershipDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MembershipDefinition>(this.MembershipField, value);
@@ -2732,7 +2733,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LogicalMultiTestDefinition> @In {
             get {
                 if ((this.@InField == null)) {
-                    this.@InField = new XTypedList<LogicalMultiTestDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
+                    this.@InField = new XTypedList<LogicalMultiTestDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.@InField;
             }
@@ -2742,7 +2743,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.@InField == null)) {
-                        this.@InField = XTypedList<LogicalMultiTestDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
+                        this.@InField = XTypedList<LogicalMultiTestDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LogicalMultiTestDefinition>(this.@InField, value);
@@ -2775,7 +2776,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -2822,7 +2823,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FieldRefDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FieldRefDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldRefDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FieldRefDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FieldRefDefinitions() {
             BuildElementDictionary();
@@ -2848,7 +2849,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldRefDefinition> FieldRef {
             get {
                 if ((this.FieldRefField == null)) {
-                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldRefField;
             }
@@ -2858,7 +2859,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldRefField == null)) {
-                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldRefDefinition>(this.FieldRefField, value);
@@ -2891,7 +2892,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -2924,7 +2925,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator OrderByDefinition(XElement xe) { return XTypedServices.ToXTypedElement<OrderByDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator OrderByDefinition(XElement xe) { return XTypedServices.ToXTypedElement<OrderByDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static OrderByDefinition() {
             BuildElementDictionary();
@@ -2950,7 +2951,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldRefDefinition> FieldRef {
             get {
                 if ((this.FieldRefField == null)) {
-                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldRefField;
             }
@@ -2960,7 +2961,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldRefField == null)) {
-                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldRefDefinition>(this.FieldRefField, value);
@@ -3023,7 +3024,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3056,7 +3057,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator RowDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RowDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RowDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RowDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static RowDefinition() {
             BuildElementDictionary();
@@ -3082,7 +3083,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldDataDefinition> Field {
             get {
                 if ((this.FieldField == null)) {
-                    this.FieldField = new XTypedList<FieldDataDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldField = new XTypedList<FieldDataDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldField;
             }
@@ -3092,7 +3093,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldField == null)) {
-                        this.FieldField = XTypedList<FieldDataDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldField = XTypedList<FieldDataDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldDataDefinition>(this.FieldField, value);
@@ -3125,7 +3126,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3144,7 +3145,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FieldDataDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FieldDataDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldDataDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldDataDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldDataDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FieldDataDefinition() {
         }
@@ -3191,7 +3192,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3220,7 +3221,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator RowDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<RowDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RowDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<RowDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static RowDefinitions() {
             BuildElementDictionary();
@@ -3246,7 +3247,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<RowDefinition> Row {
             get {
                 if ((this.RowField == null)) {
-                    this.RowField = new XTypedList<RowDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
+                    this.RowField = new XTypedList<RowDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.RowField;
             }
@@ -3256,7 +3257,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.RowField == null)) {
-                        this.RowField = XTypedList<RowDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
+                        this.RowField = XTypedList<RowDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<RowDefinition>(this.RowField, value);
@@ -3289,7 +3290,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3308,7 +3309,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class EmptyQueryDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator EmptyQueryDefinition(XElement xe) { return XTypedServices.ToXTypedElement<EmptyQueryDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator EmptyQueryDefinition(XElement xe) { return XTypedServices.ToXTypedElement<EmptyQueryDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public EmptyQueryDefinition() {
         }
@@ -3330,7 +3331,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3345,7 +3346,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class SimpleFieldRef : XTypedElement, IXMetaData {
         
-         public static explicit operator SimpleFieldRef(XElement xe) { return XTypedServices.ToXTypedElement<SimpleFieldRef>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SimpleFieldRef(XElement xe) { return XTypedServices.ToXTypedElement<SimpleFieldRef>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public SimpleFieldRef() {
         }
@@ -3382,7 +3383,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3397,7 +3398,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class LookupColumnDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator LookupColumnDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LookupColumnDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LookupColumnDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LookupColumnDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public LookupColumnDefinition() {
         }
@@ -3524,7 +3525,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3539,7 +3540,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class QueryColumnDefinition : global::Microsoft.Schemas.SharePoint.LookupColumnDefinition, IXMetaData {
         
-         public static explicit operator QueryColumnDefinition(XElement xe) { return XTypedServices.ToXTypedElement<QueryColumnDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator QueryColumnDefinition(XElement xe) { return XTypedServices.ToXTypedElement<QueryColumnDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public QueryColumnDefinition() {
         }
@@ -3606,7 +3607,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3621,7 +3622,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class QueryGetVarDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator QueryGetVarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<QueryGetVarDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator QueryGetVarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<QueryGetVarDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public QueryGetVarDefinition() {
         }
@@ -3673,7 +3674,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3688,7 +3689,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class QueryListProperty : XTypedElement, IXMetaData {
         
-         public static explicit operator QueryListProperty(XElement xe) { return XTypedServices.ToXTypedElement<QueryListProperty>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator QueryListProperty(XElement xe) { return XTypedServices.ToXTypedElement<QueryListProperty>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public QueryListProperty() {
         }
@@ -3740,7 +3741,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3763,7 +3764,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator MembershipDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MembershipDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MembershipDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MembershipDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static MembershipDefinition() {
             BuildElementDictionary();
@@ -3816,7 +3817,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3845,7 +3846,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator GroupByDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GroupByDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GroupByDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GroupByDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static GroupByDefinition() {
             BuildElementDictionary();
@@ -3898,7 +3899,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -3933,7 +3934,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator UnlimitedLogicalTestDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UnlimitedLogicalTestDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UnlimitedLogicalTestDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UnlimitedLogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static UnlimitedLogicalTestDefinition() {
             BuildElementDictionary();
@@ -3961,7 +3962,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldRefDefinition> FieldRef {
             get {
                 if ((this.FieldRefField == null)) {
-                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldRefField = new XTypedList<FieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldRefField;
             }
@@ -3971,7 +3972,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldRefField == null)) {
-                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldRefField = XTypedList<FieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldRefDefinition>(this.FieldRefField, value);
@@ -3994,7 +3995,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ValueDefinition> Value {
             get {
                 if ((this.ValueField == null)) {
-                    this.ValueField = new XTypedList<ValueDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ValueField = new XTypedList<ValueDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ValueField;
             }
@@ -4004,7 +4005,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ValueField == null)) {
-                        this.ValueField = XTypedList<ValueDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ValueField = XTypedList<ValueDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Value", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ValueDefinition>(this.ValueField, value);
@@ -4037,7 +4038,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -4065,7 +4066,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator CamlViewRoot(XElement xe) { return XTypedServices.ToXTypedElement<CamlViewRoot>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CamlViewRoot(XElement xe) { return XTypedServices.ToXTypedElement<CamlViewRoot>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CamlViewRoot() {
             BuildElementDictionary();
@@ -4103,7 +4104,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -4173,7 +4174,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class HtmlRenderingElement : XTypedElement, IXMetaData {
         
-         public static explicit operator HtmlRenderingElement(XElement xe) { return XTypedServices.ToXTypedElement<HtmlRenderingElement>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HtmlRenderingElement(XElement xe) { return XTypedServices.ToXTypedElement<HtmlRenderingElement>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public HtmlRenderingElement() {
         }
@@ -4330,7 +4331,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -4353,7 +4354,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator HtmlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HtmlDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HtmlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HtmlDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static HtmlDefinition() {
             InitFSM();
@@ -4410,7 +4411,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -4439,7 +4440,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator HtmlContentDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HtmlContentDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HtmlContentDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HtmlContentDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static HtmlContentDefinition() {
             BuildElementDictionary();
@@ -4477,7 +4478,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -4547,7 +4548,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FieldRefViewDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FieldRefViewDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldRefViewDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldRefViewDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldRefViewDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FieldRefViewDefinition() {
         }
@@ -4689,7 +4690,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -4715,7 +4716,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator BatchDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BatchDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BatchDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BatchDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static BatchDefinition() {
             BuildElementDictionary();
@@ -4838,7 +4839,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -4888,7 +4889,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator MethodDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MethodDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MethodDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MethodDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static MethodDefinition() {
             BuildElementDictionary();
@@ -4992,7 +4993,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -5020,7 +5021,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator SetListDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SetListDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SetListDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SetListDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SetListDefinition() {
             InitFSM();
@@ -5107,7 +5108,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -5146,7 +5147,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator SetVarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SetVarDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SetVarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SetVarDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SetVarDefinition() {
             BuildElementDictionary();
@@ -5244,7 +5245,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -5478,7 +5479,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator CamlViewElement(XElement xe) { return XTypedServices.ToXTypedElement<CamlViewElement>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CamlViewElement(XElement xe) { return XTypedServices.ToXTypedElement<CamlViewElement>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CamlViewElement() {
             BuildElementDictionary();
@@ -5506,7 +5507,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<QueryColumnDefinition> Column {
             get {
                 if ((this.ColumnField == null)) {
-                    this.ColumnField = new XTypedList<QueryColumnDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ColumnField = new XTypedList<QueryColumnDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ColumnField;
             }
@@ -5516,7 +5517,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ColumnField == null)) {
-                        this.ColumnField = XTypedList<QueryColumnDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ColumnField = XTypedList<QueryColumnDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<QueryColumnDefinition>(this.ColumnField, value);
@@ -5539,7 +5540,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<QueryColumnDefinition> Column2 {
             get {
                 if ((this.Column2Field == null)) {
-                    this.Column2Field = new XTypedList<QueryColumnDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Column2", "http://schemas.microsoft.com/sharepoint/"));
+                    this.Column2Field = new XTypedList<QueryColumnDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Column2", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.Column2Field;
             }
@@ -5549,7 +5550,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.Column2Field == null)) {
-                        this.Column2Field = XTypedList<QueryColumnDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Column2", "http://schemas.microsoft.com/sharepoint/"));
+                        this.Column2Field = XTypedList<QueryColumnDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Column2", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<QueryColumnDefinition>(this.Column2Field, value);
@@ -5572,7 +5573,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CounterDefinition> Counter {
             get {
                 if ((this.CounterField == null)) {
-                    this.CounterField = new XTypedList<CounterDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Counter", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CounterField = new XTypedList<CounterDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Counter", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CounterField;
             }
@@ -5582,7 +5583,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CounterField == null)) {
-                        this.CounterField = XTypedList<CounterDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Counter", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CounterField = XTypedList<CounterDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Counter", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CounterDefinition>(this.CounterField, value);
@@ -5605,7 +5606,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<EmptyElement> CurrentRights {
             get {
                 if ((this.CurrentRightsField == null)) {
-                    this.CurrentRightsField = new XTypedList<EmptyElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CurrentRights", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CurrentRightsField = new XTypedList<EmptyElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CurrentRights", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CurrentRightsField;
             }
@@ -5615,7 +5616,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CurrentRightsField == null)) {
-                        this.CurrentRightsField = XTypedList<EmptyElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CurrentRights", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CurrentRightsField = XTypedList<EmptyElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CurrentRights", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<EmptyElement>(this.CurrentRightsField, value);
@@ -5638,7 +5639,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldViewReferenceDefinition> Field {
             get {
                 if ((this.FieldField == null)) {
-                    this.FieldField = new XTypedList<FieldViewReferenceDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldField = new XTypedList<FieldViewReferenceDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldField;
             }
@@ -5648,7 +5649,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldField == null)) {
-                        this.FieldField = XTypedList<FieldViewReferenceDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldField = XTypedList<FieldViewReferenceDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldViewReferenceDefinition>(this.FieldField, value);
@@ -5671,7 +5672,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<EmptyElement> FieldPrefix {
             get {
                 if ((this.FieldPrefixField == null)) {
-                    this.FieldPrefixField = new XTypedList<EmptyElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldPrefix", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldPrefixField = new XTypedList<EmptyElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldPrefix", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldPrefixField;
             }
@@ -5681,7 +5682,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldPrefixField == null)) {
-                        this.FieldPrefixField = XTypedList<EmptyElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldPrefix", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldPrefixField = XTypedList<EmptyElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldPrefix", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<EmptyElement>(this.FieldPrefixField, value);
@@ -5704,7 +5705,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldPropertyDefinition> FieldProperty {
             get {
                 if ((this.FieldPropertyField == null)) {
-                    this.FieldPropertyField = new XTypedList<FieldPropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldProperty", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldPropertyField = new XTypedList<FieldPropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldProperty", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldPropertyField;
             }
@@ -5714,7 +5715,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldPropertyField == null)) {
-                        this.FieldPropertyField = XTypedList<FieldPropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldProperty", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldPropertyField = XTypedList<FieldPropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldProperty", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldPropertyDefinition>(this.FieldPropertyField, value);
@@ -5737,7 +5738,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CamlViewElement> Fields {
             get {
                 if ((this.FieldsField == null)) {
-                    this.FieldsField = new XTypedList<CamlViewElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Fields", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldsField = new XTypedList<CamlViewElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Fields", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldsField;
             }
@@ -5747,7 +5748,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldsField == null)) {
-                        this.FieldsField = XTypedList<CamlViewElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Fields", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldsField = XTypedList<CamlViewElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Fields", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CamlViewElement>(this.FieldsField, value);
@@ -5770,7 +5771,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SwitchDefinition> FieldSwitch {
             get {
                 if ((this.FieldSwitchField == null)) {
-                    this.FieldSwitchField = new XTypedList<SwitchDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldSwitch", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldSwitchField = new XTypedList<SwitchDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldSwitch", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldSwitchField;
             }
@@ -5780,7 +5781,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldSwitchField == null)) {
-                        this.FieldSwitchField = XTypedList<SwitchDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldSwitch", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldSwitchField = XTypedList<SwitchDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldSwitch", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SwitchDefinition>(this.FieldSwitchField, value);
@@ -5803,7 +5804,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FilterLinkDefinition> FilterLink {
             get {
                 if ((this.FilterLinkField == null)) {
-                    this.FilterLinkField = new XTypedList<FilterLinkDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FilterLink", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FilterLinkField = new XTypedList<FilterLinkDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FilterLink", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FilterLinkField;
             }
@@ -5813,7 +5814,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FilterLinkField == null)) {
-                        this.FilterLinkField = XTypedList<FilterLinkDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FilterLink", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FilterLinkField = XTypedList<FilterLinkDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FilterLink", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FilterLinkDefinition>(this.FilterLinkField, value);
@@ -5836,7 +5837,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<XTypedElement> GetFileExtension {
             get {
                 if ((this.GetFileExtensionField == null)) {
-                    this.GetFileExtensionField = new XTypedList<XTypedElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GetFileExtension", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GetFileExtensionField = new XTypedList<XTypedElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GetFileExtension", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GetFileExtensionField;
             }
@@ -5846,7 +5847,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GetFileExtensionField == null)) {
-                        this.GetFileExtensionField = XTypedList<XTypedElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GetFileExtension", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GetFileExtensionField = XTypedList<XTypedElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GetFileExtension", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<XTypedElement>(this.GetFileExtensionField, value);
@@ -5869,7 +5870,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<GetVarDefinition> GetVar {
             get {
                 if ((this.GetVarField == null)) {
-                    this.GetVarField = new XTypedList<GetVarDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GetVar", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GetVarField = new XTypedList<GetVarDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GetVar", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GetVarField;
             }
@@ -5879,7 +5880,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GetVarField == null)) {
-                        this.GetVarField = XTypedList<GetVarDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GetVar", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GetVarField = XTypedList<GetVarDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GetVar", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<GetVarDefinition>(this.GetVarField, value);
@@ -5902,7 +5903,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HtmlContentDefinition> HTML {
             get {
                 if ((this.HTMLField == null)) {
-                    this.HTMLField = new XTypedList<HtmlContentDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HTML", "http://schemas.microsoft.com/sharepoint/"));
+                    this.HTMLField = new XTypedList<HtmlContentDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HTML", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.HTMLField;
             }
@@ -5912,7 +5913,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.HTMLField == null)) {
-                        this.HTMLField = XTypedList<HtmlContentDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HTML", "http://schemas.microsoft.com/sharepoint/"));
+                        this.HTMLField = XTypedList<HtmlContentDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HTML", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HtmlContentDefinition>(this.HTMLField, value);
@@ -5935,7 +5936,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HttpHostDefinition> HttpHost {
             get {
                 if ((this.HttpHostField == null)) {
-                    this.HttpHostField = new XTypedList<HttpHostDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HttpHost", "http://schemas.microsoft.com/sharepoint/"));
+                    this.HttpHostField = new XTypedList<HttpHostDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HttpHost", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.HttpHostField;
             }
@@ -5945,7 +5946,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.HttpHostField == null)) {
-                        this.HttpHostField = XTypedList<HttpHostDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HttpHost", "http://schemas.microsoft.com/sharepoint/"));
+                        this.HttpHostField = XTypedList<HttpHostDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HttpHost", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HttpHostDefinition>(this.HttpHostField, value);
@@ -5968,7 +5969,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HttpPathDefinition> HttpPath {
             get {
                 if ((this.HttpPathField == null)) {
-                    this.HttpPathField = new XTypedList<HttpPathDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HttpPath", "http://schemas.microsoft.com/sharepoint/"));
+                    this.HttpPathField = new XTypedList<HttpPathDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HttpPath", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.HttpPathField;
             }
@@ -5978,7 +5979,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.HttpPathField == null)) {
-                        this.HttpPathField = XTypedList<HttpPathDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HttpPath", "http://schemas.microsoft.com/sharepoint/"));
+                        this.HttpPathField = XTypedList<HttpPathDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HttpPath", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HttpPathDefinition>(this.HttpPathField, value);
@@ -6001,7 +6002,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HttpVDirDefinition> HttpVDir {
             get {
                 if ((this.HttpVDirField == null)) {
-                    this.HttpVDirField = new XTypedList<HttpVDirDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HttpVDir", "http://schemas.microsoft.com/sharepoint/"));
+                    this.HttpVDirField = new XTypedList<HttpVDirDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HttpVDir", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.HttpVDirField;
             }
@@ -6011,7 +6012,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.HttpVDirField == null)) {
-                        this.HttpVDirField = XTypedList<HttpVDirDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HttpVDir", "http://schemas.microsoft.com/sharepoint/"));
+                        this.HttpVDirField = XTypedList<HttpVDirDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HttpVDir", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HttpVDirDefinition>(this.HttpVDirField, value);
@@ -6034,7 +6035,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<EmptyElement> ID {
             get {
                 if ((this.IDField == null)) {
-                    this.IDField = new XTypedList<EmptyElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ID", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IDField = new XTypedList<EmptyElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ID", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IDField;
             }
@@ -6044,7 +6045,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IDField == null)) {
-                        this.IDField = XTypedList<EmptyElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ID", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IDField = XTypedList<EmptyElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ID", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<EmptyElement>(this.IDField, value);
@@ -6067,7 +6068,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<IfEqualDefinition> IfEqual {
             get {
                 if ((this.IfEqualField == null)) {
-                    this.IfEqualField = new XTypedList<IfEqualDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfEqual", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IfEqualField = new XTypedList<IfEqualDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfEqual", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IfEqualField;
             }
@@ -6077,7 +6078,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IfEqualField == null)) {
-                        this.IfEqualField = XTypedList<IfEqualDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfEqual", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IfEqualField = XTypedList<IfEqualDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfEqual", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<IfEqualDefinition>(this.IfEqualField, value);
@@ -6100,7 +6101,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<IfNegDefinition> IfNeg {
             get {
                 if ((this.IfNegField == null)) {
-                    this.IfNegField = new XTypedList<IfNegDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfNeg", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IfNegField = new XTypedList<IfNegDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfNeg", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IfNegField;
             }
@@ -6110,7 +6111,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IfNegField == null)) {
-                        this.IfNegField = XTypedList<IfNegDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfNeg", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IfNegField = XTypedList<IfNegDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfNeg", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<IfNegDefinition>(this.IfNegField, value);
@@ -6133,7 +6134,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<IfNewDefinition> IfNew {
             get {
                 if ((this.IfNewField == null)) {
-                    this.IfNewField = new XTypedList<IfNewDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfNew", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IfNewField = new XTypedList<IfNewDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfNew", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IfNewField;
             }
@@ -6143,7 +6144,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IfNewField == null)) {
-                        this.IfNewField = XTypedList<IfNewDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfNew", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IfNewField = XTypedList<IfNewDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfNew", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<IfNewDefinition>(this.IfNewField, value);
@@ -6166,7 +6167,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<IfSubStringDefinition> IfSubString {
             get {
                 if ((this.IfSubStringField == null)) {
-                    this.IfSubStringField = new XTypedList<IfSubStringDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfSubString", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IfSubStringField = new XTypedList<IfSubStringDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfSubString", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IfSubStringField;
             }
@@ -6176,7 +6177,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IfSubStringField == null)) {
-                        this.IfSubStringField = XTypedList<IfSubStringDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfSubString", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IfSubStringField = XTypedList<IfSubStringDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfSubString", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<IfSubStringDefinition>(this.IfSubStringField, value);
@@ -6199,7 +6200,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<XTypedElement> Length {
             get {
                 if ((this.LengthField == null)) {
-                    this.LengthField = new XTypedList<XTypedElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Length", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LengthField = new XTypedList<XTypedElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Length", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LengthField;
             }
@@ -6209,7 +6210,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LengthField == null)) {
-                        this.LengthField = XTypedList<XTypedElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Length", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LengthField = XTypedList<XTypedElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Length", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<XTypedElement>(this.LengthField, value);
@@ -6232,7 +6233,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LimitDefinition> Limit {
             get {
                 if ((this.LimitField == null)) {
-                    this.LimitField = new XTypedList<LimitDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Limit", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LimitField = new XTypedList<LimitDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Limit", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LimitField;
             }
@@ -6242,7 +6243,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LimitField == null)) {
-                        this.LimitField = XTypedList<LimitDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Limit", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LimitField = XTypedList<LimitDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Limit", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LimitDefinition>(this.LimitField, value);
@@ -6265,7 +6266,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<EmptyElement> List {
             get {
                 if ((this.ListField == null)) {
-                    this.ListField = new XTypedList<EmptyElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListField = new XTypedList<EmptyElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListField;
             }
@@ -6275,7 +6276,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListField == null)) {
-                        this.ListField = XTypedList<EmptyElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListField = XTypedList<EmptyElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<EmptyElement>(this.ListField, value);
@@ -6298,7 +6299,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<EmptyElement> ListUrl {
             get {
                 if ((this.ListUrlField == null)) {
-                    this.ListUrlField = new XTypedList<EmptyElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListUrl", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListUrlField = new XTypedList<EmptyElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListUrl", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListUrlField;
             }
@@ -6308,7 +6309,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListUrlField == null)) {
-                        this.ListUrlField = XTypedList<EmptyElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListUrl", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListUrlField = XTypedList<EmptyElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListUrl", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<EmptyElement>(this.ListUrlField, value);
@@ -6331,7 +6332,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HttpPathDefinition> ListUrlDir {
             get {
                 if ((this.ListUrlDirField == null)) {
-                    this.ListUrlDirField = new XTypedList<HttpPathDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListUrlDir", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListUrlDirField = new XTypedList<HttpPathDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListUrlDir", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListUrlDirField;
             }
@@ -6341,7 +6342,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListUrlDirField == null)) {
-                        this.ListUrlDirField = XTypedList<HttpPathDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListUrlDir", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListUrlDirField = XTypedList<HttpPathDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListUrlDir", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HttpPathDefinition>(this.ListUrlDirField, value);
@@ -6364,7 +6365,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ListPropertyDefinition> ListProperty {
             get {
                 if ((this.ListPropertyField == null)) {
-                    this.ListPropertyField = new XTypedList<ListPropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListPropertyField = new XTypedList<ListPropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListPropertyField;
             }
@@ -6374,7 +6375,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListPropertyField == null)) {
-                        this.ListPropertyField = XTypedList<ListPropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListPropertyField = XTypedList<ListPropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ListPropertyDefinition>(this.ListPropertyField, value);
@@ -6397,7 +6398,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LookupColumnDefinition> LookupColumn {
             get {
                 if ((this.LookupColumnField == null)) {
-                    this.LookupColumnField = new XTypedList<LookupColumnDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LookupColumnField = new XTypedList<LookupColumnDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LookupColumnField;
             }
@@ -6407,7 +6408,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LookupColumnField == null)) {
-                        this.LookupColumnField = XTypedList<LookupColumnDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LookupColumnField = XTypedList<LookupColumnDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LookupColumnDefinition>(this.LookupColumnField, value);
@@ -6430,7 +6431,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CamlViewElement> MapToAll {
             get {
                 if ((this.MapToAllField == null)) {
-                    this.MapToAllField = new XTypedList<CamlViewElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToAll", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MapToAllField = new XTypedList<CamlViewElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToAll", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MapToAllField;
             }
@@ -6440,7 +6441,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MapToAllField == null)) {
-                        this.MapToAllField = XTypedList<CamlViewElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToAll", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MapToAllField = XTypedList<CamlViewElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToAll", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CamlViewElement>(this.MapToAllField, value);
@@ -6463,7 +6464,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CamlViewElement> MapToIcon {
             get {
                 if ((this.MapToIconField == null)) {
-                    this.MapToIconField = new XTypedList<CamlViewElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToIcon", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MapToIconField = new XTypedList<CamlViewElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToIcon", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MapToIconField;
             }
@@ -6473,7 +6474,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MapToIconField == null)) {
-                        this.MapToIconField = XTypedList<CamlViewElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToIcon", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MapToIconField = XTypedList<CamlViewElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToIcon", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CamlViewElement>(this.MapToIconField, value);
@@ -6496,7 +6497,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HtmlRenderingElement> PageUrl {
             get {
                 if ((this.PageUrlField == null)) {
-                    this.PageUrlField = new XTypedList<HtmlRenderingElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("PageUrl", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PageUrlField = new XTypedList<HtmlRenderingElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("PageUrl", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PageUrlField;
             }
@@ -6506,7 +6507,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PageUrlField == null)) {
-                        this.PageUrlField = XTypedList<HtmlRenderingElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("PageUrl", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PageUrlField = XTypedList<HtmlRenderingElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("PageUrl", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HtmlRenderingElement>(this.PageUrlField, value);
@@ -6529,7 +6530,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldPropertyDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<FieldPropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<FieldPropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -6539,7 +6540,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<FieldPropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<FieldPropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldPropertyDefinition>(this.PropertyField, value);
@@ -6562,7 +6563,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ScriptQuoteDefinition> ScriptQuote {
             get {
                 if ((this.ScriptQuoteField == null)) {
-                    this.ScriptQuoteField = new XTypedList<ScriptQuoteDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ScriptQuote", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ScriptQuoteField = new XTypedList<ScriptQuoteDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ScriptQuote", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ScriptQuoteField;
             }
@@ -6572,7 +6573,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ScriptQuoteField == null)) {
-                        this.ScriptQuoteField = XTypedList<ScriptQuoteDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ScriptQuote", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ScriptQuoteField = XTypedList<ScriptQuoteDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ScriptQuote", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ScriptQuoteDefinition>(this.ScriptQuoteField, value);
@@ -6595,7 +6596,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SelectOptionsDefinition> SelectionOptions {
             get {
                 if ((this.SelectionOptionsField == null)) {
-                    this.SelectionOptionsField = new XTypedList<SelectOptionsDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SelectionOptions", "http://schemas.microsoft.com/sharepoint/"));
+                    this.SelectionOptionsField = new XTypedList<SelectOptionsDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SelectionOptions", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.SelectionOptionsField;
             }
@@ -6605,7 +6606,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.SelectionOptionsField == null)) {
-                        this.SelectionOptionsField = XTypedList<SelectOptionsDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SelectionOptions", "http://schemas.microsoft.com/sharepoint/"));
+                        this.SelectionOptionsField = XTypedList<SelectOptionsDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SelectionOptions", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SelectOptionsDefinition>(this.SelectionOptionsField, value);
@@ -6628,7 +6629,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ServerPropertyDefinition> ServerProperty {
             get {
                 if ((this.ServerPropertyField == null)) {
-                    this.ServerPropertyField = new XTypedList<ServerPropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ServerProperty", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ServerPropertyField = new XTypedList<ServerPropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ServerProperty", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ServerPropertyField;
             }
@@ -6638,7 +6639,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ServerPropertyField == null)) {
-                        this.ServerPropertyField = XTypedList<ServerPropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ServerProperty", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ServerPropertyField = XTypedList<ServerPropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ServerProperty", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ServerPropertyDefinition>(this.ServerPropertyField, value);
@@ -6661,7 +6662,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SetVarDefinition> SetVar {
             get {
                 if ((this.SetVarField == null)) {
-                    this.SetVarField = new XTypedList<SetVarDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SetVar", "http://schemas.microsoft.com/sharepoint/"));
+                    this.SetVarField = new XTypedList<SetVarDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SetVar", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.SetVarField;
             }
@@ -6671,7 +6672,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.SetVarField == null)) {
-                        this.SetVarField = XTypedList<SetVarDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SetVar", "http://schemas.microsoft.com/sharepoint/"));
+                        this.SetVarField = XTypedList<SetVarDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SetVar", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SetVarDefinition>(this.SetVarField, value);
@@ -6694,7 +6695,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SwitchDefinition> @Switch {
             get {
                 if ((this.@SwitchField == null)) {
-                    this.@SwitchField = new XTypedList<SwitchDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Switch", "http://schemas.microsoft.com/sharepoint/"));
+                    this.@SwitchField = new XTypedList<SwitchDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Switch", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.@SwitchField;
             }
@@ -6704,7 +6705,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.@SwitchField == null)) {
-                        this.@SwitchField = XTypedList<SwitchDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Switch", "http://schemas.microsoft.com/sharepoint/"));
+                        this.@SwitchField = XTypedList<SwitchDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Switch", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SwitchDefinition>(this.@SwitchField, value);
@@ -6727,7 +6728,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ThreadStampDefinition> ThreadStamp {
             get {
                 if ((this.ThreadStampField == null)) {
-                    this.ThreadStampField = new XTypedList<ThreadStampDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ThreadStamp", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ThreadStampField = new XTypedList<ThreadStampDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ThreadStamp", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ThreadStampField;
             }
@@ -6737,7 +6738,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ThreadStampField == null)) {
-                        this.ThreadStampField = XTypedList<ThreadStampDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ThreadStamp", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ThreadStampField = XTypedList<ThreadStampDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ThreadStamp", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ThreadStampDefinition>(this.ThreadStampField, value);
@@ -6760,7 +6761,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<URLDefinition> URL {
             get {
                 if ((this.URLField == null)) {
-                    this.URLField = new XTypedList<URLDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("URL", "http://schemas.microsoft.com/sharepoint/"));
+                    this.URLField = new XTypedList<URLDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("URL", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.URLField;
             }
@@ -6770,7 +6771,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.URLField == null)) {
-                        this.URLField = XTypedList<URLDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("URL", "http://schemas.microsoft.com/sharepoint/"));
+                        this.URLField = XTypedList<URLDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("URL", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<URLDefinition>(this.URLField, value);
@@ -6793,7 +6794,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<XTypedElement> UrlDirName {
             get {
                 if ((this.UrlDirNameField == null)) {
-                    this.UrlDirNameField = new XTypedList<XTypedElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UrlDirName", "http://schemas.microsoft.com/sharepoint/"));
+                    this.UrlDirNameField = new XTypedList<XTypedElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UrlDirName", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.UrlDirNameField;
             }
@@ -6803,7 +6804,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.UrlDirNameField == null)) {
-                        this.UrlDirNameField = XTypedList<XTypedElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UrlDirName", "http://schemas.microsoft.com/sharepoint/"));
+                        this.UrlDirNameField = XTypedList<XTypedElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UrlDirName", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<XTypedElement>(this.UrlDirNameField, value);
@@ -6826,7 +6827,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<UrlBaseNameDefinition> UrlBaseName {
             get {
                 if ((this.UrlBaseNameField == null)) {
-                    this.UrlBaseNameField = new XTypedList<UrlBaseNameDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UrlBaseName", "http://schemas.microsoft.com/sharepoint/"));
+                    this.UrlBaseNameField = new XTypedList<UrlBaseNameDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UrlBaseName", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.UrlBaseNameField;
             }
@@ -6836,7 +6837,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.UrlBaseNameField == null)) {
-                        this.UrlBaseNameField = XTypedList<UrlBaseNameDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UrlBaseName", "http://schemas.microsoft.com/sharepoint/"));
+                        this.UrlBaseNameField = XTypedList<UrlBaseNameDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UrlBaseName", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<UrlBaseNameDefinition>(this.UrlBaseNameField, value);
@@ -6859,7 +6860,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MeetingPropertyDefinition> MeetingProperty {
             get {
                 if ((this.MeetingPropertyField == null)) {
-                    this.MeetingPropertyField = new XTypedList<MeetingPropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MeetingProperty", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MeetingPropertyField = new XTypedList<MeetingPropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MeetingProperty", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MeetingPropertyField;
             }
@@ -6869,7 +6870,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MeetingPropertyField == null)) {
-                        this.MeetingPropertyField = XTypedList<MeetingPropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MeetingProperty", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MeetingPropertyField = XTypedList<MeetingPropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MeetingProperty", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MeetingPropertyDefinition>(this.MeetingPropertyField, value);
@@ -6892,7 +6893,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ProjectPropertyDefinition> ProjectProperty {
             get {
                 if ((this.ProjectPropertyField == null)) {
-                    this.ProjectPropertyField = new XTypedList<ProjectPropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ProjectProperty", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ProjectPropertyField = new XTypedList<ProjectPropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ProjectProperty", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ProjectPropertyField;
             }
@@ -6902,7 +6903,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ProjectPropertyField == null)) {
-                        this.ProjectPropertyField = XTypedList<ProjectPropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ProjectProperty", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ProjectPropertyField = XTypedList<ProjectPropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ProjectProperty", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ProjectPropertyDefinition>(this.ProjectPropertyField, value);
@@ -6925,7 +6926,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<UserIDDefinition> UserID {
             get {
                 if ((this.UserIDField == null)) {
-                    this.UserIDField = new XTypedList<UserIDDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UserID", "http://schemas.microsoft.com/sharepoint/"));
+                    this.UserIDField = new XTypedList<UserIDDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UserID", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.UserIDField;
             }
@@ -6935,7 +6936,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.UserIDField == null)) {
-                        this.UserIDField = XTypedList<UserIDDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UserID", "http://schemas.microsoft.com/sharepoint/"));
+                        this.UserIDField = XTypedList<UserIDDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UserID", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<UserIDDefinition>(this.UserIDField, value);
@@ -6958,7 +6959,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HtmlRenderingElement> FieldSortParams {
             get {
                 if ((this.FieldSortParamsField == null)) {
-                    this.FieldSortParamsField = new XTypedList<HtmlRenderingElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldSortParams", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldSortParamsField = new XTypedList<HtmlRenderingElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldSortParams", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldSortParamsField;
             }
@@ -6968,7 +6969,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldSortParamsField == null)) {
-                        this.FieldSortParamsField = XTypedList<HtmlRenderingElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldSortParams", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldSortParamsField = XTypedList<HtmlRenderingElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldSortParams", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HtmlRenderingElement>(this.FieldSortParamsField, value);
@@ -6991,7 +6992,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<EmptyElement> WebQueryInfo {
             get {
                 if ((this.WebQueryInfoField == null)) {
-                    this.WebQueryInfoField = new XTypedList<EmptyElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebQueryInfo", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WebQueryInfoField = new XTypedList<EmptyElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebQueryInfo", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WebQueryInfoField;
             }
@@ -7001,7 +7002,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WebQueryInfoField == null)) {
-                        this.WebQueryInfoField = XTypedList<EmptyElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebQueryInfo", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WebQueryInfoField = XTypedList<EmptyElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebQueryInfo", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<EmptyElement>(this.WebQueryInfoField, value);
@@ -7024,7 +7025,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<EmptyElement> Identity {
             get {
                 if ((this.IdentityField == null)) {
-                    this.IdentityField = new XTypedList<EmptyElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Identity", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IdentityField = new XTypedList<EmptyElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Identity", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IdentityField;
             }
@@ -7034,7 +7035,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IdentityField == null)) {
-                        this.IdentityField = XTypedList<EmptyElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Identity", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IdentityField = XTypedList<EmptyElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Identity", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<EmptyElement>(this.IdentityField, value);
@@ -7057,7 +7058,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<IfHasRightsDefinition> IfHasRights {
             get {
                 if ((this.IfHasRightsField == null)) {
-                    this.IfHasRightsField = new XTypedList<IfHasRightsDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfHasRights", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IfHasRightsField = new XTypedList<IfHasRightsDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IfHasRights", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IfHasRightsField;
             }
@@ -7067,7 +7068,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IfHasRightsField == null)) {
-                        this.IfHasRightsField = XTypedList<IfHasRightsDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfHasRights", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IfHasRightsField = XTypedList<IfHasRightsDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IfHasRights", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<IfHasRightsDefinition>(this.IfHasRightsField, value);
@@ -7090,7 +7091,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CamlViewElement> MapToControl {
             get {
                 if ((this.MapToControlField == null)) {
-                    this.MapToControlField = new XTypedList<CamlViewElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToControl", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MapToControlField = new XTypedList<CamlViewElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToControl", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MapToControlField;
             }
@@ -7100,7 +7101,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MapToControlField == null)) {
-                        this.MapToControlField = XTypedList<CamlViewElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToControl", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MapToControlField = XTypedList<CamlViewElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToControl", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CamlViewElement>(this.MapToControlField, value);
@@ -7123,7 +7124,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ForEachElement> @ForEach {
             get {
                 if ((this.@ForEachField == null)) {
-                    this.@ForEachField = new XTypedList<ForEachElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ForEach", "http://schemas.microsoft.com/sharepoint/"));
+                    this.@ForEachField = new XTypedList<ForEachElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ForEach", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.@ForEachField;
             }
@@ -7133,7 +7134,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.@ForEachField == null)) {
-                        this.@ForEachField = XTypedList<ForEachElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ForEach", "http://schemas.microsoft.com/sharepoint/"));
+                        this.@ForEachField = XTypedList<ForEachElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ForEach", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ForEachElement>(this.@ForEachField, value);
@@ -7156,7 +7157,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CamlViewElement> ContentTypes {
             get {
                 if ((this.ContentTypesField == null)) {
-                    this.ContentTypesField = new XTypedList<CamlViewElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypes", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContentTypesField = new XTypedList<CamlViewElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypes", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContentTypesField;
             }
@@ -7166,7 +7167,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContentTypesField == null)) {
-                        this.ContentTypesField = XTypedList<CamlViewElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypes", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContentTypesField = XTypedList<CamlViewElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypes", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CamlViewElement>(this.ContentTypesField, value);
@@ -7189,7 +7190,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CamlViewElement> MapToContentType {
             get {
                 if ((this.MapToContentTypeField == null)) {
-                    this.MapToContentTypeField = new XTypedList<CamlViewElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToContentType", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MapToContentTypeField = new XTypedList<CamlViewElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapToContentType", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MapToContentTypeField;
             }
@@ -7199,7 +7200,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MapToContentTypeField == null)) {
-                        this.MapToContentTypeField = XTypedList<CamlViewElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToContentType", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MapToContentTypeField = XTypedList<CamlViewElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapToContentType", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CamlViewElement>(this.MapToContentTypeField, value);
@@ -7232,7 +7233,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -7302,7 +7303,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class GetVarDefinition : global::Microsoft.Schemas.SharePoint.HtmlRenderingElement, IXMetaData {
         
-         public static explicit operator GetVarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GetVarDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GetVarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GetVarDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public GetVarDefinition() {
         }
@@ -7339,7 +7340,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -7371,7 +7372,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator SwitchDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SwitchDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SwitchDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SwitchDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SwitchDefinition() {
             BuildElementDictionary();
@@ -7399,7 +7400,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ExprDefinition> Expr {
             get {
                 if ((this.ExprField == null)) {
-                    this.ExprField = new XTypedList<ExprDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Expr", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ExprField = new XTypedList<ExprDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Expr", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ExprField;
             }
@@ -7409,7 +7410,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ExprField == null)) {
-                        this.ExprField = XTypedList<ExprDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Expr", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ExprField = XTypedList<ExprDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Expr", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ExprDefinition>(this.ExprField, value);
@@ -7432,7 +7433,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CaseDefinition> @Case {
             get {
                 if ((this.@CaseField == null)) {
-                    this.@CaseField = new XTypedList<CaseDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Case", "http://schemas.microsoft.com/sharepoint/"));
+                    this.@CaseField = new XTypedList<CaseDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Case", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.@CaseField;
             }
@@ -7442,7 +7443,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.@CaseField == null)) {
-                        this.@CaseField = XTypedList<CaseDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Case", "http://schemas.microsoft.com/sharepoint/"));
+                        this.@CaseField = XTypedList<CaseDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Case", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CaseDefinition>(this.@CaseField, value);
@@ -7465,7 +7466,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DefaultDefinition> @Default {
             get {
                 if ((this.@DefaultField == null)) {
-                    this.@DefaultField = new XTypedList<DefaultDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Default", "http://schemas.microsoft.com/sharepoint/"));
+                    this.@DefaultField = new XTypedList<DefaultDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Default", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.@DefaultField;
             }
@@ -7475,7 +7476,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.@DefaultField == null)) {
-                        this.@DefaultField = XTypedList<DefaultDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Default", "http://schemas.microsoft.com/sharepoint/"));
+                        this.@DefaultField = XTypedList<DefaultDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Default", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DefaultDefinition>(this.@DefaultField, value);
@@ -7523,7 +7524,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -7552,7 +7553,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator ExprDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExprDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ExprDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExprDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ExprDefinition() {
             InitFSM();
@@ -7594,7 +7595,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -7623,7 +7624,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator CaseDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CaseDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CaseDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CaseDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CaseDefinition() {
             BuildElementDictionary();
@@ -7676,7 +7677,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -7754,7 +7755,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator DefaultDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DefaultDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DefaultDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DefaultDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DefaultDefinition() {
             BuildElementDictionary();
@@ -7792,7 +7793,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -7862,7 +7863,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ListPropertyDefinition : global::Microsoft.Schemas.SharePoint.HtmlRenderingElement, IXMetaData {
         
-         public static explicit operator ListPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListPropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListPropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ListPropertyDefinition() {
         }
@@ -7914,7 +7915,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -7929,7 +7930,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FieldPropertyDefinition : global::Microsoft.Schemas.SharePoint.HtmlRenderingElement, IXMetaData {
         
-         public static explicit operator FieldPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldPropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldPropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FieldPropertyDefinition() {
         }
@@ -7996,7 +7997,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8011,7 +8012,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FieldViewReferenceDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FieldViewReferenceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldViewReferenceDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldViewReferenceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldViewReferenceDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FieldViewReferenceDefinition() {
         }
@@ -8153,7 +8154,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8168,7 +8169,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class EmptyElement : XTypedElement, IXMetaData {
         
-         public static explicit operator EmptyElement(XElement xe) { return XTypedServices.ToXTypedElement<EmptyElement>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator EmptyElement(XElement xe) { return XTypedServices.ToXTypedElement<EmptyElement>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public EmptyElement() {
         }
@@ -8190,7 +8191,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8213,7 +8214,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ScriptQuoteDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ScriptQuoteDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ScriptQuoteDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ScriptQuoteDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ScriptQuoteDefinition() {
             BuildElementDictionary();
@@ -8266,7 +8267,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8336,7 +8337,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ThreadStampDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ThreadStampDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ThreadStampDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ThreadStampDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ThreadStampDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ThreadStampDefinition() {
         }
@@ -8373,7 +8374,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8388,7 +8389,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class SelectOptionsDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator SelectOptionsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SelectOptionsDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SelectOptionsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SelectOptionsDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public SelectOptionsDefinition() {
         }
@@ -8458,7 +8459,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8483,7 +8484,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class CounterDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator CounterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CounterDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CounterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CounterDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CounterDefinition() {
         }
@@ -8520,7 +8521,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8543,7 +8544,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator IfEqualDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfEqualDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator IfEqualDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfEqualDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static IfEqualDefinition() {
             BuildElementDictionary();
@@ -8653,7 +8654,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8683,7 +8684,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator IfNegDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfNegDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator IfNegDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfNegDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static IfNegDefinition() {
             BuildElementDictionary();
@@ -8757,7 +8758,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8785,7 +8786,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator IfSubStringDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfSubStringDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator IfSubStringDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfSubStringDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static IfSubStringDefinition() {
             BuildElementDictionary();
@@ -8895,7 +8896,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -8925,7 +8926,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator LimitDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LimitDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LimitDefinition(XElement xe) { return XTypedServices.ToXTypedElement<LimitDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static LimitDefinition() {
             BuildElementDictionary();
@@ -9065,7 +9066,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9086,7 +9087,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ColumnDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ColumnDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ColumnDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ColumnDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ColumnDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ColumnDefinition() {
         }
@@ -9123,7 +9124,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9138,7 +9139,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class URLDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator URLDefinition(XElement xe) { return XTypedServices.ToXTypedElement<URLDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator URLDefinition(XElement xe) { return XTypedServices.ToXTypedElement<URLDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public URLDefinition() {
         }
@@ -9200,7 +9201,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9229,7 +9230,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator UrlBaseNameDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UrlBaseNameDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UrlBaseNameDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UrlBaseNameDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static UrlBaseNameDefinition() {
             BuildElementDictionary();
@@ -9257,7 +9258,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<XTypedElement> Field {
             get {
                 if ((this.FieldField == null)) {
-                    this.FieldField = new XTypedList<XTypedElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldField = new XTypedList<XTypedElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldField;
             }
@@ -9267,7 +9268,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldField == null)) {
-                        this.FieldField = XTypedList<XTypedElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldField = XTypedList<XTypedElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<XTypedElement>(this.FieldField, value);
@@ -9290,7 +9291,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LookupColumnDefinition> LookupColumn {
             get {
                 if ((this.LookupColumnField == null)) {
-                    this.LookupColumnField = new XTypedList<LookupColumnDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LookupColumnField = new XTypedList<LookupColumnDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LookupColumnField;
             }
@@ -9300,7 +9301,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LookupColumnField == null)) {
-                        this.LookupColumnField = XTypedList<LookupColumnDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LookupColumnField = XTypedList<LookupColumnDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LookupColumnDefinition>(this.LookupColumnField, value);
@@ -9348,7 +9349,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9368,7 +9369,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class HttpHostDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator HttpHostDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HttpHostDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HttpHostDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HttpHostDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public HttpHostDefinition() {
         }
@@ -9405,7 +9406,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9434,7 +9435,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ServerPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ServerPropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ServerPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ServerPropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ServerPropertyDefinition() {
             BuildElementDictionary();
@@ -9460,7 +9461,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<QueryColumnDefinition> Column {
             get {
                 if ((this.ColumnField == null)) {
-                    this.ColumnField = new XTypedList<QueryColumnDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ColumnField = new XTypedList<QueryColumnDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ColumnField;
             }
@@ -9470,7 +9471,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ColumnField == null)) {
-                        this.ColumnField = XTypedList<QueryColumnDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ColumnField = XTypedList<QueryColumnDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<QueryColumnDefinition>(this.ColumnField, value);
@@ -9518,7 +9519,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9551,7 +9552,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CamlBdcMethod(XElement xe) { return XTypedServices.ToXTypedElement<CamlBdcMethod>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CamlBdcMethod(XElement xe) { return XTypedServices.ToXTypedElement<CamlBdcMethod>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CamlBdcMethod() {
             BuildElementDictionary();
@@ -9577,7 +9578,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CamlBdcFilter> Filter {
             get {
                 if ((this.FilterField == null)) {
-                    this.FilterField = new XTypedList<CamlBdcFilter>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Filter", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FilterField = new XTypedList<CamlBdcFilter>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Filter", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FilterField;
             }
@@ -9587,7 +9588,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FilterField == null)) {
-                        this.FilterField = XTypedList<CamlBdcFilter>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Filter", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FilterField = XTypedList<CamlBdcFilter>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Filter", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CamlBdcFilter>(this.FilterField, value);
@@ -9635,7 +9636,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9654,7 +9655,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class CamlBdcFilter : XTypedElement, IXMetaData {
         
-         public static explicit operator CamlBdcFilter(XElement xe) { return XTypedServices.ToXTypedElement<CamlBdcFilter>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CamlBdcFilter(XElement xe) { return XTypedServices.ToXTypedElement<CamlBdcFilter>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CamlBdcFilter() {
         }
@@ -9721,7 +9722,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9736,7 +9737,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FilterLinkDefinition : global::Microsoft.Schemas.SharePoint.HtmlRenderingElement, IXMetaData {
         
-         public static explicit operator FilterLinkDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FilterLinkDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FilterLinkDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FilterLinkDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FilterLinkDefinition() {
         }
@@ -9788,7 +9789,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9811,7 +9812,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator IfNewDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfNewDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator IfNewDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfNewDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static IfNewDefinition() {
             BuildElementDictionary();
@@ -9864,7 +9865,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9934,7 +9935,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class MeetingPropertyDefinition : global::Microsoft.Schemas.SharePoint.HtmlRenderingElement, IXMetaData {
         
-         public static explicit operator MeetingPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MeetingPropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MeetingPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MeetingPropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public MeetingPropertyDefinition() {
         }
@@ -9971,7 +9972,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -9986,7 +9987,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ProjectPropertyDefinition : global::Microsoft.Schemas.SharePoint.HtmlRenderingElement, IXMetaData {
         
-         public static explicit operator ProjectPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ProjectPropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ProjectPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ProjectPropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ProjectPropertyDefinition() {
         }
@@ -10023,7 +10024,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10038,7 +10039,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class UserIDDefinition : global::Microsoft.Schemas.SharePoint.EmptyElement, IXMetaData {
         
-         public static explicit operator UserIDDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UserIDDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UserIDDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UserIDDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public UserIDDefinition() {
         }
@@ -10075,7 +10076,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10090,7 +10091,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class HttpPathDefinition : global::Microsoft.Schemas.SharePoint.EmptyElement, IXMetaData {
         
-         public static explicit operator HttpPathDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HttpPathDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HttpPathDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HttpPathDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public HttpPathDefinition() {
         }
@@ -10172,7 +10173,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10187,7 +10188,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class HttpVDirDefinition : global::Microsoft.Schemas.SharePoint.EmptyElement, IXMetaData {
         
-         public static explicit operator HttpVDirDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HttpVDirDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HttpVDirDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HttpVDirDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public HttpVDirDefinition() {
         }
@@ -10239,7 +10240,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10265,7 +10266,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator IfHasRightsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfHasRightsDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator IfHasRightsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<IfHasRightsDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static IfHasRightsDefinition() {
             BuildElementDictionary();
@@ -10364,7 +10365,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10399,7 +10400,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator RightsChoiceDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<RightsChoiceDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RightsChoiceDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<RightsChoiceDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static RightsChoiceDefinitions() {
             BuildElementDictionary();
@@ -10425,7 +10426,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<RightsGroupDefinition> RightsGroup {
             get {
                 if ((this.RightsGroupField == null)) {
-                    this.RightsGroupField = new XTypedList<RightsGroupDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RightsGroup", "http://schemas.microsoft.com/sharepoint/"));
+                    this.RightsGroupField = new XTypedList<RightsGroupDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RightsGroup", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.RightsGroupField;
             }
@@ -10435,7 +10436,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.RightsGroupField == null)) {
-                        this.RightsGroupField = XTypedList<RightsGroupDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RightsGroup", "http://schemas.microsoft.com/sharepoint/"));
+                        this.RightsGroupField = XTypedList<RightsGroupDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RightsGroup", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<RightsGroupDefinition>(this.RightsGroupField, value);
@@ -10468,7 +10469,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10487,7 +10488,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class RightsGroupDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator RightsGroupDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RightsGroupDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RightsGroupDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RightsGroupDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public RightsGroupDefinition() {
         }
@@ -10539,7 +10540,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10572,7 +10573,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ForEachElement(XElement xe) { return XTypedServices.ToXTypedElement<ForEachElement>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ForEachElement(XElement xe) { return XTypedServices.ToXTypedElement<ForEachElement>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ForEachElement() {
             BuildElementDictionary();
@@ -10625,7 +10626,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -10977,7 +10978,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ButtonType : XTypedElement, IXMetaData {
         
-         public static explicit operator ButtonType(XElement xe) { return XTypedServices.ToXTypedElement<ButtonType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ButtonType(XElement xe) { return XTypedServices.ToXTypedElement<ButtonType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ButtonType() {
         }
@@ -11428,7 +11429,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -11443,7 +11444,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class CheckBoxType : XTypedElement, IXMetaData {
         
-         public static explicit operator CheckBoxType(XElement xe) { return XTypedServices.ToXTypedElement<CheckBoxType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CheckBoxType(XElement xe) { return XTypedServices.ToXTypedElement<CheckBoxType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CheckBoxType() {
         }
@@ -11717,7 +11718,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -11743,7 +11744,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ColorPickerType(XElement xe) { return XTypedServices.ToXTypedElement<ColorPickerType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ColorPickerType(XElement xe) { return XTypedServices.ToXTypedElement<ColorPickerType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ColorPickerType() {
             BuildElementDictionary();
@@ -11911,7 +11912,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -11944,7 +11945,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ColorStylesType(XElement xe) { return XTypedServices.ToXTypedElement<ColorStylesType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ColorStylesType(XElement xe) { return XTypedServices.ToXTypedElement<ColorStylesType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ColorStylesType() {
             BuildElementDictionary();
@@ -11970,7 +11971,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ColorStyleType> Color {
             get {
                 if ((this.ColorField == null)) {
-                    this.ColorField = new XTypedList<ColorStyleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Color", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ColorField = new XTypedList<ColorStyleType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Color", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ColorField;
             }
@@ -11980,7 +11981,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ColorField == null)) {
-                        this.ColorField = XTypedList<ColorStyleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Color", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ColorField = XTypedList<ColorStyleType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Color", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ColorStyleType>(this.ColorField, value);
@@ -12013,7 +12014,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -12032,7 +12033,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ColorStyleType : XTypedElement, IXMetaData {
         
-         public static explicit operator ColorStyleType(XElement xe) { return XTypedServices.ToXTypedElement<ColorStyleType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ColorStyleType(XElement xe) { return XTypedServices.ToXTypedElement<ColorStyleType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ColorStyleType() {
         }
@@ -12132,7 +12133,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -12176,7 +12177,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ComboBoxType(XElement xe) { return XTypedServices.ToXTypedElement<ComboBoxType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ComboBoxType(XElement xe) { return XTypedServices.ToXTypedElement<ComboBoxType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ComboBoxType() {
             BuildElementDictionary();
@@ -12716,7 +12717,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -12755,7 +12756,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator CommandUIType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CommandUIType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CommandUIType() {
             BuildElementDictionary();
@@ -12783,7 +12784,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<RibbonType> Ribbon {
             get {
                 if ((this.RibbonField == null)) {
-                    this.RibbonField = new XTypedList<RibbonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Ribbon", "http://schemas.microsoft.com/sharepoint/"));
+                    this.RibbonField = new XTypedList<RibbonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Ribbon", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.RibbonField;
             }
@@ -12793,7 +12794,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.RibbonField == null)) {
-                        this.RibbonField = XTypedList<RibbonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Ribbon", "http://schemas.microsoft.com/sharepoint/"));
+                        this.RibbonField = XTypedList<RibbonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Ribbon", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<RibbonType>(this.RibbonField, value);
@@ -12816,7 +12817,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<QATType> QAT {
             get {
                 if ((this.QATField == null)) {
-                    this.QATField = new XTypedList<QATType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("QAT", "http://schemas.microsoft.com/sharepoint/"));
+                    this.QATField = new XTypedList<QATType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("QAT", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.QATField;
             }
@@ -12826,7 +12827,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.QATField == null)) {
-                        this.QATField = XTypedList<QATType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("QAT", "http://schemas.microsoft.com/sharepoint/"));
+                        this.QATField = XTypedList<QATType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("QAT", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<QATType>(this.QATField, value);
@@ -12849,7 +12850,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<JewelType> Jewel {
             get {
                 if ((this.JewelField == null)) {
-                    this.JewelField = new XTypedList<JewelType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Jewel", "http://schemas.microsoft.com/sharepoint/"));
+                    this.JewelField = new XTypedList<JewelType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Jewel", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.JewelField;
             }
@@ -12859,7 +12860,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.JewelField == null)) {
-                        this.JewelField = XTypedList<JewelType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Jewel", "http://schemas.microsoft.com/sharepoint/"));
+                        this.JewelField = XTypedList<JewelType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Jewel", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<JewelType>(this.JewelField, value);
@@ -12882,7 +12883,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<TemplatesType> Templates {
             get {
                 if ((this.TemplatesField == null)) {
-                    this.TemplatesField = new XTypedList<TemplatesType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Templates", "http://schemas.microsoft.com/sharepoint/"));
+                    this.TemplatesField = new XTypedList<TemplatesType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Templates", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.TemplatesField;
             }
@@ -12892,7 +12893,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.TemplatesField == null)) {
-                        this.TemplatesField = XTypedList<TemplatesType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Templates", "http://schemas.microsoft.com/sharepoint/"));
+                        this.TemplatesField = XTypedList<TemplatesType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Templates", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<TemplatesType>(this.TemplatesField, value);
@@ -12925,7 +12926,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -12961,7 +12962,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ContextualGroupType(XElement xe) { return XTypedServices.ToXTypedElement<ContextualGroupType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContextualGroupType(XElement xe) { return XTypedServices.ToXTypedElement<ContextualGroupType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ContextualGroupType() {
             BuildElementDictionary();
@@ -12987,7 +12988,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<TabType> Tab {
             get {
                 if ((this.TabField == null)) {
-                    this.TabField = new XTypedList<TabType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
+                    this.TabField = new XTypedList<TabType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.TabField;
             }
@@ -12997,7 +12998,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.TabField == null)) {
-                        this.TabField = XTypedList<TabType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
+                        this.TabField = XTypedList<TabType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<TabType>(this.TabField, value);
@@ -13126,7 +13127,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -13159,7 +13160,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ContextualTabsType(XElement xe) { return XTypedServices.ToXTypedElement<ContextualTabsType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContextualTabsType(XElement xe) { return XTypedServices.ToXTypedElement<ContextualTabsType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ContextualTabsType() {
             BuildElementDictionary();
@@ -13185,7 +13186,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ContextualGroupType> ContextualGroup {
             get {
                 if ((this.ContextualGroupField == null)) {
-                    this.ContextualGroupField = new XTypedList<ContextualGroupType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContextualGroup", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContextualGroupField = new XTypedList<ContextualGroupType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContextualGroup", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContextualGroupField;
             }
@@ -13195,7 +13196,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContextualGroupField == null)) {
-                        this.ContextualGroupField = XTypedList<ContextualGroupType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContextualGroup", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContextualGroupField = XTypedList<ContextualGroupType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContextualGroup", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ContextualGroupType>(this.ContextualGroupField, value);
@@ -13246,7 +13247,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -13265,7 +13266,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ControlRefType : XTypedElement, IXMetaData {
         
-         public static explicit operator ControlRefType(XElement xe) { return XTypedServices.ToXTypedElement<ControlRefType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ControlRefType(XElement xe) { return XTypedServices.ToXTypedElement<ControlRefType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ControlRefType() {
         }
@@ -13317,7 +13318,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -13376,7 +13377,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ControlsType(XElement xe) { return XTypedServices.ToXTypedElement<ControlsType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ControlsType(XElement xe) { return XTypedServices.ToXTypedElement<ControlsType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ControlsType() {
             BuildElementDictionary();
@@ -13404,7 +13405,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ButtonType> Button {
             get {
                 if ((this.ButtonField == null)) {
-                    this.ButtonField = new XTypedList<ButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ButtonField = new XTypedList<ButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ButtonField;
             }
@@ -13414,7 +13415,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ButtonField == null)) {
-                        this.ButtonField = XTypedList<ButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ButtonField = XTypedList<ButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ButtonType>(this.ButtonField, value);
@@ -13437,7 +13438,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CheckBoxType> CheckBox {
             get {
                 if ((this.CheckBoxField == null)) {
-                    this.CheckBoxField = new XTypedList<CheckBoxType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CheckBox", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CheckBoxField = new XTypedList<CheckBoxType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CheckBox", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CheckBoxField;
             }
@@ -13447,7 +13448,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CheckBoxField == null)) {
-                        this.CheckBoxField = XTypedList<CheckBoxType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CheckBox", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CheckBoxField = XTypedList<CheckBoxType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CheckBox", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CheckBoxType>(this.CheckBoxField, value);
@@ -13470,7 +13471,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ComboBoxType> ComboBox {
             get {
                 if ((this.ComboBoxField == null)) {
-                    this.ComboBoxField = new XTypedList<ComboBoxType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ComboBox", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ComboBoxField = new XTypedList<ComboBoxType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ComboBox", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ComboBoxField;
             }
@@ -13480,7 +13481,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ComboBoxField == null)) {
-                        this.ComboBoxField = XTypedList<ComboBoxType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ComboBox", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ComboBoxField = XTypedList<ComboBoxType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ComboBox", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ComboBoxType>(this.ComboBoxField, value);
@@ -13503,7 +13504,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DropDownType> DropDown {
             get {
                 if ((this.DropDownField == null)) {
-                    this.DropDownField = new XTypedList<DropDownType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DropDown", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DropDownField = new XTypedList<DropDownType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DropDown", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DropDownField;
             }
@@ -13513,7 +13514,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DropDownField == null)) {
-                        this.DropDownField = XTypedList<DropDownType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DropDown", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DropDownField = XTypedList<DropDownType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DropDown", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DropDownType>(this.DropDownField, value);
@@ -13536,7 +13537,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FlyoutAnchorType> FlyoutAnchor {
             get {
                 if ((this.FlyoutAnchorField == null)) {
-                    this.FlyoutAnchorField = new XTypedList<FlyoutAnchorType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FlyoutAnchorField = new XTypedList<FlyoutAnchorType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FlyoutAnchorField;
             }
@@ -13546,7 +13547,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FlyoutAnchorField == null)) {
-                        this.FlyoutAnchorField = XTypedList<FlyoutAnchorType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FlyoutAnchorField = XTypedList<FlyoutAnchorType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FlyoutAnchorType>(this.FlyoutAnchorField, value);
@@ -13569,7 +13570,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<GalleryButtonType> GalleryButton {
             get {
                 if ((this.GalleryButtonField == null)) {
-                    this.GalleryButtonField = new XTypedList<GalleryButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GalleryButtonField = new XTypedList<GalleryButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GalleryButtonField;
             }
@@ -13579,7 +13580,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GalleryButtonField == null)) {
-                        this.GalleryButtonField = XTypedList<GalleryButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GalleryButtonField = XTypedList<GalleryButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<GalleryButtonType>(this.GalleryButtonField, value);
@@ -13602,7 +13603,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LabelType> Label {
             get {
                 if ((this.LabelField == null)) {
-                    this.LabelField = new XTypedList<LabelType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Label", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LabelField = new XTypedList<LabelType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Label", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LabelField;
             }
@@ -13612,7 +13613,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LabelField == null)) {
-                        this.LabelField = XTypedList<LabelType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Label", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LabelField = XTypedList<LabelType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Label", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LabelType>(this.LabelField, value);
@@ -13635,7 +13636,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MRUSplitButtonType> MRUSplitButton {
             get {
                 if ((this.MRUSplitButtonField == null)) {
-                    this.MRUSplitButtonField = new XTypedList<MRUSplitButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MRUSplitButton", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MRUSplitButtonField = new XTypedList<MRUSplitButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MRUSplitButton", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MRUSplitButtonField;
             }
@@ -13645,7 +13646,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MRUSplitButtonField == null)) {
-                        this.MRUSplitButtonField = XTypedList<MRUSplitButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MRUSplitButton", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MRUSplitButtonField = XTypedList<MRUSplitButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MRUSplitButton", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MRUSplitButtonType>(this.MRUSplitButtonField, value);
@@ -13668,7 +13669,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SpinnerType> Spinner {
             get {
                 if ((this.SpinnerField == null)) {
-                    this.SpinnerField = new XTypedList<SpinnerType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Spinner", "http://schemas.microsoft.com/sharepoint/"));
+                    this.SpinnerField = new XTypedList<SpinnerType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Spinner", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.SpinnerField;
             }
@@ -13678,7 +13679,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.SpinnerField == null)) {
-                        this.SpinnerField = XTypedList<SpinnerType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Spinner", "http://schemas.microsoft.com/sharepoint/"));
+                        this.SpinnerField = XTypedList<SpinnerType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Spinner", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SpinnerType>(this.SpinnerField, value);
@@ -13701,7 +13702,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SplitButtonType> SplitButton {
             get {
                 if ((this.SplitButtonField == null)) {
-                    this.SplitButtonField = new XTypedList<SplitButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SplitButton", "http://schemas.microsoft.com/sharepoint/"));
+                    this.SplitButtonField = new XTypedList<SplitButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SplitButton", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.SplitButtonField;
             }
@@ -13711,7 +13712,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.SplitButtonField == null)) {
-                        this.SplitButtonField = XTypedList<SplitButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SplitButton", "http://schemas.microsoft.com/sharepoint/"));
+                        this.SplitButtonField = XTypedList<SplitButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SplitButton", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SplitButtonType>(this.SplitButtonField, value);
@@ -13734,7 +13735,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<TextBoxType> TextBox {
             get {
                 if ((this.TextBoxField == null)) {
-                    this.TextBoxField = new XTypedList<TextBoxType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("TextBox", "http://schemas.microsoft.com/sharepoint/"));
+                    this.TextBoxField = new XTypedList<TextBoxType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("TextBox", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.TextBoxField;
             }
@@ -13744,7 +13745,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.TextBoxField == null)) {
-                        this.TextBoxField = XTypedList<TextBoxType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("TextBox", "http://schemas.microsoft.com/sharepoint/"));
+                        this.TextBoxField = XTypedList<TextBoxType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("TextBox", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<TextBoxType>(this.TextBoxField, value);
@@ -13767,7 +13768,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ToggleButtonType> ToggleButton {
             get {
                 if ((this.ToggleButtonField == null)) {
-                    this.ToggleButtonField = new XTypedList<ToggleButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ToggleButtonField = new XTypedList<ToggleButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ToggleButtonField;
             }
@@ -13777,7 +13778,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ToggleButtonField == null)) {
-                        this.ToggleButtonField = XTypedList<ToggleButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ToggleButtonField = XTypedList<ToggleButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ToggleButtonType>(this.ToggleButtonField, value);
@@ -13969,7 +13970,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -14019,7 +14020,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator DropDownType(XElement xe) { return XTypedServices.ToXTypedElement<DropDownType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DropDownType(XElement xe) { return XTypedServices.ToXTypedElement<DropDownType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DropDownType() {
             BuildElementDictionary();
@@ -14502,7 +14503,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -14541,7 +14542,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FlyoutAnchorType(XElement xe) { return XTypedServices.ToXTypedElement<FlyoutAnchorType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FlyoutAnchorType(XElement xe) { return XTypedServices.ToXTypedElement<FlyoutAnchorType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FlyoutAnchorType() {
             BuildElementDictionary();
@@ -15066,7 +15067,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -15099,7 +15100,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator GalleryType(XElement xe) { return XTypedServices.ToXTypedElement<GalleryType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GalleryType(XElement xe) { return XTypedServices.ToXTypedElement<GalleryType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static GalleryType() {
             BuildElementDictionary();
@@ -15125,7 +15126,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<GalleryButtonType> GalleryButton {
             get {
                 if ((this.GalleryButtonField == null)) {
-                    this.GalleryButtonField = new XTypedList<GalleryButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GalleryButtonField = new XTypedList<GalleryButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GalleryButtonField;
             }
@@ -15135,7 +15136,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GalleryButtonField == null)) {
-                        this.GalleryButtonField = XTypedList<GalleryButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GalleryButtonField = XTypedList<GalleryButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GalleryButton", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<GalleryButtonType>(this.GalleryButtonField, value);
@@ -15300,7 +15301,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -15319,7 +15320,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class GalleryButtonType : XTypedElement, IXMetaData {
         
-         public static explicit operator GalleryButtonType(XElement xe) { return XTypedServices.ToXTypedElement<GalleryButtonType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GalleryButtonType(XElement xe) { return XTypedServices.ToXTypedElement<GalleryButtonType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public GalleryButtonType() {
         }
@@ -15734,7 +15735,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -15763,7 +15764,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator GroupTemplateType(XElement xe) { return XTypedServices.ToXTypedElement<GroupTemplateType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GroupTemplateType(XElement xe) { return XTypedServices.ToXTypedElement<GroupTemplateType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static GroupTemplateType() {
             BuildElementDictionary();
@@ -15789,7 +15790,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LayoutType> Layout {
             get {
                 if ((this.LayoutField == null)) {
-                    this.LayoutField = new XTypedList<LayoutType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Layout", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LayoutField = new XTypedList<LayoutType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Layout", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LayoutField;
             }
@@ -15799,7 +15800,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LayoutField == null)) {
-                        this.LayoutField = XTypedList<LayoutType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Layout", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LayoutField = XTypedList<LayoutType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Layout", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LayoutType>(this.LayoutField, value);
@@ -15865,7 +15866,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -15898,7 +15899,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator GroupsType(XElement xe) { return XTypedServices.ToXTypedElement<GroupsType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GroupsType(XElement xe) { return XTypedServices.ToXTypedElement<GroupsType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static GroupsType() {
             BuildElementDictionary();
@@ -15924,7 +15925,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<GroupType> Group {
             get {
                 if ((this.GroupField == null)) {
-                    this.GroupField = new XTypedList<GroupType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Group", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GroupField = new XTypedList<GroupType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Group", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GroupField;
             }
@@ -15934,7 +15935,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GroupField == null)) {
-                        this.GroupField = XTypedList<GroupType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Group", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GroupField = XTypedList<GroupType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Group", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<GroupType>(this.GroupField, value);
@@ -15985,7 +15986,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -16012,7 +16013,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator GroupType(XElement xe) { return XTypedServices.ToXTypedElement<GroupType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GroupType(XElement xe) { return XTypedServices.ToXTypedElement<GroupType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static GroupType() {
             BuildElementDictionary();
@@ -16248,7 +16249,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -16267,7 +16268,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class InsertTableType : XTypedElement, IXMetaData {
         
-         public static explicit operator InsertTableType(XElement xe) { return XTypedServices.ToXTypedElement<InsertTableType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator InsertTableType(XElement xe) { return XTypedServices.ToXTypedElement<InsertTableType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public InsertTableType() {
         }
@@ -16430,7 +16431,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -16465,7 +16466,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator JewelType(XElement xe) { return XTypedServices.ToXTypedElement<JewelType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator JewelType(XElement xe) { return XTypedServices.ToXTypedElement<JewelType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static JewelType() {
             BuildElementDictionary();
@@ -17545,7 +17546,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -17564,7 +17565,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class LabelType : XTypedElement, IXMetaData {
         
-         public static explicit operator LabelType(XElement xe) { return XTypedServices.ToXTypedElement<LabelType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LabelType(XElement xe) { return XTypedServices.ToXTypedElement<LabelType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public LabelType() {
         }
@@ -17763,7 +17764,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -17792,7 +17793,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator LayoutType(XElement xe) { return XTypedServices.ToXTypedElement<LayoutType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LayoutType(XElement xe) { return XTypedServices.ToXTypedElement<LayoutType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static LayoutType() {
             BuildElementDictionary();
@@ -17820,7 +17821,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SectionType> Section {
             get {
                 if ((this.SectionField == null)) {
-                    this.SectionField = new XTypedList<SectionType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Section", "http://schemas.microsoft.com/sharepoint/"));
+                    this.SectionField = new XTypedList<SectionType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Section", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.SectionField;
             }
@@ -17830,7 +17831,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.SectionField == null)) {
-                        this.SectionField = XTypedList<SectionType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Section", "http://schemas.microsoft.com/sharepoint/"));
+                        this.SectionField = XTypedList<SectionType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Section", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SectionType>(this.SectionField, value);
@@ -17853,7 +17854,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<OverflowSectionType> OverflowSection {
             get {
                 if ((this.OverflowSectionField == null)) {
-                    this.OverflowSectionField = new XTypedList<OverflowSectionType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("OverflowSection", "http://schemas.microsoft.com/sharepoint/"));
+                    this.OverflowSectionField = new XTypedList<OverflowSectionType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("OverflowSection", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.OverflowSectionField;
             }
@@ -17863,7 +17864,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.OverflowSectionField == null)) {
-                        this.OverflowSectionField = XTypedList<OverflowSectionType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("OverflowSection", "http://schemas.microsoft.com/sharepoint/"));
+                        this.OverflowSectionField = XTypedList<OverflowSectionType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("OverflowSection", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<OverflowSectionType>(this.OverflowSectionField, value);
@@ -17929,7 +17930,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -17949,7 +17950,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class MaxSizeType : XTypedElement, IXMetaData {
         
-         public static explicit operator MaxSizeType(XElement xe) { return XTypedServices.ToXTypedElement<MaxSizeType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MaxSizeType(XElement xe) { return XTypedServices.ToXTypedElement<MaxSizeType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public MaxSizeType() {
         }
@@ -18043,7 +18044,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -18072,7 +18073,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator MenuType(XElement xe) { return XTypedServices.ToXTypedElement<MenuType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MenuType(XElement xe) { return XTypedServices.ToXTypedElement<MenuType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static MenuType() {
             BuildElementDictionary();
@@ -18098,7 +18099,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MenuSectionType> MenuSection {
             get {
                 if ((this.MenuSectionField == null)) {
-                    this.MenuSectionField = new XTypedList<MenuSectionType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MenuSection", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MenuSectionField = new XTypedList<MenuSectionType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MenuSection", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MenuSectionField;
             }
@@ -18108,7 +18109,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MenuSectionField == null)) {
-                        this.MenuSectionField = XTypedList<MenuSectionType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MenuSection", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MenuSectionField = XTypedList<MenuSectionType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MenuSection", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MenuSectionType>(this.MenuSectionField, value);
@@ -18174,7 +18175,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -18210,7 +18211,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator MenuSectionType(XElement xe) { return XTypedServices.ToXTypedElement<MenuSectionType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MenuSectionType(XElement xe) { return XTypedServices.ToXTypedElement<MenuSectionType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static MenuSectionType() {
             BuildElementDictionary();
@@ -18395,7 +18396,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -18438,7 +18439,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator MenuSectionControlsType(XElement xe) { return XTypedServices.ToXTypedElement<MenuSectionControlsType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MenuSectionControlsType(XElement xe) { return XTypedServices.ToXTypedElement<MenuSectionControlsType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static MenuSectionControlsType() {
             BuildElementDictionary();
@@ -18466,7 +18467,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ToggleButtonType> ToggleButton {
             get {
                 if ((this.ToggleButtonField == null)) {
-                    this.ToggleButtonField = new XTypedList<ToggleButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ToggleButtonField = new XTypedList<ToggleButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ToggleButtonField;
             }
@@ -18476,7 +18477,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ToggleButtonField == null)) {
-                        this.ToggleButtonField = XTypedList<ToggleButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ToggleButtonField = XTypedList<ToggleButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ToggleButton", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ToggleButtonType>(this.ToggleButtonField, value);
@@ -18499,7 +18500,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ButtonType> Button {
             get {
                 if ((this.ButtonField == null)) {
-                    this.ButtonField = new XTypedList<ButtonType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ButtonField = new XTypedList<ButtonType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ButtonField;
             }
@@ -18509,7 +18510,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ButtonField == null)) {
-                        this.ButtonField = XTypedList<ButtonType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ButtonField = XTypedList<ButtonType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Button", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ButtonType>(this.ButtonField, value);
@@ -18532,7 +18533,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ColorPickerType> ColorPicker {
             get {
                 if ((this.ColorPickerField == null)) {
-                    this.ColorPickerField = new XTypedList<ColorPickerType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ColorPicker", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ColorPickerField = new XTypedList<ColorPickerType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ColorPicker", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ColorPickerField;
             }
@@ -18542,7 +18543,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ColorPickerField == null)) {
-                        this.ColorPickerField = XTypedList<ColorPickerType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ColorPicker", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ColorPickerField = XTypedList<ColorPickerType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ColorPicker", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ColorPickerType>(this.ColorPickerField, value);
@@ -18565,7 +18566,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FlyoutAnchorType> FlyoutAnchor {
             get {
                 if ((this.FlyoutAnchorField == null)) {
-                    this.FlyoutAnchorField = new XTypedList<FlyoutAnchorType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FlyoutAnchorField = new XTypedList<FlyoutAnchorType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FlyoutAnchorField;
             }
@@ -18575,7 +18576,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FlyoutAnchorField == null)) {
-                        this.FlyoutAnchorField = XTypedList<FlyoutAnchorType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FlyoutAnchorField = XTypedList<FlyoutAnchorType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FlyoutAnchor", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FlyoutAnchorType>(this.FlyoutAnchorField, value);
@@ -18598,7 +18599,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<InsertTableType> InsertTable {
             get {
                 if ((this.InsertTableField == null)) {
-                    this.InsertTableField = new XTypedList<InsertTableType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("InsertTable", "http://schemas.microsoft.com/sharepoint/"));
+                    this.InsertTableField = new XTypedList<InsertTableType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("InsertTable", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.InsertTableField;
             }
@@ -18608,7 +18609,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.InsertTableField == null)) {
-                        this.InsertTableField = XTypedList<InsertTableType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("InsertTable", "http://schemas.microsoft.com/sharepoint/"));
+                        this.InsertTableField = XTypedList<InsertTableType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("InsertTable", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<InsertTableType>(this.InsertTableField, value);
@@ -18659,7 +18660,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -18702,7 +18703,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator MRUSplitButtonType(XElement xe) { return XTypedServices.ToXTypedElement<MRUSplitButtonType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MRUSplitButtonType(XElement xe) { return XTypedServices.ToXTypedElement<MRUSplitButtonType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static MRUSplitButtonType() {
             BuildElementDictionary();
@@ -19173,7 +19174,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -19192,7 +19193,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class LowScaleWarningType : XTypedElement, IXMetaData {
         
-         public static explicit operator LowScaleWarningType(XElement xe) { return XTypedServices.ToXTypedElement<LowScaleWarningType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator LowScaleWarningType(XElement xe) { return XTypedServices.ToXTypedElement<LowScaleWarningType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public LowScaleWarningType() {
         }
@@ -19265,7 +19266,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -19280,7 +19281,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class OverflowAreaType : XTypedElement, IXMetaData {
         
-         public static explicit operator OverflowAreaType(XElement xe) { return XTypedServices.ToXTypedElement<OverflowAreaType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator OverflowAreaType(XElement xe) { return XTypedServices.ToXTypedElement<OverflowAreaType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public OverflowAreaType() {
         }
@@ -19332,7 +19333,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -19347,7 +19348,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class OverflowSectionType : XTypedElement, IXMetaData {
         
-         public static explicit operator OverflowSectionType(XElement xe) { return XTypedServices.ToXTypedElement<OverflowSectionType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator OverflowSectionType(XElement xe) { return XTypedServices.ToXTypedElement<OverflowSectionType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public OverflowSectionType() {
         }
@@ -19450,7 +19451,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -19476,7 +19477,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator QATType(XElement xe) { return XTypedServices.ToXTypedElement<QATType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator QATType(XElement xe) { return XTypedServices.ToXTypedElement<QATType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static QATType() {
             BuildElementDictionary();
@@ -19752,7 +19753,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -19785,7 +19786,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator RibbonTemplatesType(XElement xe) { return XTypedServices.ToXTypedElement<RibbonTemplatesType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RibbonTemplatesType(XElement xe) { return XTypedServices.ToXTypedElement<RibbonTemplatesType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static RibbonTemplatesType() {
             BuildElementDictionary();
@@ -19811,7 +19812,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<GroupTemplateType> GroupTemplate {
             get {
                 if ((this.GroupTemplateField == null)) {
-                    this.GroupTemplateField = new XTypedList<GroupTemplateType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GroupTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GroupTemplateField = new XTypedList<GroupTemplateType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GroupTemplate", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GroupTemplateField;
             }
@@ -19821,7 +19822,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GroupTemplateField == null)) {
-                        this.GroupTemplateField = XTypedList<GroupTemplateType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GroupTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GroupTemplateField = XTypedList<GroupTemplateType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GroupTemplate", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<GroupTemplateType>(this.GroupTemplateField, value);
@@ -19872,7 +19873,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -19902,7 +19903,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator RibbonType(XElement xe) { return XTypedServices.ToXTypedElement<RibbonType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RibbonType(XElement xe) { return XTypedServices.ToXTypedElement<RibbonType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static RibbonType() {
             BuildElementDictionary();
@@ -20712,7 +20713,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -20749,7 +20750,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator RowType(XElement xe) { return XTypedServices.ToXTypedElement<RowType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RowType(XElement xe) { return XTypedServices.ToXTypedElement<RowType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static RowType() {
             BuildElementDictionary();
@@ -20777,7 +20778,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ControlRefType> ControlRef {
             get {
                 if ((this.ControlRefField == null)) {
-                    this.ControlRefField = new XTypedList<ControlRefType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ControlRefField = new XTypedList<ControlRefType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ControlRefField;
             }
@@ -20787,7 +20788,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ControlRefField == null)) {
-                        this.ControlRefField = XTypedList<ControlRefType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ControlRefField = XTypedList<ControlRefType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ControlRefType>(this.ControlRefField, value);
@@ -20810,7 +20811,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<StripType> Strip {
             get {
                 if ((this.StripField == null)) {
-                    this.StripField = new XTypedList<StripType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Strip", "http://schemas.microsoft.com/sharepoint/"));
+                    this.StripField = new XTypedList<StripType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Strip", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.StripField;
             }
@@ -20820,7 +20821,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.StripField == null)) {
-                        this.StripField = XTypedList<StripType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Strip", "http://schemas.microsoft.com/sharepoint/"));
+                        this.StripField = XTypedList<StripType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Strip", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<StripType>(this.StripField, value);
@@ -20843,7 +20844,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<OverflowAreaType> OverflowArea {
             get {
                 if ((this.OverflowAreaField == null)) {
-                    this.OverflowAreaField = new XTypedList<OverflowAreaType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("OverflowArea", "http://schemas.microsoft.com/sharepoint/"));
+                    this.OverflowAreaField = new XTypedList<OverflowAreaType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("OverflowArea", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.OverflowAreaField;
             }
@@ -20853,7 +20854,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.OverflowAreaField == null)) {
-                        this.OverflowAreaField = XTypedList<OverflowAreaType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("OverflowArea", "http://schemas.microsoft.com/sharepoint/"));
+                        this.OverflowAreaField = XTypedList<OverflowAreaType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("OverflowArea", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<OverflowAreaType>(this.OverflowAreaField, value);
@@ -20886,7 +20887,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -20907,7 +20908,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ScaleType : XTypedElement, IXMetaData {
         
-         public static explicit operator ScaleType(XElement xe) { return XTypedServices.ToXTypedElement<ScaleType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ScaleType(XElement xe) { return XTypedServices.ToXTypedElement<ScaleType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ScaleType() {
         }
@@ -21016,7 +21017,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -21048,7 +21049,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ScalingType(XElement xe) { return XTypedServices.ToXTypedElement<ScalingType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ScalingType(XElement xe) { return XTypedServices.ToXTypedElement<ScalingType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ScalingType() {
             BuildElementDictionary();
@@ -21073,7 +21074,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MaxSizeType> MaxSize {
             get {
                 if ((this.MaxSizeField == null)) {
-                    this.MaxSizeField = new XTypedList<MaxSizeType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MaxSize", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MaxSizeField = new XTypedList<MaxSizeType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MaxSize", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MaxSizeField;
             }
@@ -21083,7 +21084,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MaxSizeField == null)) {
-                        this.MaxSizeField = XTypedList<MaxSizeType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MaxSize", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MaxSizeField = XTypedList<MaxSizeType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MaxSize", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MaxSizeType>(this.MaxSizeField, value);
@@ -21106,7 +21107,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ScaleType> Scale {
             get {
                 if ((this.ScaleField == null)) {
-                    this.ScaleField = new XTypedList<ScaleType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Scale", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ScaleField = new XTypedList<ScaleType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Scale", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ScaleField;
             }
@@ -21116,7 +21117,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ScaleField == null)) {
-                        this.ScaleField = XTypedList<ScaleType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Scale", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ScaleField = XTypedList<ScaleType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Scale", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ScaleType>(this.ScaleField, value);
@@ -21139,7 +21140,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<LowScaleWarningType> LowScaleWarning {
             get {
                 if ((this.LowScaleWarningField == null)) {
-                    this.LowScaleWarningField = new XTypedList<LowScaleWarningType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("LowScaleWarning", "http://schemas.microsoft.com/sharepoint/"));
+                    this.LowScaleWarningField = new XTypedList<LowScaleWarningType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("LowScaleWarning", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.LowScaleWarningField;
             }
@@ -21149,7 +21150,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.LowScaleWarningField == null)) {
-                        this.LowScaleWarningField = XTypedList<LowScaleWarningType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("LowScaleWarning", "http://schemas.microsoft.com/sharepoint/"));
+                        this.LowScaleWarningField = XTypedList<LowScaleWarningType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("LowScaleWarning", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<LowScaleWarningType>(this.LowScaleWarningField, value);
@@ -21200,7 +21201,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -21235,7 +21236,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SectionType(XElement xe) { return XTypedServices.ToXTypedElement<SectionType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SectionType(XElement xe) { return XTypedServices.ToXTypedElement<SectionType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SectionType() {
             BuildElementDictionary();
@@ -21261,7 +21262,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<RowType> Row {
             get {
                 if ((this.RowField == null)) {
-                    this.RowField = new XTypedList<RowType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
+                    this.RowField = new XTypedList<RowType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.RowField;
             }
@@ -21271,7 +21272,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.RowField == null)) {
-                        this.RowField = XTypedList<RowType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
+                        this.RowField = XTypedList<RowType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Row", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<RowType>(this.RowField, value);
@@ -21334,7 +21335,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -21367,7 +21368,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SpinnerType(XElement xe) { return XTypedServices.ToXTypedElement<SpinnerType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SpinnerType(XElement xe) { return XTypedServices.ToXTypedElement<SpinnerType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SpinnerType() {
             BuildElementDictionary();
@@ -21393,7 +21394,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<UnitType> Unit {
             get {
                 if ((this.UnitField == null)) {
-                    this.UnitField = new XTypedList<UnitType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Unit", "http://schemas.microsoft.com/sharepoint/"));
+                    this.UnitField = new XTypedList<UnitType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Unit", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.UnitField;
             }
@@ -21403,7 +21404,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.UnitField == null)) {
-                        this.UnitField = XTypedList<UnitType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Unit", "http://schemas.microsoft.com/sharepoint/"));
+                        this.UnitField = XTypedList<UnitType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Unit", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<UnitType>(this.UnitField, value);
@@ -21760,7 +21761,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -21799,7 +21800,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SplitButtonType(XElement xe) { return XTypedServices.ToXTypedElement<SplitButtonType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SplitButtonType(XElement xe) { return XTypedServices.ToXTypedElement<SplitButtonType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SplitButtonType() {
             BuildElementDictionary();
@@ -22369,7 +22370,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -22402,7 +22403,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator StripType(XElement xe) { return XTypedServices.ToXTypedElement<StripType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator StripType(XElement xe) { return XTypedServices.ToXTypedElement<StripType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static StripType() {
             BuildElementDictionary();
@@ -22428,7 +22429,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ControlRefType> ControlRef {
             get {
                 if ((this.ControlRefField == null)) {
-                    this.ControlRefField = new XTypedList<ControlRefType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ControlRefField = new XTypedList<ControlRefType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ControlRefField;
             }
@@ -22438,7 +22439,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ControlRefField == null)) {
-                        this.ControlRefField = XTypedList<ControlRefType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ControlRefField = XTypedList<ControlRefType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ControlRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ControlRefType>(this.ControlRefField, value);
@@ -22471,7 +22472,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -22501,7 +22502,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator TabType(XElement xe) { return XTypedServices.ToXTypedElement<TabType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator TabType(XElement xe) { return XTypedServices.ToXTypedElement<TabType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static TabType() {
             BuildElementDictionary();
@@ -22678,7 +22679,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -22712,7 +22713,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator TabsType(XElement xe) { return XTypedServices.ToXTypedElement<TabsType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator TabsType(XElement xe) { return XTypedServices.ToXTypedElement<TabsType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static TabsType() {
             BuildElementDictionary();
@@ -22738,7 +22739,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<TabType> Tab {
             get {
                 if ((this.TabField == null)) {
-                    this.TabField = new XTypedList<TabType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
+                    this.TabField = new XTypedList<TabType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.TabField;
             }
@@ -22748,7 +22749,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.TabField == null)) {
-                        this.TabField = XTypedList<TabType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
+                        this.TabField = XTypedList<TabType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Tab", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<TabType>(this.TabField, value);
@@ -22799,7 +22800,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -22826,7 +22827,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator TemplatesType(XElement xe) { return XTypedServices.ToXTypedElement<TemplatesType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator TemplatesType(XElement xe) { return XTypedServices.ToXTypedElement<TemplatesType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static TemplatesType() {
             BuildElementDictionary();
@@ -22885,7 +22886,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -22904,7 +22905,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class TextBoxType : XTypedElement, IXMetaData {
         
-         public static explicit operator TextBoxType(XElement xe) { return XTypedServices.ToXTypedElement<TextBoxType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator TextBoxType(XElement xe) { return XTypedServices.ToXTypedElement<TextBoxType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public TextBoxType() {
         }
@@ -23202,7 +23203,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -23217,7 +23218,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ToggleButtonType : XTypedElement, IXMetaData {
         
-         public static explicit operator ToggleButtonType(XElement xe) { return XTypedServices.ToXTypedElement<ToggleButtonType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ToggleButtonType(XElement xe) { return XTypedServices.ToXTypedElement<ToggleButtonType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ToggleButtonType() {
         }
@@ -23668,7 +23669,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -23697,7 +23698,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator UnitType(XElement xe) { return XTypedServices.ToXTypedElement<UnitType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UnitType(XElement xe) { return XTypedServices.ToXTypedElement<UnitType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static UnitType() {
             BuildElementDictionary();
@@ -23723,7 +23724,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<UnitAbbreviationType> UnitAbbreviation {
             get {
                 if ((this.UnitAbbreviationField == null)) {
-                    this.UnitAbbreviationField = new XTypedList<UnitAbbreviationType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UnitAbbreviation", "http://schemas.microsoft.com/sharepoint/"));
+                    this.UnitAbbreviationField = new XTypedList<UnitAbbreviationType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UnitAbbreviation", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.UnitAbbreviationField;
             }
@@ -23733,7 +23734,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.UnitAbbreviationField == null)) {
-                        this.UnitAbbreviationField = XTypedList<UnitAbbreviationType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UnitAbbreviation", "http://schemas.microsoft.com/sharepoint/"));
+                        this.UnitAbbreviationField = XTypedList<UnitAbbreviationType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UnitAbbreviation", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<UnitAbbreviationType>(this.UnitAbbreviationField, value);
@@ -23853,7 +23854,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -23872,7 +23873,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class UnitAbbreviationType : XTypedElement, IXMetaData {
         
-         public static explicit operator UnitAbbreviationType(XElement xe) { return XTypedServices.ToXTypedElement<UnitAbbreviationType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UnitAbbreviationType(XElement xe) { return XTypedServices.ToXTypedElement<UnitAbbreviationType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public UnitAbbreviationType() {
         }
@@ -23927,7 +23928,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -23956,7 +23957,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ruleDesignerType(XElement xe) { return XTypedServices.ToXTypedElement<ruleDesignerType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ruleDesignerType(XElement xe) { return XTypedServices.ToXTypedElement<ruleDesignerType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ruleDesignerType() {
             BuildElementDictionary();
@@ -23982,7 +23983,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldBind> FieldBind {
             get {
                 if ((this.FieldBindField == null)) {
-                    this.FieldBindField = new XTypedList<FieldBind>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldBind", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldBindField = new XTypedList<FieldBind>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldBind", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldBindField;
             }
@@ -23992,7 +23993,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldBindField == null)) {
-                        this.FieldBindField = XTypedList<FieldBind>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldBind", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldBindField = XTypedList<FieldBind>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldBind", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldBind>(this.FieldBindField, value);
@@ -24040,7 +24041,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -24070,7 +24071,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator defaultElementType(XElement xe) { return XTypedServices.ToXTypedElement<defaultElementType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator defaultElementType(XElement xe) { return XTypedServices.ToXTypedElement<defaultElementType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static defaultElementType() {
             BuildElementDictionary();
@@ -24130,7 +24131,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -24163,7 +24164,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator parametersType(XElement xe) { return XTypedServices.ToXTypedElement<parametersType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator parametersType(XElement xe) { return XTypedServices.ToXTypedElement<parametersType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static parametersType() {
             BuildElementDictionary();
@@ -24189,7 +24190,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<Parameter> Parameter {
             get {
                 if ((this.ParameterField == null)) {
-                    this.ParameterField = new XTypedList<Parameter>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ParameterField = new XTypedList<Parameter>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ParameterField;
             }
@@ -24199,7 +24200,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ParameterField == null)) {
-                        this.ParameterField = XTypedList<Parameter>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ParameterField = XTypedList<Parameter>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<Parameter>(this.ParameterField, value);
@@ -24232,7 +24233,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -24265,7 +24266,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator dataSourcesType(XElement xe) { return XTypedServices.ToXTypedElement<dataSourcesType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator dataSourcesType(XElement xe) { return XTypedServices.ToXTypedElement<dataSourcesType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static dataSourcesType() {
             BuildElementDictionary();
@@ -24291,7 +24292,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<dataSourceType> DataSource {
             get {
                 if ((this.DataSourceField == null)) {
-                    this.DataSourceField = new XTypedList<dataSourceType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DataSource", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DataSourceField = new XTypedList<dataSourceType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DataSource", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DataSourceField;
             }
@@ -24301,7 +24302,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DataSourceField == null)) {
-                        this.DataSourceField = XTypedList<dataSourceType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DataSource", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DataSourceField = XTypedList<dataSourceType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DataSource", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<dataSourceType>(this.DataSourceField, value);
@@ -24334,7 +24335,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -24364,7 +24365,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator dataSourceType(XElement xe) { return XTypedServices.ToXTypedElement<dataSourceType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator dataSourceType(XElement xe) { return XTypedServices.ToXTypedElement<dataSourceType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static dataSourceType() {
             BuildElementDictionary();
@@ -24499,7 +24500,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -24545,7 +24546,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator actionType(XElement xe) { return XTypedServices.ToXTypedElement<actionType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator actionType(XElement xe) { return XTypedServices.ToXTypedElement<actionType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static actionType() {
             BuildElementDictionary();
@@ -24997,7 +24998,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25056,7 +25057,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FieldBind(XElement xe) { return XTypedServices.ToXTypedElement<FieldBind>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldBind(XElement xe) { return XTypedServices.ToXTypedElement<FieldBind>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FieldBind() {
             BuildElementDictionary();
@@ -25072,11 +25073,11 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public FieldBind(IEnumerable<Option> Option) {
-            this.OptionField = XTypedList<Option>.Initialize(this, LinqToXsdTypeManager.Instance, Option, System.Xml.Linq.XName.Get("Option", "http://schemas.microsoft.com/sharepoint/"));
+            this.OptionField = XTypedList<Option>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, Option, System.Xml.Linq.XName.Get("Option", "http://schemas.microsoft.com/sharepoint/"));
         }
         
         public FieldBind(IEnumerable<DataSourceRef> DataSourceRef) {
-            this.DataSourceRefField = XTypedList<DataSourceRef>.Initialize(this, LinqToXsdTypeManager.Instance, DataSourceRef, System.Xml.Linq.XName.Get("DataSourceRef", "http://schemas.microsoft.com/sharepoint/"));
+            this.DataSourceRefField = XTypedList<DataSourceRef>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, DataSourceRef, System.Xml.Linq.XName.Get("DataSourceRef", "http://schemas.microsoft.com/sharepoint/"));
         }
         
         /// <summary>
@@ -25090,7 +25091,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<Option> Option {
             get {
                 if ((this.OptionField == null)) {
-                    this.OptionField = new XTypedList<Option>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Option", "http://schemas.microsoft.com/sharepoint/"));
+                    this.OptionField = new XTypedList<Option>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Option", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.OptionField;
             }
@@ -25100,7 +25101,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.OptionField == null)) {
-                        this.OptionField = XTypedList<Option>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Option", "http://schemas.microsoft.com/sharepoint/"));
+                        this.OptionField = XTypedList<Option>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Option", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<Option>(this.OptionField, value);
@@ -25120,7 +25121,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DataSourceRef> DataSourceRef {
             get {
                 if ((this.DataSourceRefField == null)) {
-                    this.DataSourceRefField = new XTypedList<DataSourceRef>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DataSourceRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DataSourceRefField = new XTypedList<DataSourceRef>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DataSourceRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DataSourceRefField;
             }
@@ -25130,7 +25131,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DataSourceRefField == null)) {
-                        this.DataSourceRefField = XTypedList<DataSourceRef>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DataSourceRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DataSourceRefField = XTypedList<DataSourceRef>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DataSourceRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DataSourceRef>(this.DataSourceRefField, value);
@@ -25292,7 +25293,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25312,7 +25313,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class Option : XTypedElement, IXMetaData {
         
-         public static explicit operator Option(XElement xe) { return XTypedServices.ToXTypedElement<Option>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Option(XElement xe) { return XTypedServices.ToXTypedElement<Option>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Option() {
         }
@@ -25400,7 +25401,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25415,7 +25416,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class DataSourceRef : XTypedElement, IXMetaData {
         
-         public static explicit operator DataSourceRef(XElement xe) { return XTypedServices.ToXTypedElement<DataSourceRef>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DataSourceRef(XElement xe) { return XTypedServices.ToXTypedElement<DataSourceRef>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public DataSourceRef() {
         }
@@ -25452,7 +25453,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25467,7 +25468,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class Parameter : XTypedElement, IXMetaData {
         
-         public static explicit operator Parameter(XElement xe) { return XTypedServices.ToXTypedElement<Parameter>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Parameter(XElement xe) { return XTypedServices.ToXTypedElement<Parameter>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Parameter() {
         }
@@ -25618,7 +25619,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25644,7 +25645,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SchemaSource(XElement xe) { return XTypedServices.ToXTypedElement<SchemaSource>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SchemaSource(XElement xe) { return XTypedServices.ToXTypedElement<SchemaSource>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SchemaSource() {
             BuildElementDictionary();
@@ -25771,7 +25772,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25807,7 +25808,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator Fields(XElement xe) { return XTypedServices.ToXTypedElement<Fields>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Fields(XElement xe) { return XTypedServices.ToXTypedElement<Fields>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static Fields() {
             BuildElementDictionary();
@@ -25833,7 +25834,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<Field> Field {
             get {
                 if ((this.FieldField == null)) {
-                    this.FieldField = new XTypedList<Field>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldField = new XTypedList<Field>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldField;
             }
@@ -25843,7 +25844,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldField == null)) {
-                        this.FieldField = XTypedList<Field>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldField = XTypedList<Field>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<Field>(this.FieldField, value);
@@ -25876,7 +25877,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25895,7 +25896,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class Field : XTypedElement, IXMetaData {
         
-         public static explicit operator Field(XElement xe) { return XTypedServices.ToXTypedElement<Field>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Field(XElement xe) { return XTypedServices.ToXTypedElement<Field>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Field() {
         }
@@ -25962,7 +25963,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -25977,7 +25978,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ContentType : XTypedElement, IXMetaData {
         
-         public static explicit operator ContentType(XElement xe) { return XTypedServices.ToXTypedElement<ContentType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentType(XElement xe) { return XTypedServices.ToXTypedElement<ContentType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ContentType() {
         }
@@ -26014,7 +26015,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26029,7 +26030,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class Dictionary : XTypedElement, IXMetaData {
         
-         public static explicit operator Dictionary(XElement xe) { return XTypedServices.ToXTypedElement<Dictionary>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Dictionary(XElement xe) { return XTypedServices.ToXTypedElement<Dictionary>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Dictionary() {
         }
@@ -26066,7 +26067,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26092,7 +26093,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator Evaluation(XElement xe) { return XTypedServices.ToXTypedElement<Evaluation>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Evaluation(XElement xe) { return XTypedServices.ToXTypedElement<Evaluation>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static Evaluation() {
             BuildElementDictionary();
@@ -26175,7 +26176,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26195,7 +26196,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ActivitySource : XTypedElement, IXMetaData {
         
-         public static explicit operator ActivitySource(XElement xe) { return XTypedServices.ToXTypedElement<ActivitySource>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ActivitySource(XElement xe) { return XTypedServices.ToXTypedElement<ActivitySource>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ActivitySource() {
         }
@@ -26217,7 +26218,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26232,7 +26233,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class HashtableSource : XTypedElement, IXMetaData {
         
-         public static explicit operator HashtableSource(XElement xe) { return XTypedServices.ToXTypedElement<HashtableSource>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HashtableSource(XElement xe) { return XTypedServices.ToXTypedElement<HashtableSource>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public HashtableSource() {
         }
@@ -26269,7 +26270,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26298,7 +26299,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator Modifications(XElement xe) { return XTypedServices.ToXTypedElement<Modifications>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Modifications(XElement xe) { return XTypedServices.ToXTypedElement<Modifications>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static Modifications() {
             BuildElementDictionary();
@@ -26324,7 +26325,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<Modification> Modification {
             get {
                 if ((this.ModificationField == null)) {
-                    this.ModificationField = new XTypedList<Modification>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Modification", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ModificationField = new XTypedList<Modification>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Modification", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ModificationField;
             }
@@ -26334,7 +26335,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ModificationField == null)) {
-                        this.ModificationField = XTypedList<Modification>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Modification", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ModificationField = XTypedList<Modification>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Modification", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<Modification>(this.ModificationField, value);
@@ -26367,7 +26368,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26386,7 +26387,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class Modification : XTypedElement, IXMetaData {
         
-         public static explicit operator Modification(XElement xe) { return XTypedServices.ToXTypedElement<Modification>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Modification(XElement xe) { return XTypedServices.ToXTypedElement<Modification>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Modification() {
         }
@@ -26462,7 +26463,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26485,7 +26486,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator ActionVariables(XElement xe) { return XTypedServices.ToXTypedElement<ActionVariables>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ActionVariables(XElement xe) { return XTypedServices.ToXTypedElement<ActionVariables>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ActionVariables() {
             InitFSM();
@@ -26527,7 +26528,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26556,7 +26557,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator ActionBody(XElement xe) { return XTypedServices.ToXTypedElement<ActionBody>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ActionBody(XElement xe) { return XTypedServices.ToXTypedElement<ActionBody>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ActionBody() {
             InitFSM();
@@ -26598,7 +26599,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26627,7 +26628,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator ActionConditions(XElement xe) { return XTypedServices.ToXTypedElement<ActionConditions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ActionConditions(XElement xe) { return XTypedServices.ToXTypedElement<ActionConditions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ActionConditions() {
             InitFSM();
@@ -26669,7 +26670,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -26857,7 +26858,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator SiteDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SiteDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SiteDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SiteDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SiteDefinition() {
             BuildElementDictionary();
@@ -27165,7 +27166,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -27208,7 +27209,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator NavBarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<NavBarDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator NavBarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<NavBarDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static NavBarDefinition() {
             BuildElementDictionary();
@@ -27234,7 +27235,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<NavBarLinkDefinition> NavBarLink {
             get {
                 if ((this.NavBarLinkField == null)) {
-                    this.NavBarLinkField = new XTypedList<NavBarLinkDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBarLink", "http://schemas.microsoft.com/sharepoint/"));
+                    this.NavBarLinkField = new XTypedList<NavBarLinkDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBarLink", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.NavBarLinkField;
             }
@@ -27244,7 +27245,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.NavBarLinkField == null)) {
-                        this.NavBarLinkField = XTypedList<NavBarLinkDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBarLink", "http://schemas.microsoft.com/sharepoint/"));
+                        this.NavBarLinkField = XTypedList<NavBarLinkDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBarLink", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<NavBarLinkDefinition>(this.NavBarLinkField, value);
@@ -27264,7 +27265,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<NavBarLinkDefinition> NavBarPage {
             get {
                 if ((this.NavBarPageField == null)) {
-                    this.NavBarPageField = new XTypedList<NavBarLinkDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
+                    this.NavBarPageField = new XTypedList<NavBarLinkDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.NavBarPageField;
             }
@@ -27274,7 +27275,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.NavBarPageField == null)) {
-                        this.NavBarPageField = XTypedList<NavBarLinkDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
+                        this.NavBarPageField = XTypedList<NavBarLinkDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<NavBarLinkDefinition>(this.NavBarPageField, value);
@@ -27415,7 +27416,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -27435,7 +27436,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class NavBarLinkDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator NavBarLinkDefinition(XElement xe) { return XTypedServices.ToXTypedElement<NavBarLinkDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator NavBarLinkDefinition(XElement xe) { return XTypedServices.ToXTypedElement<NavBarLinkDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public NavBarLinkDefinition() {
         }
@@ -27487,7 +27488,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -27516,7 +27517,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator NavBarDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<NavBarDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator NavBarDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<NavBarDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static NavBarDefinitions() {
             BuildElementDictionary();
@@ -27542,7 +27543,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<NavBarDefinition> NavBar {
             get {
                 if ((this.NavBarField == null)) {
-                    this.NavBarField = new XTypedList<NavBarDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBar", "http://schemas.microsoft.com/sharepoint/"));
+                    this.NavBarField = new XTypedList<NavBarDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBar", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.NavBarField;
             }
@@ -27552,7 +27553,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.NavBarField == null)) {
-                        this.NavBarField = XTypedList<NavBarDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBar", "http://schemas.microsoft.com/sharepoint/"));
+                        this.NavBarField = XTypedList<NavBarDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBar", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<NavBarDefinition>(this.NavBarField, value);
@@ -27585,7 +27586,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -27612,7 +27613,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator FieldDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FieldDefinition() {
             BuildElementDictionary();
@@ -29690,7 +29691,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -29730,7 +29731,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator BaseListDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BaseListDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BaseListDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BaseListDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static BaseListDefinition() {
             BuildElementDictionary();
@@ -30069,7 +30070,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -30102,7 +30103,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FieldDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FieldDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FieldDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FieldDefinitions() {
             BuildElementDictionary();
@@ -30128,7 +30129,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FieldDefinition> Field {
             get {
                 if ((this.FieldField == null)) {
-                    this.FieldField = new XTypedList<FieldDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldField = new XTypedList<FieldDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldField;
             }
@@ -30138,7 +30139,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldField == null)) {
-                        this.FieldField = XTypedList<FieldDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldField = XTypedList<FieldDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FieldDefinition>(this.FieldField, value);
@@ -30189,7 +30190,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -30216,7 +30217,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator FormDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FormDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FormDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FormDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FormDefinition() {
             BuildElementDictionary();
@@ -30446,7 +30447,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -30496,7 +30497,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListFormSet(XElement xe) { return XTypedServices.ToXTypedElement<ListFormSet>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListFormSet(XElement xe) { return XTypedServices.ToXTypedElement<ListFormSet>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListFormSet() {
             BuildElementDictionary();
@@ -30522,7 +30523,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FormDefinition> Form {
             get {
                 if ((this.FormField == null)) {
-                    this.FormField = new XTypedList<FormDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FormField = new XTypedList<FormDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FormField;
             }
@@ -30532,7 +30533,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FormField == null)) {
-                        this.FormField = XTypedList<FormDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FormField = XTypedList<FormDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FormDefinition>(this.FormField, value);
@@ -30565,7 +30566,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -30592,7 +30593,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ToolbarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ToolbarDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ToolbarDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ToolbarDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ToolbarDefinition() {
             BuildElementDictionary();
@@ -30660,7 +30661,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -30761,7 +30762,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ViewDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ViewDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ViewDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ViewDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ViewDefinition() {
             BuildElementDictionary();
@@ -31786,7 +31787,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -31834,7 +31835,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ListDataSourceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListDataSourceDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListDataSourceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListDataSourceDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListDataSourceDefinition() {
             BuildElementDictionary();
@@ -31862,7 +31863,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<PropertyValueAttributeDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<PropertyValueAttributeDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<PropertyValueAttributeDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -31872,7 +31873,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<PropertyValueAttributeDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<PropertyValueAttributeDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<PropertyValueAttributeDefinition>(this.PropertyField, value);
@@ -31905,7 +31906,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -31924,7 +31925,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ListTemplateDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ListTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListTemplateDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListTemplateDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ListTemplateDefinition() {
         }
@@ -32555,7 +32556,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -32570,7 +32571,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class WebTemplateDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator WebTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebTemplateDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WebTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebTemplateDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public WebTemplateDefinition() {
         }
@@ -33072,7 +33073,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33115,7 +33116,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListTemplateDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ListTemplateDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListTemplateDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ListTemplateDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListTemplateDefinitions() {
             BuildElementDictionary();
@@ -33141,7 +33142,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ListTemplateDefinition> ListTemplate {
             get {
                 if ((this.ListTemplateField == null)) {
-                    this.ListTemplateField = new XTypedList<ListTemplateDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListTemplateField = new XTypedList<ListTemplateDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListTemplateField;
             }
@@ -33151,7 +33152,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListTemplateField == null)) {
-                        this.ListTemplateField = XTypedList<ListTemplateDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListTemplateField = XTypedList<ListTemplateDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ListTemplateDefinition>(this.ListTemplateField, value);
@@ -33184,7 +33185,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33214,7 +33215,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator DocumentTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DocumentTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DocumentTemplateDefinition() {
             BuildElementDictionary();
@@ -33379,7 +33380,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33412,7 +33413,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator DocumentTemplateDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DocumentTemplateDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DocumentTemplateDefinitions() {
             BuildElementDictionary();
@@ -33438,7 +33439,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DocumentTemplateDefinition> DocumentTemplate {
             get {
                 if ((this.DocumentTemplateField == null)) {
-                    this.DocumentTemplateField = new XTypedList<DocumentTemplateDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DocumentTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DocumentTemplateField = new XTypedList<DocumentTemplateDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DocumentTemplate", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DocumentTemplateField;
             }
@@ -33448,7 +33449,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DocumentTemplateField == null)) {
-                        this.DocumentTemplateField = XTypedList<DocumentTemplateDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DocumentTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DocumentTemplateField = XTypedList<DocumentTemplateDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DocumentTemplate", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DocumentTemplateDefinition>(this.DocumentTemplateField, value);
@@ -33481,7 +33482,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33500,7 +33501,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class DocumentTemplateFileDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator DocumentTemplateFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateFileDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DocumentTemplateFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateFileDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public DocumentTemplateFileDefinition() {
         }
@@ -33567,7 +33568,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33596,7 +33597,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator DocumentTemplateFileDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateFileDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DocumentTemplateFileDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<DocumentTemplateFileDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DocumentTemplateFileDefinitions() {
             BuildElementDictionary();
@@ -33622,7 +33623,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DocumentTemplateFileDefinition> DocumentTemplateFile {
             get {
                 if ((this.DocumentTemplateFileField == null)) {
-                    this.DocumentTemplateFileField = new XTypedList<DocumentTemplateFileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DocumentTemplateFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DocumentTemplateFileField = new XTypedList<DocumentTemplateFileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DocumentTemplateFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DocumentTemplateFileField;
             }
@@ -33632,7 +33633,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DocumentTemplateFileField == null)) {
-                        this.DocumentTemplateFileField = XTypedList<DocumentTemplateFileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DocumentTemplateFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DocumentTemplateFileField = XTypedList<DocumentTemplateFileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DocumentTemplateFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DocumentTemplateFileDefinition>(this.DocumentTemplateFileField, value);
@@ -33665,7 +33666,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33698,7 +33699,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator BaseTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BaseTypeDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BaseTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BaseTypeDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static BaseTypeDefinition() {
             BuildElementDictionary();
@@ -33724,7 +33725,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ListMetaDataDefinition> MetaData {
             get {
                 if ((this.MetaDataField == null)) {
-                    this.MetaDataField = new XTypedList<ListMetaDataDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MetaData", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MetaDataField = new XTypedList<ListMetaDataDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MetaData", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MetaDataField;
             }
@@ -33734,7 +33735,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MetaDataField == null)) {
-                        this.MetaDataField = XTypedList<ListMetaDataDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MetaData", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MetaDataField = XTypedList<ListMetaDataDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MetaData", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ListMetaDataDefinition>(this.MetaDataField, value);
@@ -33812,7 +33813,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33845,7 +33846,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator BaseTypeDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<BaseTypeDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BaseTypeDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<BaseTypeDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static BaseTypeDefinitions() {
             BuildElementDictionary();
@@ -33871,7 +33872,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<BaseTypeDefinition> BaseType {
             get {
                 if ((this.BaseTypeField == null)) {
-                    this.BaseTypeField = new XTypedList<BaseTypeDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BaseType", "http://schemas.microsoft.com/sharepoint/"));
+                    this.BaseTypeField = new XTypedList<BaseTypeDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BaseType", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.BaseTypeField;
             }
@@ -33881,7 +33882,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.BaseTypeField == null)) {
-                        this.BaseTypeField = XTypedList<BaseTypeDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BaseType", "http://schemas.microsoft.com/sharepoint/"));
+                        this.BaseTypeField = XTypedList<BaseTypeDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BaseType", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<BaseTypeDefinition>(this.BaseTypeField, value);
@@ -33914,7 +33915,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -33941,7 +33942,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ConfigurationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ConfigurationDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ConfigurationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ConfigurationDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ConfigurationDefinition() {
             BuildElementDictionary();
@@ -34207,7 +34208,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -34241,7 +34242,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator DataDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DataDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DataDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DataDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DataDefinition() {
             BuildElementDictionary();
@@ -34298,7 +34299,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -34331,7 +34332,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ListDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ListDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListDefinitions() {
             BuildElementDictionary();
@@ -34357,7 +34358,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ListDefinition> List {
             get {
                 if ((this.ListField == null)) {
-                    this.ListField = new XTypedList<ListDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListField = new XTypedList<ListDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListField;
             }
@@ -34367,7 +34368,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListField == null)) {
-                        this.ListField = XTypedList<ListDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListField = XTypedList<ListDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ListDefinition>(this.ListField, value);
@@ -34400,7 +34401,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -34433,7 +34434,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ModuleDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ModuleDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ModuleDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ModuleDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ModuleDefinition() {
             BuildElementDictionary();
@@ -34459,7 +34460,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FileDefinition> File {
             get {
                 if ((this.FileField == null)) {
-                    this.FileField = new XTypedList<FileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("File", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FileField = new XTypedList<FileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("File", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FileField;
             }
@@ -34469,7 +34470,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FileField == null)) {
-                        this.FileField = XTypedList<FileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("File", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FileField = XTypedList<FileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("File", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FileDefinition>(this.FileField, value);
@@ -34625,7 +34626,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -34670,7 +34671,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator FileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FileDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FileDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FileDefinition() {
             BuildElementDictionary();
@@ -34698,7 +34699,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WebPartDefinition> AllUsersWebPart {
             get {
                 if ((this.AllUsersWebPartField == null)) {
-                    this.AllUsersWebPartField = new XTypedList<WebPartDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("AllUsersWebPart", "http://schemas.microsoft.com/sharepoint/"));
+                    this.AllUsersWebPartField = new XTypedList<WebPartDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("AllUsersWebPart", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.AllUsersWebPartField;
             }
@@ -34708,7 +34709,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.AllUsersWebPartField == null)) {
-                        this.AllUsersWebPartField = XTypedList<WebPartDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("AllUsersWebPart", "http://schemas.microsoft.com/sharepoint/"));
+                        this.AllUsersWebPartField = XTypedList<WebPartDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("AllUsersWebPart", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WebPartDefinition>(this.AllUsersWebPartField, value);
@@ -34731,7 +34732,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ViewWebPartDefinition> View {
             get {
                 if ((this.ViewField == null)) {
-                    this.ViewField = new XTypedList<ViewWebPartDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ViewField = new XTypedList<ViewWebPartDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ViewField;
             }
@@ -34741,7 +34742,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ViewField == null)) {
-                        this.ViewField = XTypedList<ViewWebPartDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ViewField = XTypedList<ViewWebPartDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ViewWebPartDefinition>(this.ViewField, value);
@@ -34764,7 +34765,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<NavBarPageDefinition> NavBarPage {
             get {
                 if ((this.NavBarPageField == null)) {
-                    this.NavBarPageField = new XTypedList<NavBarPageDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
+                    this.NavBarPageField = new XTypedList<NavBarPageDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.NavBarPageField;
             }
@@ -34774,7 +34775,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.NavBarPageField == null)) {
-                        this.NavBarPageField = XTypedList<NavBarPageDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
+                        this.NavBarPageField = XTypedList<NavBarPageDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("NavBarPage", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<NavBarPageDefinition>(this.NavBarPageField, value);
@@ -34797,7 +34798,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<PropertyValueAttributeDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<PropertyValueAttributeDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<PropertyValueAttributeDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -34807,7 +34808,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<PropertyValueAttributeDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<PropertyValueAttributeDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<PropertyValueAttributeDefinition>(this.PropertyField, value);
@@ -34830,7 +34831,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WebPartConnectionDefinition> WebPartConnection {
             get {
                 if ((this.WebPartConnectionField == null)) {
-                    this.WebPartConnectionField = new XTypedList<WebPartConnectionDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebPartConnection", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WebPartConnectionField = new XTypedList<WebPartConnectionDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebPartConnection", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WebPartConnectionField;
             }
@@ -34840,7 +34841,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WebPartConnectionField == null)) {
-                        this.WebPartConnectionField = XTypedList<WebPartConnectionDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebPartConnection", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WebPartConnectionField = XTypedList<WebPartConnectionDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebPartConnection", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WebPartConnectionDefinition>(this.WebPartConnectionField, value);
@@ -34863,7 +34864,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<BinarySerializedWebPartDefinition> BinarySerializedWebPart {
             get {
                 if ((this.BinarySerializedWebPartField == null)) {
-                    this.BinarySerializedWebPartField = new XTypedList<BinarySerializedWebPartDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
+                    this.BinarySerializedWebPartField = new XTypedList<BinarySerializedWebPartDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.BinarySerializedWebPartField;
             }
@@ -34873,7 +34874,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.BinarySerializedWebPartField == null)) {
-                        this.BinarySerializedWebPartField = XTypedList<BinarySerializedWebPartDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
+                        this.BinarySerializedWebPartField = XTypedList<BinarySerializedWebPartDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<BinarySerializedWebPartDefinition>(this.BinarySerializedWebPartField, value);
@@ -35041,7 +35042,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -35086,7 +35087,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class WebPartDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator WebPartDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WebPartDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public WebPartDefinition() {
         }
@@ -35156,7 +35157,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -35185,7 +35186,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ViewWebPartDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ViewWebPartDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ViewWebPartDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ViewWebPartDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ViewWebPartDefinition() {
             BuildElementDictionary();
@@ -35211,7 +35212,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<BinarySerializedWebPartDefinition> BinarySerializedWebPart {
             get {
                 if ((this.BinarySerializedWebPartField == null)) {
-                    this.BinarySerializedWebPartField = new XTypedList<BinarySerializedWebPartDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
+                    this.BinarySerializedWebPartField = new XTypedList<BinarySerializedWebPartDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.BinarySerializedWebPartField;
             }
@@ -35221,7 +35222,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.BinarySerializedWebPartField == null)) {
-                        this.BinarySerializedWebPartField = XTypedList<BinarySerializedWebPartDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
+                        this.BinarySerializedWebPartField = XTypedList<BinarySerializedWebPartDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BinarySerializedWebPart", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<BinarySerializedWebPartDefinition>(this.BinarySerializedWebPartField, value);
@@ -35605,7 +35606,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -35638,7 +35639,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator BinarySerializedWebPartDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BinarySerializedWebPartDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BinarySerializedWebPartDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BinarySerializedWebPartDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static BinarySerializedWebPartDefinition() {
             BuildElementDictionary();
@@ -35685,7 +35686,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<BinarySerializedWebPartBodyDefinition> WebPart {
             get {
                 if ((this.WebPartField == null)) {
-                    this.WebPartField = new XTypedList<BinarySerializedWebPartBodyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebPart", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WebPartField = new XTypedList<BinarySerializedWebPartBodyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebPart", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WebPartField;
             }
@@ -35695,7 +35696,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WebPartField == null)) {
-                        this.WebPartField = XTypedList<BinarySerializedWebPartBodyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebPart", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WebPartField = XTypedList<BinarySerializedWebPartBodyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebPart", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<BinarySerializedWebPartBodyDefinition>(this.WebPartField, value);
@@ -35728,7 +35729,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -35762,7 +35763,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator GUIDMapDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GUIDMapDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GUIDMapDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GUIDMapDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static GUIDMapDefinition() {
             BuildElementDictionary();
@@ -35788,7 +35789,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<GUIDMapItemDefinition> GUID {
             get {
                 if ((this.GUIDField == null)) {
-                    this.GUIDField = new XTypedList<GUIDMapItemDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GUID", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GUIDField = new XTypedList<GUIDMapItemDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GUID", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GUIDField;
             }
@@ -35798,7 +35799,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GUIDField == null)) {
-                        this.GUIDField = XTypedList<GUIDMapItemDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GUID", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GUIDField = XTypedList<GUIDMapItemDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GUID", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<GUIDMapItemDefinition>(this.GUIDField, value);
@@ -35831,7 +35832,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -35850,7 +35851,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class BinarySerializedWebPartBodyDefinition : global::Microsoft.Schemas.SharePoint.WebPartDefinition, IXMetaData {
         
-         public static explicit operator BinarySerializedWebPartBodyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BinarySerializedWebPartBodyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BinarySerializedWebPartBodyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BinarySerializedWebPartBodyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public BinarySerializedWebPartBodyDefinition() {
         }
@@ -36163,7 +36164,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36178,7 +36179,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class GUIDMapItemDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator GUIDMapItemDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GUIDMapItemDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GUIDMapItemDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GUIDMapItemDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public GUIDMapItemDefinition() {
         }
@@ -36230,7 +36231,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36262,7 +36263,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class NavBarPageDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator NavBarPageDefinition(XElement xe) { return XTypedServices.ToXTypedElement<NavBarPageDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator NavBarPageDefinition(XElement xe) { return XTypedServices.ToXTypedElement<NavBarPageDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public NavBarPageDefinition() {
         }
@@ -36332,7 +36333,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36358,7 +36359,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator WebPartConnectionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartConnectionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WebPartConnectionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartConnectionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static WebPartConnectionDefinition() {
             BuildElementDictionary();
@@ -36535,7 +36536,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36554,7 +36555,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class WebPartTransformerDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator WebPartTransformerDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartTransformerDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WebPartTransformerDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartTransformerDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public WebPartTransformerDefinition() {
         }
@@ -36606,7 +36607,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36635,7 +36636,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ConfigurationDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ConfigurationDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ConfigurationDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ConfigurationDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ConfigurationDefinitions() {
             BuildElementDictionary();
@@ -36661,7 +36662,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ConfigurationDefinition> Configuration {
             get {
                 if ((this.ConfigurationField == null)) {
-                    this.ConfigurationField = new XTypedList<ConfigurationDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Configuration", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ConfigurationField = new XTypedList<ConfigurationDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Configuration", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ConfigurationField;
             }
@@ -36671,7 +36672,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ConfigurationField == null)) {
-                        this.ConfigurationField = XTypedList<ConfigurationDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Configuration", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ConfigurationField = XTypedList<ConfigurationDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Configuration", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ConfigurationDefinition>(this.ConfigurationField, value);
@@ -36704,7 +36705,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36737,7 +36738,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ModuleDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ModuleDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ModuleDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ModuleDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ModuleDefinitions() {
             BuildElementDictionary();
@@ -36763,7 +36764,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ModuleDefinition> Module {
             get {
                 if ((this.ModuleField == null)) {
-                    this.ModuleField = new XTypedList<ModuleDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ModuleField = new XTypedList<ModuleDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ModuleField;
             }
@@ -36773,7 +36774,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ModuleField == null)) {
-                        this.ModuleField = XTypedList<ModuleDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ModuleField = XTypedList<ModuleDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ModuleDefinition>(this.ModuleField, value);
@@ -36806,7 +36807,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36825,7 +36826,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ModuleReference : XTypedElement, IXMetaData {
         
-         public static explicit operator ModuleReference(XElement xe) { return XTypedServices.ToXTypedElement<ModuleReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ModuleReference(XElement xe) { return XTypedServices.ToXTypedElement<ModuleReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ModuleReference() {
         }
@@ -36862,7 +36863,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36891,7 +36892,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ModuleReferences(XElement xe) { return XTypedServices.ToXTypedElement<ModuleReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ModuleReferences(XElement xe) { return XTypedServices.ToXTypedElement<ModuleReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ModuleReferences() {
             BuildElementDictionary();
@@ -36917,7 +36918,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ModuleReference> Module {
             get {
                 if ((this.ModuleField == null)) {
-                    this.ModuleField = new XTypedList<ModuleReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ModuleField = new XTypedList<ModuleReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ModuleField;
             }
@@ -36927,7 +36928,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ModuleField == null)) {
-                        this.ModuleField = XTypedList<ModuleReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ModuleField = XTypedList<ModuleReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ModuleReference>(this.ModuleField, value);
@@ -36960,7 +36961,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -36993,7 +36994,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CHOICEDEFINITIONS(XElement xe) { return XTypedServices.ToXTypedElement<CHOICEDEFINITIONS>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CHOICEDEFINITIONS(XElement xe) { return XTypedServices.ToXTypedElement<CHOICEDEFINITIONS>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CHOICEDEFINITIONS() {
             BuildElementDictionary();
@@ -37019,7 +37020,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CHOICEDEFINITION> CHOICE {
             get {
                 if ((this.CHOICEField == null)) {
-                    this.CHOICEField = new XTypedList<CHOICEDEFINITION>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CHOICE", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CHOICEField = new XTypedList<CHOICEDEFINITION>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CHOICE", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CHOICEField;
             }
@@ -37029,7 +37030,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CHOICEField == null)) {
-                        this.CHOICEField = XTypedList<CHOICEDEFINITION>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CHOICE", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CHOICEField = XTypedList<CHOICEDEFINITION>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CHOICE", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CHOICEDEFINITION>(this.CHOICEField, value);
@@ -37062,7 +37063,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37081,7 +37082,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class CHOICEDEFINITION : XTypedElement, IXMetaData {
         
-         public static explicit operator CHOICEDEFINITION(XElement xe) { return XTypedServices.ToXTypedElement<CHOICEDEFINITION>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CHOICEDEFINITION(XElement xe) { return XTypedServices.ToXTypedElement<CHOICEDEFINITION>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CHOICEDEFINITION() {
         }
@@ -37103,7 +37104,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37132,7 +37133,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator MAPPINGDEFINITIONS(XElement xe) { return XTypedServices.ToXTypedElement<MAPPINGDEFINITIONS>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MAPPINGDEFINITIONS(XElement xe) { return XTypedServices.ToXTypedElement<MAPPINGDEFINITIONS>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static MAPPINGDEFINITIONS() {
             BuildElementDictionary();
@@ -37158,7 +37159,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MAPPINGDEFINITION> MAPPING {
             get {
                 if ((this.MAPPINGField == null)) {
-                    this.MAPPINGField = new XTypedList<MAPPINGDEFINITION>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MAPPING", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MAPPINGField = new XTypedList<MAPPINGDEFINITION>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MAPPING", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MAPPINGField;
             }
@@ -37168,7 +37169,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MAPPINGField == null)) {
-                        this.MAPPINGField = XTypedList<MAPPINGDEFINITION>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MAPPING", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MAPPINGField = XTypedList<MAPPINGDEFINITION>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MAPPING", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MAPPINGDEFINITION>(this.MAPPINGField, value);
@@ -37201,7 +37202,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37220,7 +37221,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class MAPPINGDEFINITION : XTypedElement, IXMetaData {
         
-         public static explicit operator MAPPINGDEFINITION(XElement xe) { return XTypedServices.ToXTypedElement<MAPPINGDEFINITION>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MAPPINGDEFINITION(XElement xe) { return XTypedServices.ToXTypedElement<MAPPINGDEFINITION>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public MAPPINGDEFINITION() {
         }
@@ -37267,7 +37268,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37293,7 +37294,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListInstance(XElement xe) { return XTypedServices.ToXTypedElement<ListInstance>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListInstance(XElement xe) { return XTypedServices.ToXTypedElement<ListInstance>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListInstance() {
             BuildElementDictionary();
@@ -37563,7 +37564,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37596,7 +37597,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListInstances(XElement xe) { return XTypedServices.ToXTypedElement<ListInstances>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListInstances(XElement xe) { return XTypedServices.ToXTypedElement<ListInstances>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListInstances() {
             BuildElementDictionary();
@@ -37622,7 +37623,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ListInstance> List {
             get {
                 if ((this.ListField == null)) {
-                    this.ListField = new XTypedList<ListInstance>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListField = new XTypedList<ListInstance>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListField;
             }
@@ -37632,7 +37633,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListField == null)) {
-                        this.ListField = XTypedList<ListInstance>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListField = XTypedList<ListInstance>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("List", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ListInstance>(this.ListField, value);
@@ -37665,7 +37666,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37698,7 +37699,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FormDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FormDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FormDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FormDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FormDefinitions() {
             BuildElementDictionary();
@@ -37724,7 +37725,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FormDefinition> Form {
             get {
                 if ((this.FormField == null)) {
-                    this.FormField = new XTypedList<FormDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FormField = new XTypedList<FormDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FormField;
             }
@@ -37734,7 +37735,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FormField == null)) {
-                        this.FormField = XTypedList<FormDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FormField = XTypedList<FormDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Form", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FormDefinition>(this.FormField, value);
@@ -37767,7 +37768,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37797,7 +37798,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListMetaDataDefault(XElement xe) { return XTypedServices.ToXTypedElement<ListMetaDataDefault>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListMetaDataDefault(XElement xe) { return XTypedServices.ToXTypedElement<ListMetaDataDefault>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListMetaDataDefault() {
             BuildElementDictionary();
@@ -37857,7 +37858,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37890,7 +37891,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ViewDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ViewDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ViewDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ViewDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ViewDefinitions() {
             BuildElementDictionary();
@@ -37916,7 +37917,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ViewDefinition> View {
             get {
                 if ((this.ViewField == null)) {
-                    this.ViewField = new XTypedList<ViewDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ViewField = new XTypedList<ViewDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ViewField;
             }
@@ -37926,7 +37927,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ViewField == null)) {
-                        this.ViewField = XTypedList<ViewDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ViewField = XTypedList<ViewDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ViewDefinition>(this.ViewField, value);
@@ -37959,7 +37960,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -37978,7 +37979,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class DwpFileDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator DwpFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DwpFileDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DwpFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DwpFileDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public DwpFileDefinition() {
         }
@@ -38030,7 +38031,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38059,7 +38060,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator DwpFileDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<DwpFileDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DwpFileDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<DwpFileDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DwpFileDefinitions() {
             BuildElementDictionary();
@@ -38085,7 +38086,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DwpFileDefinition> DwpFile {
             get {
                 if ((this.DwpFileField == null)) {
-                    this.DwpFileField = new XTypedList<DwpFileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DwpFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DwpFileField = new XTypedList<DwpFileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DwpFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DwpFileField;
             }
@@ -38095,7 +38096,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DwpFileField == null)) {
-                        this.DwpFileField = XTypedList<DwpFileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DwpFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DwpFileField = XTypedList<DwpFileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DwpFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DwpFileDefinition>(this.DwpFileField, value);
@@ -38128,7 +38129,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38147,7 +38148,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ClassResourceDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ClassResourceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ClassResourceDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ClassResourceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ClassResourceDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ClassResourceDefinition() {
         }
@@ -38199,7 +38200,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38228,7 +38229,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ClassResourceDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ClassResourceDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ClassResourceDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ClassResourceDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ClassResourceDefinitions() {
             BuildElementDictionary();
@@ -38254,7 +38255,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ClassResourceDefinition> ClassResource {
             get {
                 if ((this.ClassResourceField == null)) {
-                    this.ClassResourceField = new XTypedList<ClassResourceDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ClassResource", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ClassResourceField = new XTypedList<ClassResourceDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ClassResource", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ClassResourceField;
             }
@@ -38264,7 +38265,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ClassResourceField == null)) {
-                        this.ClassResourceField = XTypedList<ClassResourceDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ClassResource", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ClassResourceField = XTypedList<ClassResourceDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ClassResource", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ClassResourceDefinition>(this.ClassResourceField, value);
@@ -38297,7 +38298,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38316,7 +38317,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class BindingRedirectDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator BindingRedirectDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BindingRedirectDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BindingRedirectDefinition(XElement xe) { return XTypedServices.ToXTypedElement<BindingRedirectDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public BindingRedirectDefinition() {
         }
@@ -38353,7 +38354,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38382,7 +38383,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator BindingRedirectDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<BindingRedirectDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator BindingRedirectDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<BindingRedirectDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static BindingRedirectDefinitions() {
             BuildElementDictionary();
@@ -38408,7 +38409,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<BindingRedirectDefinition> BindingRedirect {
             get {
                 if ((this.BindingRedirectField == null)) {
-                    this.BindingRedirectField = new XTypedList<BindingRedirectDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BindingRedirect", "http://schemas.microsoft.com/sharepoint/"));
+                    this.BindingRedirectField = new XTypedList<BindingRedirectDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("BindingRedirect", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.BindingRedirectField;
             }
@@ -38418,7 +38419,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.BindingRedirectField == null)) {
-                        this.BindingRedirectField = XTypedList<BindingRedirectDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BindingRedirect", "http://schemas.microsoft.com/sharepoint/"));
+                        this.BindingRedirectField = XTypedList<BindingRedirectDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("BindingRedirect", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<BindingRedirectDefinition>(this.BindingRedirectField, value);
@@ -38451,7 +38452,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38470,7 +38471,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class RowLimitDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator RowLimitDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RowLimitDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RowLimitDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RowLimitDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public RowLimitDefinition() {
         }
@@ -38517,7 +38518,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38532,7 +38533,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ViewStyleReference : XTypedElement, IXMetaData {
         
-         public static explicit operator ViewStyleReference(XElement xe) { return XTypedServices.ToXTypedElement<ViewStyleReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ViewStyleReference(XElement xe) { return XTypedServices.ToXTypedElement<ViewStyleReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ViewStyleReference() {
         }
@@ -38572,7 +38573,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -38595,7 +38596,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator FeatureDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeatureDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeatureDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FeatureDefinition() {
             BuildElementDictionary();
@@ -38981,7 +38982,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -39026,7 +39027,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ElementManifestReference : XTypedElement, IXMetaData {
         
-         public static explicit operator ElementManifestReference(XElement xe) { return XTypedServices.ToXTypedElement<ElementManifestReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ElementManifestReference(XElement xe) { return XTypedServices.ToXTypedElement<ElementManifestReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ElementManifestReference() {
         }
@@ -39066,7 +39067,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -39095,7 +39096,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ElementManifestReferences(XElement xe) { return XTypedServices.ToXTypedElement<ElementManifestReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ElementManifestReferences(XElement xe) { return XTypedServices.ToXTypedElement<ElementManifestReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ElementManifestReferences() {
             BuildElementDictionary();
@@ -39123,7 +39124,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ElementManifestReference> ElementManifest {
             get {
                 if ((this.ElementManifestField == null)) {
-                    this.ElementManifestField = new XTypedList<ElementManifestReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ElementManifest", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ElementManifestField = new XTypedList<ElementManifestReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ElementManifest", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ElementManifestField;
             }
@@ -39133,7 +39134,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ElementManifestField == null)) {
-                        this.ElementManifestField = XTypedList<ElementManifestReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ElementManifest", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ElementManifestField = XTypedList<ElementManifestReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ElementManifest", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ElementManifestReference>(this.ElementManifestField, value);
@@ -39156,7 +39157,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ElementManifestReference> ElementFile {
             get {
                 if ((this.ElementFileField == null)) {
-                    this.ElementFileField = new XTypedList<ElementManifestReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ElementFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ElementFileField = new XTypedList<ElementManifestReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ElementFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ElementFileField;
             }
@@ -39166,7 +39167,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ElementFileField == null)) {
-                        this.ElementFileField = XTypedList<ElementManifestReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ElementFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ElementFileField = XTypedList<ElementManifestReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ElementFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ElementManifestReference>(this.ElementFileField, value);
@@ -39199,7 +39200,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -39290,7 +39291,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ElementDefinitionCollection(XElement xe) { return XTypedServices.ToXTypedElement<ElementDefinitionCollection>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ElementDefinitionCollection(XElement xe) { return XTypedServices.ToXTypedElement<ElementDefinitionCollection>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ElementDefinitionCollection() {
             BuildElementDictionary();
@@ -39318,7 +39319,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ContentTypeDefinition> ContentType {
             get {
                 if ((this.ContentTypeField == null)) {
-                    this.ContentTypeField = new XTypedList<ContentTypeDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContentTypeField = new XTypedList<ContentTypeDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContentTypeField;
             }
@@ -39328,7 +39329,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContentTypeField == null)) {
-                        this.ContentTypeField = XTypedList<ContentTypeDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContentTypeField = XTypedList<ContentTypeDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ContentTypeDefinition>(this.ContentTypeField, value);
@@ -39351,7 +39352,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ContentTypeBindingDefinition> ContentTypeBinding {
             get {
                 if ((this.ContentTypeBindingField == null)) {
-                    this.ContentTypeBindingField = new XTypedList<ContentTypeBindingDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypeBinding", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContentTypeBindingField = new XTypedList<ContentTypeBindingDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypeBinding", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContentTypeBindingField;
             }
@@ -39361,7 +39362,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContentTypeBindingField == null)) {
-                        this.ContentTypeBindingField = XTypedList<ContentTypeBindingDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypeBinding", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContentTypeBindingField = XTypedList<ContentTypeBindingDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypeBinding", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ContentTypeBindingDefinition>(this.ContentTypeBindingField, value);
@@ -39384,7 +39385,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DocumentConverterDefinition> DocumentConverter {
             get {
                 if ((this.DocumentConverterField == null)) {
-                    this.DocumentConverterField = new XTypedList<DocumentConverterDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DocumentConverter", "http://schemas.microsoft.com/sharepoint/"));
+                    this.DocumentConverterField = new XTypedList<DocumentConverterDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("DocumentConverter", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.DocumentConverterField;
             }
@@ -39394,7 +39395,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.DocumentConverterField == null)) {
-                        this.DocumentConverterField = XTypedList<DocumentConverterDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DocumentConverter", "http://schemas.microsoft.com/sharepoint/"));
+                        this.DocumentConverterField = XTypedList<DocumentConverterDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("DocumentConverter", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DocumentConverterDefinition>(this.DocumentConverterField, value);
@@ -39417,7 +39418,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FeatureSiteTemplateAssociationDefinition> FeatureSiteTemplateAssociation {
             get {
                 if ((this.FeatureSiteTemplateAssociationField == null)) {
-                    this.FeatureSiteTemplateAssociationField = new XTypedList<FeatureSiteTemplateAssociationDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FeatureSiteTemplateAssociation", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FeatureSiteTemplateAssociationField = new XTypedList<FeatureSiteTemplateAssociationDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FeatureSiteTemplateAssociation", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FeatureSiteTemplateAssociationField;
             }
@@ -39427,7 +39428,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FeatureSiteTemplateAssociationField == null)) {
-                        this.FeatureSiteTemplateAssociationField = XTypedList<FeatureSiteTemplateAssociationDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FeatureSiteTemplateAssociation", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FeatureSiteTemplateAssociationField = XTypedList<FeatureSiteTemplateAssociationDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FeatureSiteTemplateAssociation", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FeatureSiteTemplateAssociationDefinition>(this.FeatureSiteTemplateAssociationField, value);
@@ -39450,7 +39451,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SharedFieldDefinition> Field {
             get {
                 if ((this.FieldField == null)) {
-                    this.FieldField = new XTypedList<SharedFieldDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldField = new XTypedList<SharedFieldDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldField;
             }
@@ -39460,7 +39461,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldField == null)) {
-                        this.FieldField = XTypedList<SharedFieldDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldField = XTypedList<SharedFieldDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SharedFieldDefinition>(this.FieldField, value);
@@ -39483,7 +39484,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CustomActionDefinition> CustomAction {
             get {
                 if ((this.CustomActionField == null)) {
-                    this.CustomActionField = new XTypedList<CustomActionDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CustomActionField = new XTypedList<CustomActionDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CustomActionField;
             }
@@ -39493,7 +39494,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CustomActionField == null)) {
-                        this.CustomActionField = XTypedList<CustomActionDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CustomActionField = XTypedList<CustomActionDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CustomActionDefinition>(this.CustomActionField, value);
@@ -39516,7 +39517,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CustomActionGroupDefinition> CustomActionGroup {
             get {
                 if ((this.CustomActionGroupField == null)) {
-                    this.CustomActionGroupField = new XTypedList<CustomActionGroupDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomActionGroup", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CustomActionGroupField = new XTypedList<CustomActionGroupDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomActionGroup", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CustomActionGroupField;
             }
@@ -39526,7 +39527,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CustomActionGroupField == null)) {
-                        this.CustomActionGroupField = XTypedList<CustomActionGroupDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomActionGroup", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CustomActionGroupField = XTypedList<CustomActionGroupDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomActionGroup", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CustomActionGroupDefinition>(this.CustomActionGroupField, value);
@@ -39549,7 +39550,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<HideCustomActionDefinition> HideCustomAction {
             get {
                 if ((this.HideCustomActionField == null)) {
-                    this.HideCustomActionField = new XTypedList<HideCustomActionDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HideCustomAction", "http://schemas.microsoft.com/sharepoint/"));
+                    this.HideCustomActionField = new XTypedList<HideCustomActionDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("HideCustomAction", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.HideCustomActionField;
             }
@@ -39559,7 +39560,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.HideCustomActionField == null)) {
-                        this.HideCustomActionField = XTypedList<HideCustomActionDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HideCustomAction", "http://schemas.microsoft.com/sharepoint/"));
+                        this.HideCustomActionField = XTypedList<HideCustomActionDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("HideCustomAction", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<HideCustomActionDefinition>(this.HideCustomActionField, value);
@@ -39582,7 +39583,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ModuleDefinition> Module {
             get {
                 if ((this.ModuleField == null)) {
-                    this.ModuleField = new XTypedList<ModuleDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ModuleField = new XTypedList<ModuleDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ModuleField;
             }
@@ -39592,7 +39593,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ModuleField == null)) {
-                        this.ModuleField = XTypedList<ModuleDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ModuleField = XTypedList<ModuleDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Module", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ModuleDefinition>(this.ModuleField, value);
@@ -39615,7 +39616,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ListInstanceDefinition> ListInstance {
             get {
                 if ((this.ListInstanceField == null)) {
-                    this.ListInstanceField = new XTypedList<ListInstanceDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListInstance", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListInstanceField = new XTypedList<ListInstanceDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListInstance", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListInstanceField;
             }
@@ -39625,7 +39626,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListInstanceField == null)) {
-                        this.ListInstanceField = XTypedList<ListInstanceDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListInstance", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListInstanceField = XTypedList<ListInstanceDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListInstance", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ListInstanceDefinition>(this.ListInstanceField, value);
@@ -39648,7 +39649,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ListTemplateDefinition> ListTemplate {
             get {
                 if ((this.ListTemplateField == null)) {
-                    this.ListTemplateField = new XTypedList<ListTemplateDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ListTemplateField = new XTypedList<ListTemplateDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ListTemplateField;
             }
@@ -39658,7 +39659,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ListTemplateField == null)) {
-                        this.ListTemplateField = XTypedList<ListTemplateDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ListTemplateField = XTypedList<ListTemplateDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ListTemplate", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ListTemplateDefinition>(this.ListTemplateField, value);
@@ -39681,7 +39682,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<DelegateControlDefinition> Control {
             get {
                 if ((this.ControlField == null)) {
-                    this.ControlField = new XTypedList<DelegateControlDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Control", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ControlField = new XTypedList<DelegateControlDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Control", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ControlField;
             }
@@ -39691,7 +39692,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ControlField == null)) {
-                        this.ControlField = XTypedList<DelegateControlDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Control", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ControlField = XTypedList<DelegateControlDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Control", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<DelegateControlDefinition>(this.ControlField, value);
@@ -39714,7 +39715,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ReceiverDefinitionCollection> Receivers {
             get {
                 if ((this.ReceiversField == null)) {
-                    this.ReceiversField = new XTypedList<ReceiverDefinitionCollection>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Receivers", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ReceiversField = new XTypedList<ReceiverDefinitionCollection>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Receivers", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ReceiversField;
             }
@@ -39724,7 +39725,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ReceiversField == null)) {
-                        this.ReceiversField = XTypedList<ReceiverDefinitionCollection>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Receivers", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ReceiversField = XTypedList<ReceiverDefinitionCollection>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Receivers", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ReceiverDefinitionCollection>(this.ReceiversField, value);
@@ -39747,7 +39748,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WorkflowDefinition> Workflow {
             get {
                 if ((this.WorkflowField == null)) {
-                    this.WorkflowField = new XTypedList<WorkflowDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Workflow", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WorkflowField = new XTypedList<WorkflowDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Workflow", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WorkflowField;
             }
@@ -39757,7 +39758,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WorkflowField == null)) {
-                        this.WorkflowField = XTypedList<WorkflowDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Workflow", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WorkflowField = XTypedList<WorkflowDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Workflow", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WorkflowDefinition>(this.WorkflowField, value);
@@ -39780,7 +39781,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<UserMigratorDefinition> UserMigrator {
             get {
                 if ((this.UserMigratorField == null)) {
-                    this.UserMigratorField = new XTypedList<UserMigratorDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UserMigrator", "http://schemas.microsoft.com/sharepoint/"));
+                    this.UserMigratorField = new XTypedList<UserMigratorDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("UserMigrator", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.UserMigratorField;
             }
@@ -39790,7 +39791,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.UserMigratorField == null)) {
-                        this.UserMigratorField = XTypedList<UserMigratorDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UserMigrator", "http://schemas.microsoft.com/sharepoint/"));
+                        this.UserMigratorField = XTypedList<UserMigratorDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("UserMigrator", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<UserMigratorDefinition>(this.UserMigratorField, value);
@@ -39813,7 +39814,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<GroupMigratorDefinition> GroupMigrator {
             get {
                 if ((this.GroupMigratorField == null)) {
-                    this.GroupMigratorField = new XTypedList<GroupMigratorDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GroupMigrator", "http://schemas.microsoft.com/sharepoint/"));
+                    this.GroupMigratorField = new XTypedList<GroupMigratorDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("GroupMigrator", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.GroupMigratorField;
             }
@@ -39823,7 +39824,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.GroupMigratorField == null)) {
-                        this.GroupMigratorField = XTypedList<GroupMigratorDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GroupMigrator", "http://schemas.microsoft.com/sharepoint/"));
+                        this.GroupMigratorField = XTypedList<GroupMigratorDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("GroupMigrator", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<GroupMigratorDefinition>(this.GroupMigratorField, value);
@@ -39846,7 +39847,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WebPartAdderExtensionDefinition> WebPartAdderExtension {
             get {
                 if ((this.WebPartAdderExtensionField == null)) {
-                    this.WebPartAdderExtensionField = new XTypedList<WebPartAdderExtensionDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebPartAdderExtension", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WebPartAdderExtensionField = new XTypedList<WebPartAdderExtensionDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebPartAdderExtension", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WebPartAdderExtensionField;
             }
@@ -39856,7 +39857,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WebPartAdderExtensionField == null)) {
-                        this.WebPartAdderExtensionField = XTypedList<WebPartAdderExtensionDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebPartAdderExtension", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WebPartAdderExtensionField = XTypedList<WebPartAdderExtensionDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebPartAdderExtension", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WebPartAdderExtensionDefinition>(this.WebPartAdderExtensionField, value);
@@ -39879,7 +39880,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WebTemplateDefinition> WebTemplate {
             get {
                 if ((this.WebTemplateField == null)) {
-                    this.WebTemplateField = new XTypedList<WebTemplateDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WebTemplateField = new XTypedList<WebTemplateDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebTemplate", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WebTemplateField;
             }
@@ -39889,7 +39890,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WebTemplateField == null)) {
-                        this.WebTemplateField = XTypedList<WebTemplateDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebTemplate", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WebTemplateField = XTypedList<WebTemplateDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebTemplate", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WebTemplateDefinition>(this.WebTemplateField, value);
@@ -39912,7 +39913,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WorkflowAssociationDefinition> WorkflowAssociation {
             get {
                 if ((this.WorkflowAssociationField == null)) {
-                    this.WorkflowAssociationField = new XTypedList<WorkflowAssociationDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WorkflowAssociation", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WorkflowAssociationField = new XTypedList<WorkflowAssociationDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WorkflowAssociation", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WorkflowAssociationField;
             }
@@ -39922,7 +39923,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WorkflowAssociationField == null)) {
-                        this.WorkflowAssociationField = XTypedList<WorkflowAssociationDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WorkflowAssociation", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WorkflowAssociationField = XTypedList<WorkflowAssociationDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WorkflowAssociation", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WorkflowAssociationDefinition>(this.WorkflowAssociationField, value);
@@ -39945,7 +39946,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<PropertyBagDefinition> PropertyBag {
             get {
                 if ((this.PropertyBagField == null)) {
-                    this.PropertyBagField = new XTypedList<PropertyBagDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("PropertyBag", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyBagField = new XTypedList<PropertyBagDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("PropertyBag", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyBagField;
             }
@@ -39955,7 +39956,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyBagField == null)) {
-                        this.PropertyBagField = XTypedList<PropertyBagDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("PropertyBag", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyBagField = XTypedList<PropertyBagDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("PropertyBag", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<PropertyBagDefinition>(this.PropertyBagField, value);
@@ -39978,7 +39979,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WorkflowActionsDefinition> WorkflowActions {
             get {
                 if ((this.WorkflowActionsField == null)) {
-                    this.WorkflowActionsField = new XTypedList<WorkflowActionsDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WorkflowActions", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WorkflowActionsField = new XTypedList<WorkflowActionsDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WorkflowActions", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WorkflowActionsField;
             }
@@ -39988,7 +39989,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WorkflowActionsField == null)) {
-                        this.WorkflowActionsField = XTypedList<WorkflowActionsDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WorkflowActions", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WorkflowActionsField = XTypedList<WorkflowActionsDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WorkflowActions", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WorkflowActionsDefinition>(this.WorkflowActionsField, value);
@@ -40036,7 +40037,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -40083,7 +40084,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ContentTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ContentTypeDefinition() {
             BuildElementDictionary();
@@ -40499,7 +40500,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -40522,7 +40523,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FeatureManifestReference : XTypedElement, IXMetaData {
         
-         public static explicit operator FeatureManifestReference(XElement xe) { return XTypedServices.ToXTypedElement<FeatureManifestReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureManifestReference(XElement xe) { return XTypedServices.ToXTypedElement<FeatureManifestReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FeatureManifestReference() {
         }
@@ -40562,7 +40563,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -40577,7 +40578,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class SolutionDependencyManifestReference : XTypedElement, IXMetaData {
         
-         public static explicit operator SolutionDependencyManifestReference(XElement xe) { return XTypedServices.ToXTypedElement<SolutionDependencyManifestReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SolutionDependencyManifestReference(XElement xe) { return XTypedServices.ToXTypedElement<SolutionDependencyManifestReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public SolutionDependencyManifestReference() {
         }
@@ -40662,7 +40663,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -40685,7 +40686,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator SolutionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SolutionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SolutionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SolutionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SolutionDefinition() {
             BuildElementDictionary();
@@ -41008,7 +41009,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41072,7 +41073,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FeatureFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<FeatureFileReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<FeatureFileReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FeatureFileReferences() {
             BuildElementDictionary();
@@ -41098,7 +41099,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FeatureManifestReference> FeatureManifest {
             get {
                 if ((this.FeatureManifestField == null)) {
-                    this.FeatureManifestField = new XTypedList<FeatureManifestReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FeatureManifest", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FeatureManifestField = new XTypedList<FeatureManifestReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FeatureManifest", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FeatureManifestField;
             }
@@ -41108,7 +41109,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FeatureManifestField == null)) {
-                        this.FeatureManifestField = XTypedList<FeatureManifestReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FeatureManifest", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FeatureManifestField = XTypedList<FeatureManifestReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FeatureManifest", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FeatureManifestReference>(this.FeatureManifestField, value);
@@ -41141,7 +41142,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41174,7 +41175,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SolutionDependencyReferences(XElement xe) { return XTypedServices.ToXTypedElement<SolutionDependencyReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SolutionDependencyReferences(XElement xe) { return XTypedServices.ToXTypedElement<SolutionDependencyReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SolutionDependencyReferences() {
             BuildElementDictionary();
@@ -41200,7 +41201,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SolutionDependencyManifestReference> ActivationDependency {
             get {
                 if ((this.ActivationDependencyField == null)) {
-                    this.ActivationDependencyField = new XTypedList<SolutionDependencyManifestReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ActivationDependencyField = new XTypedList<SolutionDependencyManifestReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ActivationDependencyField;
             }
@@ -41210,7 +41211,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ActivationDependencyField == null)) {
-                        this.ActivationDependencyField = XTypedList<SolutionDependencyManifestReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ActivationDependencyField = XTypedList<SolutionDependencyManifestReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SolutionDependencyManifestReference>(this.ActivationDependencyField, value);
@@ -41243,7 +41244,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41276,7 +41277,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SiteDefinitionManifestReferences(XElement xe) { return XTypedServices.ToXTypedElement<SiteDefinitionManifestReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SiteDefinitionManifestReferences(XElement xe) { return XTypedServices.ToXTypedElement<SiteDefinitionManifestReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SiteDefinitionManifestReferences() {
             BuildElementDictionary();
@@ -41302,7 +41303,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SiteDefinitionManifestFileReference> SiteDefinitionManifest {
             get {
                 if ((this.SiteDefinitionManifestField == null)) {
-                    this.SiteDefinitionManifestField = new XTypedList<SiteDefinitionManifestFileReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SiteDefinitionManifest", "http://schemas.microsoft.com/sharepoint/"));
+                    this.SiteDefinitionManifestField = new XTypedList<SiteDefinitionManifestFileReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SiteDefinitionManifest", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.SiteDefinitionManifestField;
             }
@@ -41312,7 +41313,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.SiteDefinitionManifestField == null)) {
-                        this.SiteDefinitionManifestField = XTypedList<SiteDefinitionManifestFileReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SiteDefinitionManifest", "http://schemas.microsoft.com/sharepoint/"));
+                        this.SiteDefinitionManifestField = XTypedList<SiteDefinitionManifestFileReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SiteDefinitionManifest", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SiteDefinitionManifestFileReference>(this.SiteDefinitionManifestField, value);
@@ -41345,7 +41346,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41378,7 +41379,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SiteDefinitionManifestFileReference(XElement xe) { return XTypedServices.ToXTypedElement<SiteDefinitionManifestFileReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SiteDefinitionManifestFileReference(XElement xe) { return XTypedServices.ToXTypedElement<SiteDefinitionManifestFileReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SiteDefinitionManifestFileReference() {
             BuildElementDictionary();
@@ -41404,7 +41405,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<WebTempFileDefinition> WebTempFile {
             get {
                 if ((this.WebTempFileField == null)) {
-                    this.WebTempFileField = new XTypedList<WebTempFileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebTempFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.WebTempFileField = new XTypedList<WebTempFileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("WebTempFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.WebTempFileField;
             }
@@ -41414,7 +41415,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.WebTempFileField == null)) {
-                        this.WebTempFileField = XTypedList<WebTempFileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebTempFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.WebTempFileField = XTypedList<WebTempFileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("WebTempFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<WebTempFileDefinition>(this.WebTempFileField, value);
@@ -41465,7 +41466,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41495,7 +41496,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SharedFieldSetDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldSetDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SharedFieldSetDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldSetDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SharedFieldSetDefinition() {
             BuildElementDictionary();
@@ -41555,7 +41556,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41588,7 +41589,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SharedFieldDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SharedFieldDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SharedFieldDefinitions() {
             BuildElementDictionary();
@@ -41614,7 +41615,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SharedFieldDefinition> Field {
             get {
                 if ((this.FieldField == null)) {
-                    this.FieldField = new XTypedList<SharedFieldDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldField = new XTypedList<SharedFieldDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldField;
             }
@@ -41624,7 +41625,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldField == null)) {
-                        this.FieldField = XTypedList<SharedFieldDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldField = XTypedList<SharedFieldDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SharedFieldDefinition>(this.FieldField, value);
@@ -41657,7 +41658,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41687,7 +41688,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CommandUIExtensionType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIExtensionType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CommandUIExtensionType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIExtensionType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CommandUIExtensionType() {
             BuildElementDictionary();
@@ -41762,7 +41763,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41796,7 +41797,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CommandUIDefinitionsType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIDefinitionsType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CommandUIDefinitionsType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIDefinitionsType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CommandUIDefinitionsType() {
             BuildElementDictionary();
@@ -41822,7 +41823,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CommandUIDefinitionType> CommandUIDefinition {
             get {
                 if ((this.CommandUIDefinitionField == null)) {
-                    this.CommandUIDefinitionField = new XTypedList<CommandUIDefinitionType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CommandUIDefinition", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CommandUIDefinitionField = new XTypedList<CommandUIDefinitionType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CommandUIDefinition", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CommandUIDefinitionField;
             }
@@ -41832,7 +41833,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CommandUIDefinitionField == null)) {
-                        this.CommandUIDefinitionField = XTypedList<CommandUIDefinitionType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CommandUIDefinition", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CommandUIDefinitionField = XTypedList<CommandUIDefinitionType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CommandUIDefinition", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CommandUIDefinitionType>(this.CommandUIDefinitionField, value);
@@ -41865,7 +41866,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41898,7 +41899,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CommandUIHandlersType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIHandlersType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CommandUIHandlersType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIHandlersType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CommandUIHandlersType() {
             BuildElementDictionary();
@@ -41924,7 +41925,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CommandUIHandlerType> CommandUIHandler {
             get {
                 if ((this.CommandUIHandlerField == null)) {
-                    this.CommandUIHandlerField = new XTypedList<CommandUIHandlerType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CommandUIHandler", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CommandUIHandlerField = new XTypedList<CommandUIHandlerType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CommandUIHandler", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CommandUIHandlerField;
             }
@@ -41934,7 +41935,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CommandUIHandlerField == null)) {
-                        this.CommandUIHandlerField = XTypedList<CommandUIHandlerType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CommandUIHandler", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CommandUIHandlerField = XTypedList<CommandUIHandlerType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CommandUIHandler", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CommandUIHandlerType>(this.CommandUIHandlerField, value);
@@ -41967,7 +41968,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -41986,7 +41987,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class CommandUIHandlerType : XTypedElement, IXMetaData {
         
-         public static explicit operator CommandUIHandlerType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIHandlerType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CommandUIHandlerType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIHandlerType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CommandUIHandlerType() {
         }
@@ -42059,7 +42060,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -42085,7 +42086,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CommandUIDefinitionType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIDefinitionType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CommandUIDefinitionType(XElement xe) { return XTypedServices.ToXTypedElement<CommandUIDefinitionType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CommandUIDefinitionType() {
             BuildElementDictionary();
@@ -42802,7 +42803,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -42858,7 +42859,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator CustomActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomActionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CustomActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomActionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CustomActionDefinition() {
             BuildElementDictionary();
@@ -43280,7 +43281,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -43300,7 +43301,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class HideCustomActionDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator HideCustomActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HideCustomActionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator HideCustomActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<HideCustomActionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public HideCustomActionDefinition() {
         }
@@ -43382,7 +43383,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -43397,7 +43398,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class UrlActionDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator UrlActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UrlActionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UrlActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UrlActionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public UrlActionDefinition() {
         }
@@ -43437,7 +43438,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -43476,7 +43477,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CustomActionGroupDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomActionGroupDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CustomActionGroupDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomActionGroupDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CustomActionGroupDefinition() {
             BuildElementDictionary();
@@ -43641,7 +43642,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -43674,7 +43675,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CustomActionDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<CustomActionDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CustomActionDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<CustomActionDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CustomActionDefinitions() {
             BuildElementDictionary();
@@ -43700,7 +43701,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CustomActionDefinition> CustomAction {
             get {
                 if ((this.CustomActionField == null)) {
-                    this.CustomActionField = new XTypedList<CustomActionDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CustomActionField = new XTypedList<CustomActionDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CustomActionField;
             }
@@ -43710,7 +43711,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CustomActionField == null)) {
-                        this.CustomActionField = XTypedList<CustomActionDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CustomActionField = XTypedList<CustomActionDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomAction", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CustomActionDefinition>(this.CustomActionField, value);
@@ -43743,7 +43744,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -43762,7 +43763,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FeatureActivationDependencyDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FeatureActivationDependencyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeatureActivationDependencyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureActivationDependencyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeatureActivationDependencyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FeatureActivationDependencyDefinition() {
         }
@@ -43907,7 +43908,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -43936,7 +43937,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FeatureActivationDependencyDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FeatureActivationDependencyDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureActivationDependencyDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FeatureActivationDependencyDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FeatureActivationDependencyDefinitions() {
             BuildElementDictionary();
@@ -43962,7 +43963,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FeatureActivationDependencyDefinition> ActivationDependency {
             get {
                 if ((this.ActivationDependencyField == null)) {
-                    this.ActivationDependencyField = new XTypedList<FeatureActivationDependencyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ActivationDependencyField = new XTypedList<FeatureActivationDependencyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ActivationDependencyField;
             }
@@ -43972,7 +43973,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ActivationDependencyField == null)) {
-                        this.ActivationDependencyField = XTypedList<FeatureActivationDependencyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ActivationDependencyField = XTypedList<FeatureActivationDependencyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ActivationDependency", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FeatureActivationDependencyDefinition>(this.ActivationDependencyField, value);
@@ -44005,7 +44006,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -44044,7 +44045,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator SharedFieldReference(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SharedFieldReference(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SharedFieldReference() {
             BuildElementDictionary();
@@ -44082,7 +44083,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -44122,7 +44123,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FeatureTemplateReference(XElement xe) { return XTypedServices.ToXTypedElement<FeatureTemplateReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureTemplateReference(XElement xe) { return XTypedServices.ToXTypedElement<FeatureTemplateReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FeatureTemplateReference() {
             BuildElementDictionary();
@@ -44227,7 +44228,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -44260,7 +44261,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FeatureTemplateReferences(XElement xe) { return XTypedServices.ToXTypedElement<FeatureTemplateReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureTemplateReferences(XElement xe) { return XTypedServices.ToXTypedElement<FeatureTemplateReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FeatureTemplateReferences() {
             BuildElementDictionary();
@@ -44286,7 +44287,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FeatureTemplateReference> Feature {
             get {
                 if ((this.FeatureField == null)) {
-                    this.FeatureField = new XTypedList<FeatureTemplateReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Feature", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FeatureField = new XTypedList<FeatureTemplateReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Feature", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FeatureField;
             }
@@ -44296,7 +44297,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FeatureField == null)) {
-                        this.FeatureField = XTypedList<FeatureTemplateReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Feature", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FeatureField = XTypedList<FeatureTemplateReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Feature", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FeatureTemplateReference>(this.FeatureField, value);
@@ -44329,7 +44330,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -44368,7 +44369,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator VersionRangeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<VersionRangeDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator VersionRangeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<VersionRangeDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static VersionRangeDefinition() {
             BuildElementDictionary();
@@ -44396,7 +44397,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CustomUpgradeActionDefinition> CustomUpgradeAction {
             get {
                 if ((this.CustomUpgradeActionField == null)) {
-                    this.CustomUpgradeActionField = new XTypedList<CustomUpgradeActionDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CustomUpgradeActionField = new XTypedList<CustomUpgradeActionDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CustomUpgradeActionField;
             }
@@ -44406,7 +44407,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CustomUpgradeActionField == null)) {
-                        this.CustomUpgradeActionField = XTypedList<CustomUpgradeActionDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CustomUpgradeActionField = XTypedList<CustomUpgradeActionDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CustomUpgradeActionDefinition>(this.CustomUpgradeActionField, value);
@@ -44429,7 +44430,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ElementManifestReferences> ApplyElementManifests {
             get {
                 if ((this.ApplyElementManifestsField == null)) {
-                    this.ApplyElementManifestsField = new XTypedList<ElementManifestReferences>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ApplyElementManifestsField = new XTypedList<ElementManifestReferences>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ApplyElementManifestsField;
             }
@@ -44439,7 +44440,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ApplyElementManifestsField == null)) {
-                        this.ApplyElementManifestsField = XTypedList<ElementManifestReferences>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ApplyElementManifestsField = XTypedList<ElementManifestReferences>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ElementManifestReferences>(this.ApplyElementManifestsField, value);
@@ -44462,7 +44463,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<AddContentTypeFieldDefinition> AddContentTypeField {
             get {
                 if ((this.AddContentTypeFieldField == null)) {
-                    this.AddContentTypeFieldField = new XTypedList<AddContentTypeFieldDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
+                    this.AddContentTypeFieldField = new XTypedList<AddContentTypeFieldDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.AddContentTypeFieldField;
             }
@@ -44472,7 +44473,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.AddContentTypeFieldField == null)) {
-                        this.AddContentTypeFieldField = XTypedList<AddContentTypeFieldDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
+                        this.AddContentTypeFieldField = XTypedList<AddContentTypeFieldDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<AddContentTypeFieldDefinition>(this.AddContentTypeFieldField, value);
@@ -44495,7 +44496,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MapFileDefinition> MapFile {
             get {
                 if ((this.MapFileField == null)) {
-                    this.MapFileField = new XTypedList<MapFileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MapFileField = new XTypedList<MapFileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MapFileField;
             }
@@ -44505,7 +44506,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MapFileField == null)) {
-                        this.MapFileField = XTypedList<MapFileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MapFileField = XTypedList<MapFileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MapFileDefinition>(this.MapFileField, value);
@@ -44568,7 +44569,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -44613,7 +44614,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator UpgradeActionsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UpgradeActionsDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UpgradeActionsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UpgradeActionsDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static UpgradeActionsDefinition() {
             BuildElementDictionary();
@@ -44638,7 +44639,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<VersionRangeDefinition> VersionRange {
             get {
                 if ((this.VersionRangeField == null)) {
-                    this.VersionRangeField = new XTypedList<VersionRangeDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("VersionRange", "http://schemas.microsoft.com/sharepoint/"));
+                    this.VersionRangeField = new XTypedList<VersionRangeDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("VersionRange", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.VersionRangeField;
             }
@@ -44648,7 +44649,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.VersionRangeField == null)) {
-                        this.VersionRangeField = XTypedList<VersionRangeDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("VersionRange", "http://schemas.microsoft.com/sharepoint/"));
+                        this.VersionRangeField = XTypedList<VersionRangeDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("VersionRange", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<VersionRangeDefinition>(this.VersionRangeField, value);
@@ -44668,7 +44669,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CustomUpgradeActionDefinition> CustomUpgradeAction {
             get {
                 if ((this.CustomUpgradeActionField == null)) {
-                    this.CustomUpgradeActionField = new XTypedList<CustomUpgradeActionDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
+                    this.CustomUpgradeActionField = new XTypedList<CustomUpgradeActionDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.CustomUpgradeActionField;
             }
@@ -44678,7 +44679,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.CustomUpgradeActionField == null)) {
-                        this.CustomUpgradeActionField = XTypedList<CustomUpgradeActionDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
+                        this.CustomUpgradeActionField = XTypedList<CustomUpgradeActionDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("CustomUpgradeAction", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CustomUpgradeActionDefinition>(this.CustomUpgradeActionField, value);
@@ -44698,7 +44699,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ElementManifestReferences> ApplyElementManifests {
             get {
                 if ((this.ApplyElementManifestsField == null)) {
-                    this.ApplyElementManifestsField = new XTypedList<ElementManifestReferences>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ApplyElementManifestsField = new XTypedList<ElementManifestReferences>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ApplyElementManifestsField;
             }
@@ -44708,7 +44709,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ApplyElementManifestsField == null)) {
-                        this.ApplyElementManifestsField = XTypedList<ElementManifestReferences>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ApplyElementManifestsField = XTypedList<ElementManifestReferences>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ApplyElementManifests", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ElementManifestReferences>(this.ApplyElementManifestsField, value);
@@ -44728,7 +44729,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<AddContentTypeFieldDefinition> AddContentTypeField {
             get {
                 if ((this.AddContentTypeFieldField == null)) {
-                    this.AddContentTypeFieldField = new XTypedList<AddContentTypeFieldDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
+                    this.AddContentTypeFieldField = new XTypedList<AddContentTypeFieldDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.AddContentTypeFieldField;
             }
@@ -44738,7 +44739,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.AddContentTypeFieldField == null)) {
-                        this.AddContentTypeFieldField = XTypedList<AddContentTypeFieldDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
+                        this.AddContentTypeFieldField = XTypedList<AddContentTypeFieldDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("AddContentTypeField", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<AddContentTypeFieldDefinition>(this.AddContentTypeFieldField, value);
@@ -44758,7 +44759,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<MapFileDefinition> MapFile {
             get {
                 if ((this.MapFileField == null)) {
-                    this.MapFileField = new XTypedList<MapFileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.MapFileField = new XTypedList<MapFileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.MapFileField;
             }
@@ -44768,7 +44769,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.MapFileField == null)) {
-                        this.MapFileField = XTypedList<MapFileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.MapFileField = XTypedList<MapFileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("MapFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<MapFileDefinition>(this.MapFileField, value);
@@ -44831,7 +44832,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -44865,7 +44866,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CustomUpgradeActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomUpgradeActionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CustomUpgradeActionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomUpgradeActionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CustomUpgradeActionDefinition() {
             BuildElementDictionary();
@@ -44937,7 +44938,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -44970,7 +44971,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ParametersDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ParametersDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ParametersDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ParametersDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ParametersDefinition() {
             BuildElementDictionary();
@@ -44996,7 +44997,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ParameterDefinition> Parameter {
             get {
                 if ((this.ParameterField == null)) {
-                    this.ParameterField = new XTypedList<ParameterDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ParameterField = new XTypedList<ParameterDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ParameterField;
             }
@@ -45006,7 +45007,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ParameterField == null)) {
-                        this.ParameterField = XTypedList<ParameterDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ParameterField = XTypedList<ParameterDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Parameter", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ParameterDefinition>(this.ParameterField, value);
@@ -45039,7 +45040,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45058,7 +45059,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ParameterDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ParameterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ParameterDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ParameterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ParameterDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ParameterDefinition() {
         }
@@ -45098,7 +45099,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45113,7 +45114,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class AddContentTypeFieldDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator AddContentTypeFieldDefinition(XElement xe) { return XTypedServices.ToXTypedElement<AddContentTypeFieldDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator AddContentTypeFieldDefinition(XElement xe) { return XTypedServices.ToXTypedElement<AddContentTypeFieldDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public AddContentTypeFieldDefinition() {
         }
@@ -45180,7 +45181,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45195,7 +45196,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class MapFileDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator MapFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MapFileDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator MapFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<MapFileDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public MapFileDefinition() {
         }
@@ -45247,7 +45248,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45276,7 +45277,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FieldTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldTypeDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldTypeDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FieldTypeDefinition() {
             BuildElementDictionary();
@@ -45302,7 +45303,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<RenderPatternDefinition> RenderPattern {
             get {
                 if ((this.RenderPatternField == null)) {
-                    this.RenderPatternField = new XTypedList<RenderPatternDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RenderPattern", "http://schemas.microsoft.com/sharepoint/"));
+                    this.RenderPatternField = new XTypedList<RenderPatternDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RenderPattern", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.RenderPatternField;
             }
@@ -45312,7 +45313,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.RenderPatternField == null)) {
-                        this.RenderPatternField = XTypedList<RenderPatternDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RenderPattern", "http://schemas.microsoft.com/sharepoint/"));
+                        this.RenderPatternField = XTypedList<RenderPatternDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RenderPattern", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<RenderPatternDefinition>(this.RenderPatternField, value);
@@ -45375,7 +45376,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45435,7 +45436,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class RenderPatternDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator RenderPatternDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RenderPatternDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RenderPatternDefinition(XElement xe) { return XTypedServices.ToXTypedElement<RenderPatternDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public RenderPatternDefinition() {
         }
@@ -45547,7 +45548,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45562,7 +45563,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class SubFieldTypeDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator SubFieldTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SubFieldTypeDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SubFieldTypeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SubFieldTypeDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public SubFieldTypeDefinition() {
         }
@@ -45674,7 +45675,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45697,7 +45698,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator AssemblyFileReference(XElement xe) { return XTypedServices.ToXTypedElement<AssemblyFileReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator AssemblyFileReference(XElement xe) { return XTypedServices.ToXTypedElement<AssemblyFileReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static AssemblyFileReference() {
             BuildElementDictionary();
@@ -45822,7 +45823,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45857,7 +45858,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator AssemblyFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<AssemblyFileReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator AssemblyFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<AssemblyFileReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static AssemblyFileReferences() {
             BuildElementDictionary();
@@ -45883,7 +45884,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<AssemblyFileReference> Assembly {
             get {
                 if ((this.AssemblyField == null)) {
-                    this.AssemblyField = new XTypedList<AssemblyFileReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
+                    this.AssemblyField = new XTypedList<AssemblyFileReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.AssemblyField;
             }
@@ -45893,7 +45894,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.AssemblyField == null)) {
-                        this.AssemblyField = XTypedList<AssemblyFileReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
+                        this.AssemblyField = XTypedList<AssemblyFileReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<AssemblyFileReference>(this.AssemblyField, value);
@@ -45926,7 +45927,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -45945,7 +45946,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class RootFileReference : XTypedElement, IXMetaData {
         
-         public static explicit operator RootFileReference(XElement xe) { return XTypedServices.ToXTypedElement<RootFileReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RootFileReference(XElement xe) { return XTypedServices.ToXTypedElement<RootFileReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public RootFileReference() {
         }
@@ -45985,7 +45986,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46014,7 +46015,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator RootFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<RootFileReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator RootFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<RootFileReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static RootFileReferences() {
             BuildElementDictionary();
@@ -46040,7 +46041,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<RootFileReference> RootFile {
             get {
                 if ((this.RootFileField == null)) {
-                    this.RootFileField = new XTypedList<RootFileReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RootFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.RootFileField = new XTypedList<RootFileReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RootFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.RootFileField;
             }
@@ -46050,7 +46051,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.RootFileField == null)) {
-                        this.RootFileField = XTypedList<RootFileReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RootFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.RootFileField = XTypedList<RootFileReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RootFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<RootFileReference>(this.RootFileField, value);
@@ -46083,7 +46084,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46102,7 +46103,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class TemplateFileReference : XTypedElement, IXMetaData {
         
-         public static explicit operator TemplateFileReference(XElement xe) { return XTypedServices.ToXTypedElement<TemplateFileReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator TemplateFileReference(XElement xe) { return XTypedServices.ToXTypedElement<TemplateFileReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public TemplateFileReference() {
         }
@@ -46142,7 +46143,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46171,7 +46172,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator TemplateFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<TemplateFileReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator TemplateFileReferences(XElement xe) { return XTypedServices.ToXTypedElement<TemplateFileReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static TemplateFileReferences() {
             BuildElementDictionary();
@@ -46197,7 +46198,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<TemplateFileReference> TemplateFile {
             get {
                 if ((this.TemplateFileField == null)) {
-                    this.TemplateFileField = new XTypedList<TemplateFileReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("TemplateFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.TemplateFileField = new XTypedList<TemplateFileReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("TemplateFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.TemplateFileField;
             }
@@ -46207,7 +46208,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.TemplateFileField == null)) {
-                        this.TemplateFileField = XTypedList<TemplateFileReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("TemplateFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.TemplateFileField = XTypedList<TemplateFileReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("TemplateFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<TemplateFileReference>(this.TemplateFileField, value);
@@ -46240,7 +46241,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46273,7 +46274,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CodeAccessSecurityDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CodeAccessSecurityDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CodeAccessSecurityDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CodeAccessSecurityDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CodeAccessSecurityDefinition() {
             BuildElementDictionary();
@@ -46299,7 +46300,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<PolicyItemDefinition> PolicyItem {
             get {
                 if ((this.PolicyItemField == null)) {
-                    this.PolicyItemField = new XTypedList<PolicyItemDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("PolicyItem", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PolicyItemField = new XTypedList<PolicyItemDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("PolicyItem", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PolicyItemField;
             }
@@ -46309,7 +46310,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PolicyItemField == null)) {
-                        this.PolicyItemField = XTypedList<PolicyItemDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("PolicyItem", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PolicyItemField = XTypedList<PolicyItemDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("PolicyItem", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<PolicyItemDefinition>(this.PolicyItemField, value);
@@ -46342,7 +46343,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46369,7 +46370,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator PolicyItemDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PolicyItemDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator PolicyItemDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PolicyItemDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static PolicyItemDefinition() {
             BuildElementDictionary();
@@ -46449,7 +46450,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46483,7 +46484,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator PermissionSetDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PermissionSetDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator PermissionSetDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PermissionSetDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static PermissionSetDefinition() {
             BuildElementDictionary();
@@ -46509,7 +46510,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<XTypedElement> IPermission {
             get {
                 if ((this.IPermissionField == null)) {
-                    this.IPermissionField = new XTypedList<XTypedElement>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IPermission", "http://schemas.microsoft.com/sharepoint/"));
+                    this.IPermissionField = new XTypedList<XTypedElement>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("IPermission", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.IPermissionField;
             }
@@ -46519,7 +46520,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.IPermissionField == null)) {
-                        this.IPermissionField = XTypedList<XTypedElement>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IPermission", "http://schemas.microsoft.com/sharepoint/"));
+                        this.IPermissionField = XTypedList<XTypedElement>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("IPermission", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<XTypedElement>(this.IPermissionField, value);
@@ -46618,7 +46619,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46661,7 +46662,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator PolicyAssembliesDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PolicyAssembliesDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator PolicyAssembliesDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PolicyAssembliesDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static PolicyAssembliesDefinition() {
             BuildElementDictionary();
@@ -46687,7 +46688,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<PolicyAssemblyDefinition> Assembly {
             get {
                 if ((this.AssemblyField == null)) {
-                    this.AssemblyField = new XTypedList<PolicyAssemblyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
+                    this.AssemblyField = new XTypedList<PolicyAssemblyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.AssemblyField;
             }
@@ -46697,7 +46698,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.AssemblyField == null)) {
-                        this.AssemblyField = XTypedList<PolicyAssemblyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
+                        this.AssemblyField = XTypedList<PolicyAssemblyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Assembly", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<PolicyAssemblyDefinition>(this.AssemblyField, value);
@@ -46730,7 +46731,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46749,7 +46750,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class PolicyAssemblyDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator PolicyAssemblyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PolicyAssemblyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator PolicyAssemblyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PolicyAssemblyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public PolicyAssemblyDefinition() {
         }
@@ -46816,7 +46817,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -46839,7 +46840,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ItemEventDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ItemEventDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ItemEventDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ItemEventDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ItemEventDefinition() {
             BuildElementDictionary();
@@ -46970,7 +46971,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -47003,7 +47004,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class EventDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator EventDefinition(XElement xe) { return XTypedServices.ToXTypedElement<EventDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator EventDefinition(XElement xe) { return XTypedServices.ToXTypedElement<EventDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public EventDefinition() {
         }
@@ -47088,7 +47089,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -47135,7 +47136,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ContentTypeFilterDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ContentTypeFilterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeFilterDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeFilterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeFilterDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ContentTypeFilterDefinition() {
         }
@@ -47172,7 +47173,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -47187,7 +47188,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FieldChangedFilterDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FieldChangedFilterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldChangedFilterDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldChangedFilterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldChangedFilterDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FieldChangedFilterDefinition() {
         }
@@ -47224,7 +47225,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -47239,7 +47240,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FieldExpressionFilterDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FieldExpressionFilterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldExpressionFilterDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FieldExpressionFilterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FieldExpressionFilterDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FieldExpressionFilterDefinition() {
         }
@@ -47306,7 +47307,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -47346,7 +47347,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class CTFieldRefDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator CTFieldRefDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CTFieldRefDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CTFieldRefDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CTFieldRefDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CTFieldRefDefinition() {
         }
@@ -47806,7 +47807,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -47838,7 +47839,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator CTFieldRefDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<CTFieldRefDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CTFieldRefDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<CTFieldRefDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CTFieldRefDefinitions() {
             BuildElementDictionary();
@@ -47866,7 +47867,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CTFieldRefDefinition> FieldRef {
             get {
                 if ((this.FieldRefField == null)) {
-                    this.FieldRefField = new XTypedList<CTFieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldRefField = new XTypedList<CTFieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldRefField;
             }
@@ -47876,7 +47877,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldRefField == null)) {
-                        this.FieldRefField = XTypedList<CTFieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldRefField = XTypedList<CTFieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CTFieldRefDefinition>(this.FieldRefField, value);
@@ -47899,7 +47900,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<CTFieldRefDefinition> RemoveFieldRef {
             get {
                 if ((this.RemoveFieldRefField == null)) {
-                    this.RemoveFieldRefField = new XTypedList<CTFieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RemoveFieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.RemoveFieldRefField = new XTypedList<CTFieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("RemoveFieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.RemoveFieldRefField;
             }
@@ -47909,7 +47910,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.RemoveFieldRefField == null)) {
-                        this.RemoveFieldRefField = XTypedList<CTFieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RemoveFieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.RemoveFieldRefField = XTypedList<CTFieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("RemoveFieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<CTFieldRefDefinition>(this.RemoveFieldRefField, value);
@@ -47975,7 +47976,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -48019,7 +48020,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListDefinition() {
             BuildElementDictionary();
@@ -48547,7 +48548,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -48566,7 +48567,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ContentTypeLink : XTypedElement, IXMetaData {
         
-         public static explicit operator ContentTypeLink(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeLink>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeLink(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeLink>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ContentTypeLink() {
         }
@@ -48606,7 +48607,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -48635,7 +48636,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ContentTypeLinks(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeLinks>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeLinks(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeLinks>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ContentTypeLinks() {
             BuildElementDictionary();
@@ -48661,7 +48662,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ContentTypeLink> ContentTypeLink {
             get {
                 if ((this.ContentTypeLinkField == null)) {
-                    this.ContentTypeLinkField = new XTypedList<ContentTypeLink>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypeLink", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContentTypeLinkField = new XTypedList<ContentTypeLink>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypeLink", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContentTypeLinkField;
             }
@@ -48671,7 +48672,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContentTypeLinkField == null)) {
-                        this.ContentTypeLinkField = XTypedList<ContentTypeLink>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypeLink", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContentTypeLinkField = XTypedList<ContentTypeLink>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypeLink", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ContentTypeLink>(this.ContentTypeLinkField, value);
@@ -48704,7 +48705,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -48748,7 +48749,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FeaturePropertyDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FeaturePropertyDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeaturePropertyDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<FeaturePropertyDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FeaturePropertyDefinitions() {
             BuildElementDictionary();
@@ -48774,7 +48775,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FeaturePropertyDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<FeaturePropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<FeaturePropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -48784,7 +48785,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<FeaturePropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<FeaturePropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FeaturePropertyDefinition>(this.PropertyField, value);
@@ -48817,7 +48818,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -48836,7 +48837,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FeaturePropertyDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FeaturePropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeaturePropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeaturePropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeaturePropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FeaturePropertyDefinition() {
         }
@@ -48888,7 +48889,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -48911,7 +48912,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ListMetaDataDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListMetaDataDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListMetaDataDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListMetaDataDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListMetaDataDefinition() {
             BuildElementDictionary();
@@ -49093,7 +49094,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -49133,7 +49134,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator SafeControlDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<SafeControlDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SafeControlDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<SafeControlDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SafeControlDefinitions() {
             BuildElementDictionary();
@@ -49159,7 +49160,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SafeControlDefinition> SafeControl {
             get {
                 if ((this.SafeControlField == null)) {
-                    this.SafeControlField = new XTypedList<SafeControlDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SafeControl", "http://schemas.microsoft.com/sharepoint/"));
+                    this.SafeControlField = new XTypedList<SafeControlDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("SafeControl", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.SafeControlField;
             }
@@ -49169,7 +49170,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.SafeControlField == null)) {
-                        this.SafeControlField = XTypedList<SafeControlDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SafeControl", "http://schemas.microsoft.com/sharepoint/"));
+                        this.SafeControlField = XTypedList<SafeControlDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("SafeControl", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SafeControlDefinition>(this.SafeControlField, value);
@@ -49202,7 +49203,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -49221,7 +49222,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class SafeControlDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator SafeControlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SafeControlDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SafeControlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SafeControlDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public SafeControlDefinition() {
         }
@@ -49318,7 +49319,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -49347,7 +49348,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator XmlDocumentDefinitionCollection(XElement xe) { return XTypedServices.ToXTypedElement<XmlDocumentDefinitionCollection>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator XmlDocumentDefinitionCollection(XElement xe) { return XTypedServices.ToXTypedElement<XmlDocumentDefinitionCollection>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static XmlDocumentDefinitionCollection() {
             BuildElementDictionary();
@@ -49373,7 +49374,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<XmlDocumentDefinition> XmlDocument {
             get {
                 if ((this.XmlDocumentField == null)) {
-                    this.XmlDocumentField = new XTypedList<XmlDocumentDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("XmlDocument", "http://schemas.microsoft.com/sharepoint/"));
+                    this.XmlDocumentField = new XTypedList<XmlDocumentDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("XmlDocument", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.XmlDocumentField;
             }
@@ -49383,7 +49384,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.XmlDocumentField == null)) {
-                        this.XmlDocumentField = XTypedList<XmlDocumentDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("XmlDocument", "http://schemas.microsoft.com/sharepoint/"));
+                        this.XmlDocumentField = XTypedList<XmlDocumentDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("XmlDocument", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<XmlDocumentDefinition>(this.XmlDocumentField, value);
@@ -49416,7 +49417,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -49443,7 +49444,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator XmlDocumentDefinition(XElement xe) { return XTypedServices.ToXTypedElement<XmlDocumentDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator XmlDocumentDefinition(XElement xe) { return XTypedServices.ToXTypedElement<XmlDocumentDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static XmlDocumentDefinition() {
             InitFSM();
@@ -49503,7 +49504,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -49538,7 +49539,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator DelegateControlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DelegateControlDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DelegateControlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DelegateControlDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static DelegateControlDefinition() {
             BuildElementDictionary();
@@ -49564,7 +49565,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<SimplePropertyDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<SimplePropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<SimplePropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -49574,7 +49575,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<SimplePropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<SimplePropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<SimplePropertyDefinition>(this.PropertyField, value);
@@ -49685,7 +49686,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -49718,7 +49719,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ReceiverDefinitionCollection(XElement xe) { return XTypedServices.ToXTypedElement<ReceiverDefinitionCollection>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ReceiverDefinitionCollection(XElement xe) { return XTypedServices.ToXTypedElement<ReceiverDefinitionCollection>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ReceiverDefinitionCollection() {
             BuildElementDictionary();
@@ -49744,7 +49745,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ReceiverDefinition> Receiver {
             get {
                 if ((this.ReceiverField == null)) {
-                    this.ReceiverField = new XTypedList<ReceiverDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Receiver", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ReceiverField = new XTypedList<ReceiverDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Receiver", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ReceiverField;
             }
@@ -49754,7 +49755,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ReceiverField == null)) {
-                        this.ReceiverField = XTypedList<ReceiverDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Receiver", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ReceiverField = XTypedList<ReceiverDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Receiver", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ReceiverDefinition>(this.ReceiverField, value);
@@ -49865,7 +49866,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -49892,7 +49893,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ReceiverDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ReceiverDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ReceiverDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ReceiverDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ReceiverDefinition() {
             BuildElementDictionary();
@@ -50128,7 +50129,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50157,7 +50158,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class UserMigratorDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator UserMigratorDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UserMigratorDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator UserMigratorDefinition(XElement xe) { return XTypedServices.ToXTypedElement<UserMigratorDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public UserMigratorDefinition() {
         }
@@ -50209,7 +50210,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50224,7 +50225,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class GroupMigratorDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator GroupMigratorDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GroupMigratorDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator GroupMigratorDefinition(XElement xe) { return XTypedServices.ToXTypedElement<GroupMigratorDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public GroupMigratorDefinition() {
         }
@@ -50276,7 +50277,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50291,7 +50292,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class SimplePropertyDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator SimplePropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SimplePropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SimplePropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SimplePropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public SimplePropertyDefinition() {
         }
@@ -50338,7 +50339,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50353,7 +50354,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class WebPartAdderExtensionDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator WebPartAdderExtensionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartAdderExtensionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WebPartAdderExtensionDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebPartAdderExtensionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public WebPartAdderExtensionDefinition() {
         }
@@ -50411,7 +50412,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50438,7 +50439,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class PropertyValueAttributeDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator PropertyValueAttributeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PropertyValueAttributeDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator PropertyValueAttributeDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PropertyValueAttributeDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public PropertyValueAttributeDefinition() {
         }
@@ -50515,7 +50516,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50530,7 +50531,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ContentTypeDocumentTemplateDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ContentTypeDocumentTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeDocumentTemplateDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeDocumentTemplateDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeDocumentTemplateDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ContentTypeDocumentTemplateDefinition() {
         }
@@ -50577,7 +50578,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50603,7 +50604,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ListInstanceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListInstanceDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ListInstanceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ListInstanceDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ListInstanceDefinition() {
             BuildElementDictionary();
@@ -50902,7 +50903,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -50954,7 +50955,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator WorkflowMetadata(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowMetadata>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WorkflowMetadata(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowMetadata>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static WorkflowMetadata() {
             InitFSM();
@@ -50996,7 +50997,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51025,7 +51026,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator WorkflowDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WorkflowDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static WorkflowDefinition() {
             BuildElementDictionary();
@@ -51312,7 +51313,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51333,7 +51334,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class WebTempFileDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator WebTempFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebTempFileDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WebTempFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WebTempFileDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public WebTempFileDefinition() {
         }
@@ -51373,7 +51374,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51402,7 +51403,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ApplicationResourceFileDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ApplicationResourceFileDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ApplicationResourceFileDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ApplicationResourceFileDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ApplicationResourceFileDefinitions() {
             BuildElementDictionary();
@@ -51430,7 +51431,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ApplicationResourceFileDefinition> ApplicationResourceFile {
             get {
                 if ((this.ApplicationResourceFileField == null)) {
-                    this.ApplicationResourceFileField = new XTypedList<ApplicationResourceFileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ApplicationResourceFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ApplicationResourceFileField = new XTypedList<ApplicationResourceFileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ApplicationResourceFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ApplicationResourceFileField;
             }
@@ -51440,7 +51441,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ApplicationResourceFileField == null)) {
-                        this.ApplicationResourceFileField = XTypedList<ApplicationResourceFileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ApplicationResourceFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ApplicationResourceFileField = XTypedList<ApplicationResourceFileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ApplicationResourceFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ApplicationResourceFileDefinition>(this.ApplicationResourceFileField, value);
@@ -51463,7 +51464,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<App_GlobalResourceFileDefinition> App_GlobalResourceFile {
             get {
                 if ((this.App_GlobalResourceFileField == null)) {
-                    this.App_GlobalResourceFileField = new XTypedList<App_GlobalResourceFileDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("App_GlobalResourceFile", "http://schemas.microsoft.com/sharepoint/"));
+                    this.App_GlobalResourceFileField = new XTypedList<App_GlobalResourceFileDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("App_GlobalResourceFile", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.App_GlobalResourceFileField;
             }
@@ -51473,7 +51474,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.App_GlobalResourceFileField == null)) {
-                        this.App_GlobalResourceFileField = XTypedList<App_GlobalResourceFileDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("App_GlobalResourceFile", "http://schemas.microsoft.com/sharepoint/"));
+                        this.App_GlobalResourceFileField = XTypedList<App_GlobalResourceFileDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("App_GlobalResourceFile", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<App_GlobalResourceFileDefinition>(this.App_GlobalResourceFileField, value);
@@ -51506,7 +51507,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51526,7 +51527,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ApplicationResourceFileDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ApplicationResourceFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ApplicationResourceFileDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ApplicationResourceFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ApplicationResourceFileDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ApplicationResourceFileDefinition() {
         }
@@ -51566,7 +51567,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51581,7 +51582,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class App_GlobalResourceFileDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator App_GlobalResourceFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<App_GlobalResourceFileDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator App_GlobalResourceFileDefinition(XElement xe) { return XTypedServices.ToXTypedElement<App_GlobalResourceFileDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public App_GlobalResourceFileDefinition() {
         }
@@ -51621,7 +51622,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51636,7 +51637,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ResourceDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ResourceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ResourceDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ResourceDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ResourceDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ResourceDefinition() {
         }
@@ -51676,7 +51677,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51705,7 +51706,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ResourceDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ResourceDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ResourceDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ResourceDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ResourceDefinitions() {
             BuildElementDictionary();
@@ -51731,7 +51732,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ResourceDefinition> Resource {
             get {
                 if ((this.ResourceField == null)) {
-                    this.ResourceField = new XTypedList<ResourceDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Resource", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ResourceField = new XTypedList<ResourceDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Resource", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ResourceField;
             }
@@ -51741,7 +51742,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ResourceField == null)) {
-                        this.ResourceField = XTypedList<ResourceDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Resource", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ResourceField = XTypedList<ResourceDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Resource", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ResourceDefinition>(this.ResourceField, value);
@@ -51774,7 +51775,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51793,7 +51794,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class DocumentConverterDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator DocumentConverterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DocumentConverterDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator DocumentConverterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<DocumentConverterDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public DocumentConverterDefinition() {
         }
@@ -51935,7 +51936,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -51964,7 +51965,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator FeatureSiteTemplateAssociationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeatureSiteTemplateAssociationDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FeatureSiteTemplateAssociationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FeatureSiteTemplateAssociationDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static FeatureSiteTemplateAssociationDefinition() {
             BuildElementDictionary();
@@ -51990,7 +51991,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<FeaturePropertyDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<FeaturePropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<FeaturePropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -52000,7 +52001,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<FeaturePropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<FeaturePropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<FeaturePropertyDefinition>(this.PropertyField, value);
@@ -52063,7 +52064,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52082,7 +52083,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ContentTypeBindingDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ContentTypeBindingDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeBindingDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeBindingDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeBindingDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ContentTypeBindingDefinition() {
         }
@@ -52149,7 +52150,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52173,7 +52174,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ServerEmailFooterDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ServerEmailFooterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ServerEmailFooterDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ServerEmailFooterDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ServerEmailFooterDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ServerEmailFooterDefinition() {
         }
@@ -52220,7 +52221,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52249,7 +52250,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ContentTypeReferences(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeReferences>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeReferences(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeReferences>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ContentTypeReferences() {
             BuildElementDictionary();
@@ -52277,7 +52278,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ContentTypeReference> ContentTypeRef {
             get {
                 if ((this.ContentTypeRefField == null)) {
-                    this.ContentTypeRefField = new XTypedList<ContentTypeReference>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypeRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContentTypeRefField = new XTypedList<ContentTypeReference>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentTypeRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContentTypeRefField;
             }
@@ -52287,7 +52288,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContentTypeRefField == null)) {
-                        this.ContentTypeRefField = XTypedList<ContentTypeReference>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypeRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContentTypeRefField = XTypedList<ContentTypeReference>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentTypeRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ContentTypeReference>(this.ContentTypeRefField, value);
@@ -52310,7 +52311,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ContentTypeDefinition> ContentType {
             get {
                 if ((this.ContentTypeField == null)) {
-                    this.ContentTypeField = new XTypedList<ContentTypeDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ContentTypeField = new XTypedList<ContentTypeDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ContentTypeField;
             }
@@ -52320,7 +52321,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ContentTypeField == null)) {
-                        this.ContentTypeField = XTypedList<ContentTypeDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ContentTypeField = XTypedList<ContentTypeDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ContentType", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ContentTypeDefinition>(this.ContentTypeField, value);
@@ -52353,7 +52354,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52384,7 +52385,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ContentTypeReference(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ContentTypeReference(XElement xe) { return XTypedServices.ToXTypedElement<ContentTypeReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ContentTypeReference() {
             BuildElementDictionary();
@@ -52456,7 +52457,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52475,7 +52476,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FolderReference : XTypedElement, IXMetaData {
         
-         public static explicit operator FolderReference(XElement xe) { return XTypedServices.ToXTypedElement<FolderReference>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FolderReference(XElement xe) { return XTypedServices.ToXTypedElement<FolderReference>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FolderReference() {
         }
@@ -52512,7 +52513,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52535,7 +52536,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator SharedFieldDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator SharedFieldDefinition(XElement xe) { return XTypedServices.ToXTypedElement<SharedFieldDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static SharedFieldDefinition() {
             BuildElementDictionary();
@@ -52684,7 +52685,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52713,7 +52714,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ExecuteUrlDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ExecuteUrlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExecuteUrlDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ExecuteUrlDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExecuteUrlDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ExecuteUrlDefinition() {
         }
@@ -52750,7 +52751,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52765,7 +52766,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class FileDialogPostProcessorDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator FileDialogPostProcessorDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FileDialogPostProcessorDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator FileDialogPostProcessorDefinition(XElement xe) { return XTypedServices.ToXTypedElement<FileDialogPostProcessorDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public FileDialogPostProcessorDefinition() {
         }
@@ -52802,7 +52803,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52817,7 +52818,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ExternalSecurityProviderDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ExternalSecurityProviderDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExternalSecurityProviderDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ExternalSecurityProviderDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ExternalSecurityProviderDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ExternalSecurityProviderDefinition() {
         }
@@ -52869,7 +52870,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52892,7 +52893,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         static Dictionary<XName, System.Type> localElementDictionary = new Dictionary<XName, System.Type>();
         
-         public static explicit operator ComponentsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ComponentsDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ComponentsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ComponentsDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ComponentsDefinition() {
             BuildElementDictionary();
@@ -52966,7 +52967,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -52986,7 +52987,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class CTFolderDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator CTFolderDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CTFolderDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CTFolderDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CTFolderDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CTFolderDefinition() {
         }
@@ -53023,7 +53024,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -53038,7 +53039,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ViewDataFieldRefDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ViewDataFieldRefDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ViewDataFieldRefDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ViewDataFieldRefDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ViewDataFieldRefDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ViewDataFieldRefDefinition() {
         }
@@ -53100,7 +53101,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -53129,7 +53130,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ViewDataFieldRefDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ViewDataFieldRefDefinitions>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ViewDataFieldRefDefinitions(XElement xe) { return XTypedServices.ToXTypedElement<ViewDataFieldRefDefinitions>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ViewDataFieldRefDefinitions() {
             BuildElementDictionary();
@@ -53155,7 +53156,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ViewDataFieldRefDefinition> FieldRef {
             get {
                 if ((this.FieldRefField == null)) {
-                    this.FieldRefField = new XTypedList<ViewDataFieldRefDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                    this.FieldRefField = new XTypedList<ViewDataFieldRefDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.FieldRefField;
             }
@@ -53165,7 +53166,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.FieldRefField == null)) {
-                        this.FieldRefField = XTypedList<ViewDataFieldRefDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
+                        this.FieldRefField = XTypedList<ViewDataFieldRefDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("FieldRef", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ViewDataFieldRefDefinition>(this.FieldRefField, value);
@@ -53198,7 +53199,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -53217,7 +53218,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class ValidationDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator ValidationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ValidationDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ValidationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ValidationDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public ValidationDefinition() {
         }
@@ -53279,7 +53280,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -53294,7 +53295,7 @@ namespace Microsoft.Schemas.SharePoint {
     
     public partial class WorkflowAssociationDefinition : XTypedElement, IXMetaData {
         
-         public static explicit operator WorkflowAssociationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowAssociationDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WorkflowAssociationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowAssociationDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public WorkflowAssociationDefinition() {
         }
@@ -53619,7 +53620,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -53648,7 +53649,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator PropertyBagDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PropertyBagDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator PropertyBagDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PropertyBagDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static PropertyBagDefinition() {
             BuildElementDictionary();
@@ -53674,7 +53675,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<PropertyValueAttributeDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<PropertyValueAttributeDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<PropertyValueAttributeDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -53684,7 +53685,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<PropertyValueAttributeDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<PropertyValueAttributeDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<PropertyValueAttributeDefinition>(this.PropertyField, value);
@@ -53795,7 +53796,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -53841,7 +53842,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator WorkflowActionsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowActionsDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator WorkflowActionsDefinition(XElement xe) { return XTypedServices.ToXTypedElement<WorkflowActionsDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static WorkflowActionsDefinition() {
             BuildElementDictionary();
@@ -53867,7 +53868,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<actionType> Action {
             get {
                 if ((this.ActionField == null)) {
-                    this.ActionField = new XTypedList<actionType>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Action", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ActionField = new XTypedList<actionType>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Action", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ActionField;
             }
@@ -53877,7 +53878,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ActionField == null)) {
-                        this.ActionField = XTypedList<actionType>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Action", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ActionField = XTypedList<actionType>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Action", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<actionType>(this.ActionField, value);
@@ -53910,7 +53911,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -53952,7 +53953,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator CustomizationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomizationDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CustomizationDefinition(XElement xe) { return XTypedServices.ToXTypedElement<CustomizationDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static CustomizationDefinition() {
             BuildElementDictionary();
@@ -53978,7 +53979,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<ArrayOfPropertyDefinition> ArrayOfProperty {
             get {
                 if ((this.ArrayOfPropertyField == null)) {
-                    this.ArrayOfPropertyField = new XTypedList<ArrayOfPropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ArrayOfProperty", "http://schemas.microsoft.com/sharepoint/"));
+                    this.ArrayOfPropertyField = new XTypedList<ArrayOfPropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("ArrayOfProperty", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.ArrayOfPropertyField;
             }
@@ -53988,7 +53989,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.ArrayOfPropertyField == null)) {
-                        this.ArrayOfPropertyField = XTypedList<ArrayOfPropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ArrayOfProperty", "http://schemas.microsoft.com/sharepoint/"));
+                        this.ArrayOfPropertyField = XTypedList<ArrayOfPropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("ArrayOfProperty", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<ArrayOfPropertyDefinition>(this.ArrayOfPropertyField, value);
@@ -54021,7 +54022,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -54054,7 +54055,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static ContentModelEntity contentModel;
         
-         public static explicit operator ArrayOfPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ArrayOfPropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator ArrayOfPropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<ArrayOfPropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static ArrayOfPropertyDefinition() {
             BuildElementDictionary();
@@ -54080,7 +54081,7 @@ namespace Microsoft.Schemas.SharePoint {
         public IList<PropertyDefinition> Property {
             get {
                 if ((this.PropertyField == null)) {
-                    this.PropertyField = new XTypedList<PropertyDefinition>(this, LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                    this.PropertyField = new XTypedList<PropertyDefinition>(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                 }
                 return this.PropertyField;
             }
@@ -54090,7 +54091,7 @@ namespace Microsoft.Schemas.SharePoint {
                 }
                 else {
                     if ((this.PropertyField == null)) {
-                        this.PropertyField = XTypedList<PropertyDefinition>.Initialize(this, LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
+                        this.PropertyField = XTypedList<PropertyDefinition>.Initialize(this, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance, value, System.Xml.Linq.XName.Get("Property", "http://schemas.microsoft.com/sharepoint/"));
                     }
                     else {
                         XTypedServices.SetList<PropertyDefinition>(this.PropertyField, value);
@@ -54123,7 +54124,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -54150,7 +54151,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static FSM validationStates;
         
-         public static explicit operator PropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PropertyDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator PropertyDefinition(XElement xe) { return XTypedServices.ToXTypedElement<PropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         static PropertyDefinition() {
             InitFSM();
@@ -54192,7 +54193,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -54217,7 +54218,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private CommandUIType ContentField;
         
-         public static explicit operator CommandUI(XElement xe) { return XTypedServices.ToXTypedElement<CommandUI, CommandUIType>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator CommandUI(XElement xe) { return XTypedServices.ToXTypedElement<CommandUI, CommandUIType>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public CommandUI() {
             SetInnerType(new CommandUIType());
@@ -54353,7 +54354,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -54370,15 +54371,15 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public static CommandUI Load(string xmlFile) {
-            return XTypedServices.Load<CommandUI, CommandUIType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<CommandUI, CommandUIType>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static CommandUI Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<CommandUI, CommandUIType>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<CommandUI, CommandUIType>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static CommandUI Parse(string xml) {
-            return XTypedServices.Parse<CommandUI, CommandUIType>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<CommandUI, CommandUIType>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
@@ -54400,7 +54401,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private FeatureDefinition ContentField;
         
-         public static explicit operator Feature(XElement xe) { return XTypedServices.ToXTypedElement<Feature, FeatureDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Feature(XElement xe) { return XTypedServices.ToXTypedElement<Feature, FeatureDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Feature() {
             SetInnerType(new FeatureDefinition());
@@ -54776,7 +54777,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -54793,15 +54794,15 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public static Feature Load(string xmlFile) {
-            return XTypedServices.Load<Feature, FeatureDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Feature, FeatureDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Feature Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<Feature, FeatureDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Feature, FeatureDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Feature Parse(string xml) {
-            return XTypedServices.Parse<Feature, FeatureDefinition>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<Feature, FeatureDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
@@ -54823,7 +54824,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private ElementDefinitionCollection ContentField;
         
-         public static explicit operator Elements(XElement xe) { return XTypedServices.ToXTypedElement<Elements, ElementDefinitionCollection>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Elements(XElement xe) { return XTypedServices.ToXTypedElement<Elements, ElementDefinitionCollection>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Elements() {
             SetInnerType(new ElementDefinitionCollection());
@@ -55313,7 +55314,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -55330,15 +55331,15 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public static Elements Load(string xmlFile) {
-            return XTypedServices.Load<Elements, ElementDefinitionCollection>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Elements, ElementDefinitionCollection>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Elements Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<Elements, ElementDefinitionCollection>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Elements, ElementDefinitionCollection>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Elements Parse(string xml) {
-            return XTypedServices.Parse<Elements, ElementDefinitionCollection>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<Elements, ElementDefinitionCollection>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
@@ -55360,7 +55361,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private SolutionDefinition ContentField;
         
-         public static explicit operator Solution(XElement xe) { return XTypedServices.ToXTypedElement<Solution, SolutionDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Solution(XElement xe) { return XTypedServices.ToXTypedElement<Solution, SolutionDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Solution() {
             SetInnerType(new SolutionDefinition());
@@ -55684,7 +55685,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -55701,15 +55702,15 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public static Solution Load(string xmlFile) {
-            return XTypedServices.Load<Solution, SolutionDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Solution, SolutionDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Solution Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<Solution, SolutionDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Solution, SolutionDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Solution Parse(string xml) {
-            return XTypedServices.Parse<Solution, SolutionDefinition>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<Solution, SolutionDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
@@ -55731,7 +55732,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private SiteDefinition ContentField;
         
-         public static explicit operator Project(XElement xe) { return XTypedServices.ToXTypedElement<Project, SiteDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator Project(XElement xe) { return XTypedServices.ToXTypedElement<Project, SiteDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public Project() {
             SetInnerType(new SiteDefinition());
@@ -56035,7 +56036,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -56052,15 +56053,15 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public static Project Load(string xmlFile) {
-            return XTypedServices.Load<Project, SiteDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Project, SiteDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Project Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<Project, SiteDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<Project, SiteDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static Project Parse(string xml) {
-            return XTypedServices.Parse<Project, SiteDefinition>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<Project, SiteDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
@@ -56082,7 +56083,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private ListDefinition ContentField;
         
-         public static explicit operator List(XElement xe) { return XTypedServices.ToXTypedElement<List, ListDefinition>(xe,LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+         public static explicit operator List(XElement xe) { return XTypedServices.ToXTypedElement<List, ListDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
         
         public List() {
             SetInnerType(new ListDefinition());
@@ -56575,7 +56576,7 @@ namespace Microsoft.Schemas.SharePoint {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         ILinqToXsdTypeManager IXMetaData.TypeManager {
             get {
-                return LinqToXsdTypeManager.Instance;
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
             }
         }
         
@@ -56592,15 +56593,15 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public static List Load(string xmlFile) {
-            return XTypedServices.Load<List, ListDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<List, ListDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static List Load(System.IO.TextReader xmlFile) {
-            return XTypedServices.Load<List, ListDefinition>(xmlFile, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Load<List, ListDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public static List Parse(string xml) {
-            return XTypedServices.Parse<List, ListDefinition>(xml, LinqToXsdTypeManager.Instance);
+            return XTypedServices.Parse<List, ListDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
         }
         
         public override XTypedElement Clone() {
@@ -56609,6 +56610,5733 @@ namespace Microsoft.Schemas.SharePoint {
         
         private void SetInnerType(ListDefinition ContentField) {
             this.ContentField = ((ListDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class XRootNamespace {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private XDocument doc;
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private XTypedElement rootObject;
+        
+
+    public CommandUI CommandUI {  get {return rootObject as CommandUI; } }
+
+    public Feature Feature {  get {return rootObject as Feature; } }
+
+    public Elements Elements {  get {return rootObject as Elements; } }
+
+    public Solution Solution {  get {return rootObject as Solution; } }
+
+    public Project Project {  get {return rootObject as Project; } }
+
+    public List List {  get {return rootObject as List; } }
+        
+        private XRootNamespace() {
+        }
+        
+        public XRootNamespace(CommandUI root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Feature root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Elements root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Solution root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Project root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(List root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XDocument XDocument {
+            get {
+                return doc;
+            }
+        }
+        
+        public static XRootNamespace Load(string xmlFile) {
+            XRootNamespace root = new XRootNamespace();
+            root.doc = XDocument.Load(xmlFile);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+            if ((typedRoot == null)) {
+                throw new LinqToXsdException("Invalid root element in xml document.");
+            }
+            root.rootObject = typedRoot;
+            return root;
+        }
+        
+        public static XRootNamespace Load(string xmlFile, LoadOptions options) {
+            XRootNamespace root = new XRootNamespace();
+            root.doc = XDocument.Load(xmlFile, options);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+            if ((typedRoot == null)) {
+                throw new LinqToXsdException("Invalid root element in xml document.");
+            }
+            root.rootObject = typedRoot;
+            return root;
+        }
+        
+        public static XRootNamespace Load(TextReader textReader) {
+            XRootNamespace root = new XRootNamespace();
+            root.doc = XDocument.Load(textReader);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+            if ((typedRoot == null)) {
+                throw new LinqToXsdException("Invalid root element in xml document.");
+            }
+            root.rootObject = typedRoot;
+            return root;
+        }
+        
+        public static XRootNamespace Load(TextReader textReader, LoadOptions options) {
+            XRootNamespace root = new XRootNamespace();
+            root.doc = XDocument.Load(textReader, options);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+            if ((typedRoot == null)) {
+                throw new LinqToXsdException("Invalid root element in xml document.");
+            }
+            root.rootObject = typedRoot;
+            return root;
+        }
+        
+        public static XRootNamespace Load(XmlReader xmlReader) {
+            XRootNamespace root = new XRootNamespace();
+            root.doc = XDocument.Load(xmlReader);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+            if ((typedRoot == null)) {
+                throw new LinqToXsdException("Invalid root element in xml document.");
+            }
+            root.rootObject = typedRoot;
+            return root;
+        }
+        
+        public static XRootNamespace Parse(string text) {
+            XRootNamespace root = new XRootNamespace();
+            root.doc = XDocument.Parse(text);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+            if ((typedRoot == null)) {
+                throw new LinqToXsdException("Invalid root element in xml document.");
+            }
+            root.rootObject = typedRoot;
+            return root;
+        }
+        
+        public static XRootNamespace Parse(string text, LoadOptions options) {
+            XRootNamespace root = new XRootNamespace();
+            root.doc = XDocument.Parse(text, options);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+            if ((typedRoot == null)) {
+                throw new LinqToXsdException("Invalid root element in xml document.");
+            }
+            root.rootObject = typedRoot;
+            return root;
+        }
+        
+        public virtual void Save(string fileName) {
+            doc.Save(fileName);
+        }
+        
+        public virtual void Save(TextWriter textWriter) {
+            doc.Save(textWriter);
+        }
+        
+        public virtual void Save(XmlWriter writer) {
+            doc.Save(writer);
+        }
+        
+        public virtual void Save(TextWriter textWriter, SaveOptions options) {
+            doc.Save(textWriter, options);
+        }
+        
+        public virtual void Save(string fileName, SaveOptions options) {
+            doc.Save(fileName, options);
+        }
+    }
+}
+namespace Microsoft.Schemas.SharePoint.Caml {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Diagnostics;
+    using System.Xml;
+    using System.Xml.Schema;
+    using System.Xml.Linq;
+    using Xml.Schema.Linq;
+    using Microsoft.Schemas.SharePoint;
+    
+    
+    public partial class View : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.ViewDefinition ContentField;
+        
+         public static explicit operator View(XElement xe) { return XTypedServices.ToXTypedElement<View, Microsoft.Schemas.SharePoint.ViewDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public View() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.ViewDefinition());
+        }
+        
+        public View(Microsoft.Schemas.SharePoint.ViewDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.ViewDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot PagedRowset {
+            get {
+                return this.ContentField.PagedRowset;
+            }
+            set {
+                this.ContentField.PagedRowset = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public ToolbarDefinition Toolbar {
+            get {
+                return this.ContentField.Toolbar;
+            }
+            set {
+                this.ContentField.Toolbar = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlQueryRoot Query {
+            get {
+                return this.ContentField.Query;
+            }
+            set {
+                this.ContentField.Query = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public FieldRefDefinitions ViewFields {
+            get {
+                return this.ContentField.ViewFields;
+            }
+            set {
+                this.ContentField.ViewFields = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlBdcMethod Method {
+            get {
+                return this.ContentField.Method;
+            }
+            set {
+                this.ContentField.Method = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot GroupByHeader {
+            get {
+                return this.ContentField.GroupByHeader;
+            }
+            set {
+                this.ContentField.GroupByHeader = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot GroupByFooter {
+            get {
+                return this.ContentField.GroupByFooter;
+            }
+            set {
+                this.ContentField.GroupByFooter = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot ViewHeader {
+            get {
+                return this.ContentField.ViewHeader;
+            }
+            set {
+                this.ContentField.ViewHeader = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot ViewBody {
+            get {
+                return this.ContentField.ViewBody;
+            }
+            set {
+                this.ContentField.ViewBody = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot ViewFooter {
+            get {
+                return this.ContentField.ViewFooter;
+            }
+            set {
+                this.ContentField.ViewFooter = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot RowLimitExceeded {
+            get {
+                return this.ContentField.RowLimitExceeded;
+            }
+            set {
+                this.ContentField.RowLimitExceeded = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot ViewEmpty {
+            get {
+                return this.ContentField.ViewEmpty;
+            }
+            set {
+                this.ContentField.ViewEmpty = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot PagedRecurrenceRowset {
+            get {
+                return this.ContentField.PagedRecurrenceRowset;
+            }
+            set {
+                this.ContentField.PagedRecurrenceRowset = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot PagedClientCallbackRowset {
+            get {
+                return this.ContentField.PagedClientCallbackRowset;
+            }
+            set {
+                this.ContentField.PagedClientCallbackRowset = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public RowLimitDefinition RowLimit {
+            get {
+                return this.ContentField.RowLimit;
+            }
+            set {
+                this.ContentField.RowLimit = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public ViewStyleReference ViewStyle {
+            get {
+                return this.ContentField.ViewStyle;
+            }
+            set {
+                this.ContentField.ViewStyle = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public ViewDataFieldRefDefinitions ViewData {
+            get {
+                return this.ContentField.ViewData;
+            }
+            set {
+                this.ContentField.ViewData = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot Xsl {
+            get {
+                return this.ContentField.Xsl;
+            }
+            set {
+                this.ContentField.Xsl = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (PagedRowset?, Toolbar?, Query?, ViewFields?, Method?, GroupByHeader?, GroupByFooter?, ViewHeader?, ViewBody?, ViewFooter?, RowLimitExceeded?, ViewEmpty?, PagedRecurrenceRowset?, PagedClientCallbackRowset?, RowLimit?, ViewStyle?, ViewData?, Xsl?, XslLink?)
+        /// </para>
+        /// </summary>
+        public CamlViewRoot XslLink {
+            get {
+                return this.ContentField.XslLink;
+            }
+            set {
+                this.ContentField.XslLink = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string AggregateView {
+            get {
+                return this.ContentField.AggregateView;
+            }
+            set {
+                this.ContentField.AggregateView = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public System.Nullable<int> BaseViewID {
+            get {
+                return this.ContentField.BaseViewID;
+            }
+            set {
+                this.ContentField.BaseViewID = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string DefaultView {
+            get {
+                return this.ContentField.DefaultView;
+            }
+            set {
+                this.ContentField.DefaultView = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string DisplayName {
+            get {
+                return this.ContentField.DisplayName;
+            }
+            set {
+                this.ContentField.DisplayName = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string FailIfEmpty {
+            get {
+                return this.ContentField.FailIfEmpty;
+            }
+            set {
+                this.ContentField.FailIfEmpty = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string FileDialog {
+            get {
+                return this.ContentField.FileDialog;
+            }
+            set {
+                this.ContentField.FileDialog = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string FPModified {
+            get {
+                return this.ContentField.FPModified;
+            }
+            set {
+                this.ContentField.FPModified = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Hidden {
+            get {
+                return this.ContentField.Hidden;
+            }
+            set {
+                this.ContentField.Hidden = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public System.Nullable<int> List {
+            get {
+                return this.ContentField.List;
+            }
+            set {
+                this.ContentField.List = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Name {
+            get {
+                return this.ContentField.Name;
+            }
+            set {
+                this.ContentField.Name = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ContentTypeID {
+            get {
+                return this.ContentField.ContentTypeID;
+            }
+            set {
+                this.ContentField.ContentTypeID = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string OrderedView {
+            get {
+                return this.ContentField.OrderedView;
+            }
+            set {
+                this.ContentField.OrderedView = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string DefaultViewForContentType {
+            get {
+                return this.ContentField.DefaultViewForContentType;
+            }
+            set {
+                this.ContentField.DefaultViewForContentType = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string IncludeRootFolder {
+            get {
+                return this.ContentField.IncludeRootFolder;
+            }
+            set {
+                this.ContentField.IncludeRootFolder = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string PageType {
+            get {
+                return this.ContentField.PageType;
+            }
+            set {
+                this.ContentField.PageType = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Path {
+            get {
+                return this.ContentField.Path;
+            }
+            set {
+                this.ContentField.Path = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string @ReadOnly {
+            get {
+                return this.ContentField.@ReadOnly;
+            }
+            set {
+                this.ContentField.@ReadOnly = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string RecurrenceRowset {
+            get {
+                return this.ContentField.RecurrenceRowset;
+            }
+            set {
+                this.ContentField.RecurrenceRowset = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string RequiresClientIntegration {
+            get {
+                return this.ContentField.RequiresClientIntegration;
+            }
+            set {
+                this.ContentField.RequiresClientIntegration = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public System.Nullable<int> RowLimit1 {
+            get {
+                return this.ContentField.RowLimit1;
+            }
+            set {
+                this.ContentField.RowLimit1 = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Scope {
+            get {
+                return this.ContentField.Scope;
+            }
+            set {
+                this.ContentField.Scope = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ShowHeaderUI {
+            get {
+                return this.ContentField.ShowHeaderUI;
+            }
+            set {
+                this.ContentField.ShowHeaderUI = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string TabularView {
+            get {
+                return this.ContentField.TabularView;
+            }
+            set {
+                this.ContentField.TabularView = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Threaded {
+            get {
+                return this.ContentField.Threaded;
+            }
+            set {
+                this.ContentField.Threaded = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Type {
+            get {
+                return this.ContentField.Type;
+            }
+            set {
+                this.ContentField.Type = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Url {
+            get {
+                return this.ContentField.Url;
+            }
+            set {
+                this.ContentField.Url = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public System.Nullable<int> WebPartOrder {
+            get {
+                return this.ContentField.WebPartOrder;
+            }
+            set {
+                this.ContentField.WebPartOrder = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string WebPartZoneID {
+            get {
+                return this.ContentField.WebPartZoneID;
+            }
+            set {
+                this.ContentField.WebPartZoneID = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string FreeForm {
+            get {
+                return this.ContentField.FreeForm;
+            }
+            set {
+                this.ContentField.FreeForm = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ImageUrl {
+            get {
+                return this.ContentField.ImageUrl;
+            }
+            set {
+                this.ContentField.ImageUrl = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string SetupPath {
+            get {
+                return this.ContentField.SetupPath;
+            }
+            set {
+                this.ContentField.SetupPath = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ModerationType {
+            get {
+                return this.ContentField.ModerationType;
+            }
+            set {
+                this.ContentField.ModerationType = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ToolbarTemplate {
+            get {
+                return this.ContentField.ToolbarTemplate;
+            }
+            set {
+                this.ContentField.ToolbarTemplate = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string MobileView {
+            get {
+                return this.ContentField.MobileView;
+            }
+            set {
+                this.ContentField.MobileView = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string MobileUrl {
+            get {
+                return this.ContentField.MobileUrl;
+            }
+            set {
+                this.ContentField.MobileUrl = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string MobileDefaultView {
+            get {
+                return this.ContentField.MobileDefaultView;
+            }
+            set {
+                this.ContentField.MobileDefaultView = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public System.Nullable<int> MobileItemLimit {
+            get {
+                return this.ContentField.MobileItemLimit;
+            }
+            set {
+                this.ContentField.MobileItemLimit = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string MobileSimpleViewField {
+            get {
+                return this.ContentField.MobileSimpleViewField;
+            }
+            set {
+                this.ContentField.MobileSimpleViewField = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ReqAuth {
+            get {
+                return this.ContentField.ReqAuth;
+            }
+            set {
+                this.ContentField.ReqAuth = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string TargetType {
+            get {
+                return this.ContentField.TargetType;
+            }
+            set {
+                this.ContentField.TargetType = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string TargetId {
+            get {
+                return this.ContentField.TargetId;
+            }
+            set {
+                this.ContentField.TargetId = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string CssStyleSheet {
+            get {
+                return this.ContentField.CssStyleSheet;
+            }
+            set {
+                this.ContentField.CssStyleSheet = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static View Load(string xmlFile) {
+            return XTypedServices.Load<View, Microsoft.Schemas.SharePoint.ViewDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static View Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<View, Microsoft.Schemas.SharePoint.ViewDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static View Parse(string xml) {
+            return XTypedServices.Parse<View, Microsoft.Schemas.SharePoint.ViewDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new View(((Microsoft.Schemas.SharePoint.ViewDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.ViewDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.ViewDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Query : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.CamlQueryRoot ContentField;
+        
+         public static explicit operator Query(XElement xe) { return XTypedServices.ToXTypedElement<Query, Microsoft.Schemas.SharePoint.CamlQueryRoot>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Query() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.CamlQueryRoot());
+        }
+        
+        public Query(Microsoft.Schemas.SharePoint.CamlQueryRoot content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.CamlQueryRoot Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public LogicalJoinDefinition Where {
+            get {
+                return this.ContentField.Where;
+            }
+            set {
+                this.ContentField.Where = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public OrderByDefinition OrderBy {
+            get {
+                return this.ContentField.OrderBy;
+            }
+            set {
+                this.ContentField.OrderBy = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public LogicalTestDefinition Eq {
+            get {
+                return this.ContentField.Eq;
+            }
+            set {
+                this.ContentField.Eq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public SimpleFieldRef Field {
+            get {
+                return this.ContentField.Field;
+            }
+            set {
+                this.ContentField.Field = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public ListPropertyDefinition ListProperty {
+            get {
+                return this.ContentField.ListProperty;
+            }
+            set {
+                this.ContentField.ListProperty = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public LookupColumnDefinition LookupColumn {
+            get {
+                return this.ContentField.LookupColumn;
+            }
+            set {
+                this.ContentField.LookupColumn = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public QueryColumnDefinition Column {
+            get {
+                return this.ContentField.Column;
+            }
+            set {
+                this.ContentField.Column = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public QueryGetVarDefinition GetVar {
+            get {
+                return this.ContentField.GetVar;
+            }
+            set {
+                this.ContentField.GetVar = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public GroupByDefinition GroupBy {
+            get {
+                return this.ContentField.GroupBy;
+            }
+            set {
+                this.ContentField.GroupBy = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public LogicalTestDefinition Contains {
+            get {
+                return this.ContentField.Contains;
+            }
+            set {
+                this.ContentField.Contains = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// <para>
+        /// Regular expression: (Where?, OrderBy?, Eq?, Field?, ListProperty?, LookupColumn?, Column?, GetVar?, GroupBy?, Contains?, BeginsWith?)
+        /// </para>
+        /// </summary>
+        public LogicalTestDefinition BeginsWith {
+            get {
+                return this.ContentField.BeginsWith;
+            }
+            set {
+                this.ContentField.BeginsWith = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Query", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Query Load(string xmlFile) {
+            return XTypedServices.Load<Query, Microsoft.Schemas.SharePoint.CamlQueryRoot>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Query Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Query, Microsoft.Schemas.SharePoint.CamlQueryRoot>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Query Parse(string xml) {
+            return XTypedServices.Parse<Query, Microsoft.Schemas.SharePoint.CamlQueryRoot>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Query(((Microsoft.Schemas.SharePoint.CamlQueryRoot)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.CamlQueryRoot ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.CamlQueryRoot)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Where : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalJoinDefinition ContentField;
+        
+         public static explicit operator Where(XElement xe) { return XTypedServices.ToXTypedElement<Where, Microsoft.Schemas.SharePoint.LogicalJoinDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Where() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalJoinDefinition());
+        }
+        
+        public Where(Microsoft.Schemas.SharePoint.LogicalJoinDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalJoinDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Eq {
+            get {
+                return this.ContentField.Eq;
+            }
+            set {
+                this.ContentField.Eq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Geq {
+            get {
+                return this.ContentField.Geq;
+            }
+            set {
+                this.ContentField.Geq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Gt {
+            get {
+                return this.ContentField.Gt;
+            }
+            set {
+                this.ContentField.Gt = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Leq {
+            get {
+                return this.ContentField.Leq;
+            }
+            set {
+                this.ContentField.Leq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Lt {
+            get {
+                return this.ContentField.Lt;
+            }
+            set {
+                this.ContentField.Lt = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Neq {
+            get {
+                return this.ContentField.Neq;
+            }
+            set {
+                this.ContentField.Neq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<ExtendedLogicalJoinDefinition> And {
+            get {
+                return this.ContentField.And;
+            }
+            set {
+                this.ContentField.And = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<ExtendedLogicalJoinDefinition> Or {
+            get {
+                return this.ContentField.Or;
+            }
+            set {
+                this.ContentField.Or = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<MembershipDefinition> Membership {
+            get {
+                return this.ContentField.Membership;
+            }
+            set {
+                this.ContentField.Membership = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> IsNull {
+            get {
+                return this.ContentField.IsNull;
+            }
+            set {
+                this.ContentField.IsNull = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> IsNotNull {
+            get {
+                return this.ContentField.IsNotNull;
+            }
+            set {
+                this.ContentField.IsNotNull = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<UnlimitedLogicalTestDefinition> DateRangesOverlap {
+            get {
+                return this.ContentField.DateRangesOverlap;
+            }
+            set {
+                this.ContentField.DateRangesOverlap = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> BeginsWith {
+            get {
+                return this.ContentField.BeginsWith;
+            }
+            set {
+                this.ContentField.BeginsWith = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Contains {
+            get {
+                return this.ContentField.Contains;
+            }
+            set {
+                this.ContentField.Contains = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | Membership | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalMultiTestDefinition> @In {
+            get {
+                return this.ContentField.@In;
+            }
+            set {
+                this.ContentField.@In = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Where", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Where Load(string xmlFile) {
+            return XTypedServices.Load<Where, Microsoft.Schemas.SharePoint.LogicalJoinDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Where Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Where, Microsoft.Schemas.SharePoint.LogicalJoinDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Where Parse(string xml) {
+            return XTypedServices.Parse<Where, Microsoft.Schemas.SharePoint.LogicalJoinDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Where(((Microsoft.Schemas.SharePoint.LogicalJoinDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalJoinDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalJoinDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class OrderBy : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.OrderByDefinition ContentField;
+        
+         public static explicit operator OrderBy(XElement xe) { return XTypedServices.ToXTypedElement<OrderBy, Microsoft.Schemas.SharePoint.OrderByDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public OrderBy() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.OrderByDefinition());
+        }
+        
+        public OrderBy(Microsoft.Schemas.SharePoint.OrderByDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.OrderByDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional, repeating
+        /// </para>
+        /// <para>
+        /// Regular expression: (FieldRef*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string UseIndexForOrderBy {
+            get {
+                return this.ContentField.UseIndexForOrderBy;
+            }
+            set {
+                this.ContentField.UseIndexForOrderBy = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string @Override {
+            get {
+                return this.ContentField.@Override;
+            }
+            set {
+                this.ContentField.@Override = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("OrderBy", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static OrderBy Load(string xmlFile) {
+            return XTypedServices.Load<OrderBy, Microsoft.Schemas.SharePoint.OrderByDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static OrderBy Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<OrderBy, Microsoft.Schemas.SharePoint.OrderByDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static OrderBy Parse(string xml) {
+            return XTypedServices.Parse<OrderBy, Microsoft.Schemas.SharePoint.OrderByDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new OrderBy(((Microsoft.Schemas.SharePoint.OrderByDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.OrderByDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.OrderByDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Eq : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator Eq(XElement xe) { return XTypedServices.ToXTypedElement<Eq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Eq() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public Eq(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Eq Load(string xmlFile) {
+            return XTypedServices.Load<Eq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Eq Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Eq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Eq Parse(string xml) {
+            return XTypedServices.Parse<Eq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Eq(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Geq : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator Geq(XElement xe) { return XTypedServices.ToXTypedElement<Geq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Geq() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public Geq(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Geq Load(string xmlFile) {
+            return XTypedServices.Load<Geq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Geq Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Geq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Geq Parse(string xml) {
+            return XTypedServices.Parse<Geq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Geq(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Gt : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator Gt(XElement xe) { return XTypedServices.ToXTypedElement<Gt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Gt() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public Gt(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Gt Load(string xmlFile) {
+            return XTypedServices.Load<Gt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Gt Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Gt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Gt Parse(string xml) {
+            return XTypedServices.Parse<Gt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Gt(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Leq : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator Leq(XElement xe) { return XTypedServices.ToXTypedElement<Leq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Leq() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public Leq(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Leq Load(string xmlFile) {
+            return XTypedServices.Load<Leq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Leq Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Leq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Leq Parse(string xml) {
+            return XTypedServices.Parse<Leq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Leq(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Lt : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator Lt(XElement xe) { return XTypedServices.ToXTypedElement<Lt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Lt() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public Lt(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Lt Load(string xmlFile) {
+            return XTypedServices.Load<Lt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Lt Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Lt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Lt Parse(string xml) {
+            return XTypedServices.Parse<Lt, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Lt(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Neq : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator Neq(XElement xe) { return XTypedServices.ToXTypedElement<Neq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Neq() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public Neq(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Neq Load(string xmlFile) {
+            return XTypedServices.Load<Neq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Neq Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Neq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Neq Parse(string xml) {
+            return XTypedServices.Parse<Neq, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Neq(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class And : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition ContentField;
+        
+         public static explicit operator And(XElement xe) { return XTypedServices.ToXTypedElement<And, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public And() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition());
+        }
+        
+        public And(Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Eq {
+            get {
+                return this.ContentField.Eq;
+            }
+            set {
+                this.ContentField.Eq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Geq {
+            get {
+                return this.ContentField.Geq;
+            }
+            set {
+                this.ContentField.Geq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Gt {
+            get {
+                return this.ContentField.Gt;
+            }
+            set {
+                this.ContentField.Gt = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Leq {
+            get {
+                return this.ContentField.Leq;
+            }
+            set {
+                this.ContentField.Leq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Lt {
+            get {
+                return this.ContentField.Lt;
+            }
+            set {
+                this.ContentField.Lt = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Neq {
+            get {
+                return this.ContentField.Neq;
+            }
+            set {
+                this.ContentField.Neq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<ExtendedLogicalJoinDefinition> And1 {
+            get {
+                return this.ContentField.And;
+            }
+            set {
+                this.ContentField.And = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<ExtendedLogicalJoinDefinition> Or {
+            get {
+                return this.ContentField.Or;
+            }
+            set {
+                this.ContentField.Or = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalNullDefinition> IsNull {
+            get {
+                return this.ContentField.IsNull;
+            }
+            set {
+                this.ContentField.IsNull = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalNullDefinition> IsNotNull {
+            get {
+                return this.ContentField.IsNotNull;
+            }
+            set {
+                this.ContentField.IsNotNull = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> DateRangesOverlap {
+            get {
+                return this.ContentField.DateRangesOverlap;
+            }
+            set {
+                this.ContentField.DateRangesOverlap = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> BeginsWith {
+            get {
+                return this.ContentField.BeginsWith;
+            }
+            set {
+                this.ContentField.BeginsWith = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Contains {
+            get {
+                return this.ContentField.Contains;
+            }
+            set {
+                this.ContentField.Contains = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<MembershipDefinition> Membership {
+            get {
+                return this.ContentField.Membership;
+            }
+            set {
+                this.ContentField.Membership = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalMultiTestDefinition> @In {
+            get {
+                return this.ContentField.@In;
+            }
+            set {
+                this.ContentField.@In = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static And Load(string xmlFile) {
+            return XTypedServices.Load<And, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static And Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<And, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static And Parse(string xml) {
+            return XTypedServices.Parse<And, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new And(((Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Or : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition ContentField;
+        
+         public static explicit operator Or(XElement xe) { return XTypedServices.ToXTypedElement<Or, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Or() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition());
+        }
+        
+        public Or(Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Eq {
+            get {
+                return this.ContentField.Eq;
+            }
+            set {
+                this.ContentField.Eq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Geq {
+            get {
+                return this.ContentField.Geq;
+            }
+            set {
+                this.ContentField.Geq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Gt {
+            get {
+                return this.ContentField.Gt;
+            }
+            set {
+                this.ContentField.Gt = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Leq {
+            get {
+                return this.ContentField.Leq;
+            }
+            set {
+                this.ContentField.Leq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Lt {
+            get {
+                return this.ContentField.Lt;
+            }
+            set {
+                this.ContentField.Lt = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Neq {
+            get {
+                return this.ContentField.Neq;
+            }
+            set {
+                this.ContentField.Neq = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<ExtendedLogicalJoinDefinition> And {
+            get {
+                return this.ContentField.And;
+            }
+            set {
+                this.ContentField.And = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<ExtendedLogicalJoinDefinition> Or1 {
+            get {
+                return this.ContentField.Or;
+            }
+            set {
+                this.ContentField.Or = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalNullDefinition> IsNull {
+            get {
+                return this.ContentField.IsNull;
+            }
+            set {
+                this.ContentField.IsNull = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalNullDefinition> IsNotNull {
+            get {
+                return this.ContentField.IsNotNull;
+            }
+            set {
+                this.ContentField.IsNotNull = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> DateRangesOverlap {
+            get {
+                return this.ContentField.DateRangesOverlap;
+            }
+            set {
+                this.ContentField.DateRangesOverlap = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> BeginsWith {
+            get {
+                return this.ContentField.BeginsWith;
+            }
+            set {
+                this.ContentField.BeginsWith = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalTestDefinition> Contains {
+            get {
+                return this.ContentField.Contains;
+            }
+            set {
+                this.ContentField.Contains = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<MembershipDefinition> Membership {
+            get {
+                return this.ContentField.Membership;
+            }
+            set {
+                this.ContentField.Membership = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((Eq | Geq | Gt | Leq | Lt | Neq | And | Or | IsNull | IsNotNull | DateRangesOverlap | BeginsWith | Contains | Membership | @In)*)
+        /// </para>
+        /// </summary>
+        public IList<LogicalMultiTestDefinition> @In {
+            get {
+                return this.ContentField.@In;
+            }
+            set {
+                this.ContentField.@In = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Or Load(string xmlFile) {
+            return XTypedServices.Load<Or, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Or Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Or, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Or Parse(string xml) {
+            return XTypedServices.Parse<Or, Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Or(((Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.ExtendedLogicalJoinDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Membership : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.MembershipDefinition ContentField;
+        
+         public static explicit operator Membership(XElement xe) { return XTypedServices.ToXTypedElement<Membership, Microsoft.Schemas.SharePoint.MembershipDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Membership() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.MembershipDefinition());
+        }
+        
+        public Membership(Microsoft.Schemas.SharePoint.MembershipDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.MembershipDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Type {
+            get {
+                return this.ContentField.Type;
+            }
+            set {
+                this.ContentField.Type = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Membership Load(string xmlFile) {
+            return XTypedServices.Load<Membership, Microsoft.Schemas.SharePoint.MembershipDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Membership Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Membership, Microsoft.Schemas.SharePoint.MembershipDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Membership Parse(string xml) {
+            return XTypedServices.Parse<Membership, Microsoft.Schemas.SharePoint.MembershipDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Membership(((Microsoft.Schemas.SharePoint.MembershipDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.MembershipDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.MembershipDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class IsNull : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator IsNull(XElement xe) { return XTypedServices.ToXTypedElement<IsNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public IsNull() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public IsNull(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static IsNull Load(string xmlFile) {
+            return XTypedServices.Load<IsNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static IsNull Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<IsNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static IsNull Parse(string xml) {
+            return XTypedServices.Parse<IsNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new IsNull(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class IsNotNull : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator IsNotNull(XElement xe) { return XTypedServices.ToXTypedElement<IsNotNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public IsNotNull() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public IsNotNull(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static IsNotNull Load(string xmlFile) {
+            return XTypedServices.Load<IsNotNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static IsNotNull Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<IsNotNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static IsNotNull Parse(string xml) {
+            return XTypedServices.Parse<IsNotNull, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new IsNotNull(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class DateRangesOverlap : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition ContentField;
+        
+         public static explicit operator DateRangesOverlap(XElement xe) { return XTypedServices.ToXTypedElement<DateRangesOverlap, Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public DateRangesOverlap() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition());
+        }
+        
+        public DateRangesOverlap(Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static DateRangesOverlap Load(string xmlFile) {
+            return XTypedServices.Load<DateRangesOverlap, Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static DateRangesOverlap Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<DateRangesOverlap, Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static DateRangesOverlap Parse(string xml) {
+            return XTypedServices.Parse<DateRangesOverlap, Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new DateRangesOverlap(((Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.UnlimitedLogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class BeginsWith : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator BeginsWith(XElement xe) { return XTypedServices.ToXTypedElement<BeginsWith, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public BeginsWith() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public BeginsWith(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static BeginsWith Load(string xmlFile) {
+            return XTypedServices.Load<BeginsWith, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static BeginsWith Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<BeginsWith, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static BeginsWith Parse(string xml) {
+            return XTypedServices.Parse<BeginsWith, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new BeginsWith(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Contains : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator Contains(XElement xe) { return XTypedServices.ToXTypedElement<Contains, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Contains() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public Contains(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Contains Load(string xmlFile) {
+            return XTypedServices.Load<Contains, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Contains Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Contains, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Contains Parse(string xml) {
+            return XTypedServices.Parse<Contains, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Contains(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class @In : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField;
+        
+         public static explicit operator @In(XElement xe) { return XTypedServices.ToXTypedElement<@In, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public @In() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LogicalTestDefinition());
+        }
+        
+        public @In(Microsoft.Schemas.SharePoint.LogicalTestDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LogicalTestDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<FieldRefDefinition> FieldRef {
+            get {
+                return this.ContentField.FieldRef;
+            }
+            set {
+                this.ContentField.FieldRef = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<ValueDefinition> Value {
+            get {
+                return this.ContentField.Value;
+            }
+            set {
+                this.ContentField.Value = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: required, choice
+        /// </para>
+        /// <para>
+        /// Setter: Appends
+        /// </para>
+        /// <para>
+        /// Regular expression: ((FieldRef | Value | XML)*)
+        /// </para>
+        /// </summary>
+        public IList<string> XML {
+            get {
+                return this.ContentField.XML;
+            }
+            set {
+                this.ContentField.XML = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static @In Load(string xmlFile) {
+            return XTypedServices.Load<@In, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static @In Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<@In, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static @In Parse(string xml) {
+            return XTypedServices.Parse<@In, Microsoft.Schemas.SharePoint.LogicalTestDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new @In(((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LogicalTestDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LogicalTestDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Field : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.SimpleFieldRef ContentField;
+        
+         public static explicit operator Field(XElement xe) { return XTypedServices.ToXTypedElement<Field, Microsoft.Schemas.SharePoint.SimpleFieldRef>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Field() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.SimpleFieldRef());
+        }
+        
+        public Field(Microsoft.Schemas.SharePoint.SimpleFieldRef content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.SimpleFieldRef Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Name {
+            get {
+                return this.ContentField.Name;
+            }
+            set {
+                this.ContentField.Name = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Field Load(string xmlFile) {
+            return XTypedServices.Load<Field, Microsoft.Schemas.SharePoint.SimpleFieldRef>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Field Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Field, Microsoft.Schemas.SharePoint.SimpleFieldRef>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Field Parse(string xml) {
+            return XTypedServices.Parse<Field, Microsoft.Schemas.SharePoint.SimpleFieldRef>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Field(((Microsoft.Schemas.SharePoint.SimpleFieldRef)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.SimpleFieldRef ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.SimpleFieldRef)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class ListProperty : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.ListPropertyDefinition ContentField;
+        
+         public static explicit operator ListProperty(XElement xe) { return XTypedServices.ToXTypedElement<ListProperty, Microsoft.Schemas.SharePoint.ListPropertyDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public ListProperty() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.ListPropertyDefinition());
+        }
+        
+        public ListProperty(Microsoft.Schemas.SharePoint.ListPropertyDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.ListPropertyDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Select {
+            get {
+                return this.ContentField.Select;
+            }
+            set {
+                this.ContentField.Select = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ForInstance {
+            get {
+                return this.ContentField.ForInstance;
+            }
+            set {
+                this.ContentField.ForInstance = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static ListProperty Load(string xmlFile) {
+            return XTypedServices.Load<ListProperty, Microsoft.Schemas.SharePoint.ListPropertyDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static ListProperty Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<ListProperty, Microsoft.Schemas.SharePoint.ListPropertyDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static ListProperty Parse(string xml) {
+            return XTypedServices.Parse<ListProperty, Microsoft.Schemas.SharePoint.ListPropertyDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new ListProperty(((Microsoft.Schemas.SharePoint.ListPropertyDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.ListPropertyDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.ListPropertyDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class LookupColumn : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.LookupColumnDefinition ContentField;
+        
+         public static explicit operator LookupColumn(XElement xe) { return XTypedServices.ToXTypedElement<LookupColumn, Microsoft.Schemas.SharePoint.LookupColumnDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public LookupColumn() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.LookupColumnDefinition());
+        }
+        
+        public LookupColumn(Microsoft.Schemas.SharePoint.LookupColumnDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.LookupColumnDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string HTMLEncode {
+            get {
+                return this.ContentField.HTMLEncode;
+            }
+            set {
+                this.ContentField.HTMLEncode = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string StripWS {
+            get {
+                return this.ContentField.StripWS;
+            }
+            set {
+                this.ContentField.StripWS = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Name {
+            get {
+                return this.ContentField.Name;
+            }
+            set {
+                this.ContentField.Name = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string ShowField {
+            get {
+                return this.ContentField.ShowField;
+            }
+            set {
+                this.ContentField.ShowField = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string URLEncode {
+            get {
+                return this.ContentField.URLEncode;
+            }
+            set {
+                this.ContentField.URLEncode = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string URLEncodeAsURL {
+            get {
+                return this.ContentField.URLEncodeAsURL;
+            }
+            set {
+                this.ContentField.URLEncodeAsURL = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string IncludeVersions {
+            get {
+                return this.ContentField.IncludeVersions;
+            }
+            set {
+                this.ContentField.IncludeVersions = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static LookupColumn Load(string xmlFile) {
+            return XTypedServices.Load<LookupColumn, Microsoft.Schemas.SharePoint.LookupColumnDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static LookupColumn Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<LookupColumn, Microsoft.Schemas.SharePoint.LookupColumnDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static LookupColumn Parse(string xml) {
+            return XTypedServices.Parse<LookupColumn, Microsoft.Schemas.SharePoint.LookupColumnDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new LookupColumn(((Microsoft.Schemas.SharePoint.LookupColumnDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.LookupColumnDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.LookupColumnDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class Column : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.QueryColumnDefinition ContentField;
+        
+         public static explicit operator Column(XElement xe) { return XTypedServices.ToXTypedElement<Column, Microsoft.Schemas.SharePoint.QueryColumnDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public Column() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.QueryColumnDefinition());
+        }
+        
+        public Column(Microsoft.Schemas.SharePoint.QueryColumnDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.QueryColumnDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string @Default {
+            get {
+                return this.ContentField.@Default;
+            }
+            set {
+                this.ContentField.@Default = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public new string URLEncode {
+            get {
+                return this.ContentField.URLEncode;
+            }
+            set {
+                this.ContentField.URLEncode = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Format {
+            get {
+                return this.ContentField.Format;
+            }
+            set {
+                this.ContentField.Format = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static Column Load(string xmlFile) {
+            return XTypedServices.Load<Column, Microsoft.Schemas.SharePoint.QueryColumnDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Column Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<Column, Microsoft.Schemas.SharePoint.QueryColumnDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static Column Parse(string xml) {
+            return XTypedServices.Parse<Column, Microsoft.Schemas.SharePoint.QueryColumnDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new Column(((Microsoft.Schemas.SharePoint.QueryColumnDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.QueryColumnDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.QueryColumnDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class GetVar : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.QueryGetVarDefinition ContentField;
+        
+         public static explicit operator GetVar(XElement xe) { return XTypedServices.ToXTypedElement<GetVar, Microsoft.Schemas.SharePoint.QueryGetVarDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public GetVar() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.QueryGetVarDefinition());
+        }
+        
+        public GetVar(Microsoft.Schemas.SharePoint.QueryGetVarDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.QueryGetVarDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string HTMLEncode {
+            get {
+                return this.ContentField.HTMLEncode;
+            }
+            set {
+                this.ContentField.HTMLEncode = value;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Name {
+            get {
+                return this.ContentField.Name;
+            }
+            set {
+                this.ContentField.Name = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("GetVar", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static GetVar Load(string xmlFile) {
+            return XTypedServices.Load<GetVar, Microsoft.Schemas.SharePoint.QueryGetVarDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static GetVar Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<GetVar, Microsoft.Schemas.SharePoint.QueryGetVarDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static GetVar Parse(string xml) {
+            return XTypedServices.Parse<GetVar, Microsoft.Schemas.SharePoint.QueryGetVarDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new GetVar(((Microsoft.Schemas.SharePoint.QueryGetVarDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.QueryGetVarDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.QueryGetVarDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
+            XTypedServices.SetName(this, this.ContentField);
+        }
+        
+        ContentModelEntity IXMetaData.GetContentModel() {
+            return ContentModelEntity.Default;
+        }
+    }
+    
+    public partial class GroupBy : XTypedElement, IXMetaData {
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private Microsoft.Schemas.SharePoint.GroupByDefinition ContentField;
+        
+         public static explicit operator GroupBy(XElement xe) { return XTypedServices.ToXTypedElement<GroupBy, Microsoft.Schemas.SharePoint.GroupByDefinition>(xe,global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance as ILinqToXsdTypeManager); }
+        
+        public GroupBy() {
+            SetInnerType(new Microsoft.Schemas.SharePoint.GroupByDefinition());
+        }
+        
+        public GroupBy(Microsoft.Schemas.SharePoint.GroupByDefinition content) {
+            SetInnerType(content);
+        }
+        
+        public override XElement Untyped {
+            get {
+                return base.Untyped;
+            }
+            set {
+                base.Untyped = value;
+                this.ContentField.Untyped = value;
+            }
+        }
+        
+        public Microsoft.Schemas.SharePoint.GroupByDefinition Content {
+            get {
+                return ContentField;
+            }
+        }
+        
+        /// <summary>
+        /// <para>
+        /// Occurrence: optional
+        /// </para>
+        /// </summary>
+        public string Collapse {
+            get {
+                return this.ContentField.Collapse;
+            }
+            set {
+                this.ContentField.Collapse = value;
+            }
+        }
+        
+        Dictionary<XName, System.Type> IXMetaData.LocalElementsDictionary {
+            get {
+                IXMetaData schemaMetaData = ((IXMetaData)(this.Content));
+                return schemaMetaData.LocalElementsDictionary;
+            }
+        }
+        
+        XTypedElement IXMetaData.Content {
+            get {
+                return this.Content;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        XName IXMetaData.SchemaName {
+            get {
+                return System.Xml.Linq.XName.Get("GroupBy", "http://schemas.microsoft.com/sharepoint/caml");
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        SchemaOrigin IXMetaData.TypeOrigin {
+            get {
+                return SchemaOrigin.Element;
+            }
+        }
+        
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        ILinqToXsdTypeManager IXMetaData.TypeManager {
+            get {
+                return global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance;
+            }
+        }
+        
+        public void Save(string xmlFile) {
+            XTypedServices.Save(xmlFile, Untyped);
+        }
+        
+        public void Save(System.IO.TextWriter tw) {
+            XTypedServices.Save(tw, Untyped);
+        }
+        
+        public void Save(System.Xml.XmlWriter xmlWriter) {
+            XTypedServices.Save(xmlWriter, Untyped);
+        }
+        
+        public static GroupBy Load(string xmlFile) {
+            return XTypedServices.Load<GroupBy, Microsoft.Schemas.SharePoint.GroupByDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static GroupBy Load(System.IO.TextReader xmlFile) {
+            return XTypedServices.Load<GroupBy, Microsoft.Schemas.SharePoint.GroupByDefinition>(xmlFile, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public static GroupBy Parse(string xml) {
+            return XTypedServices.Parse<GroupBy, Microsoft.Schemas.SharePoint.GroupByDefinition>(xml, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
+        }
+        
+        public override XTypedElement Clone() {
+            return new GroupBy(((Microsoft.Schemas.SharePoint.GroupByDefinition)(this.Content.Clone())));
+        }
+        
+        private void SetInnerType(Microsoft.Schemas.SharePoint.GroupByDefinition ContentField) {
+            this.ContentField = ((Microsoft.Schemas.SharePoint.GroupByDefinition)(XTypedServices.GetCloneIfRooted(ContentField)));
             XTypedServices.SetName(this, this.ContentField);
         }
         
@@ -56978,6 +62706,31 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         private static void BuildElementDictionary() {
+            elementDictionary.Add(System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.View));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Query", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Query));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Where", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Where));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("OrderBy", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.OrderBy));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Eq", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Eq));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Geq", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Geq));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Gt", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Gt));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Leq", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Leq));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Lt", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Lt));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Neq", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Neq));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("And", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.And));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Or", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Or));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Membership", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Membership));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("IsNull", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.IsNull));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("IsNotNull", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.IsNotNull));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("DateRangesOverlap", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.DateRangesOverlap));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("BeginsWith", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.BeginsWith));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Contains", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Contains));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("In", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.@In));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Field", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Field));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("ListProperty", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.ListProperty));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("LookupColumn", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.LookupColumn));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("Column", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.Column));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("GetVar", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.GetVar));
+            elementDictionary.Add(System.Xml.Linq.XName.Get("GroupBy", "http://schemas.microsoft.com/sharepoint/caml"), typeof(global::Microsoft.Schemas.SharePoint.Caml.GroupBy));
             elementDictionary.Add(System.Xml.Linq.XName.Get("CommandUI", "http://schemas.microsoft.com/sharepoint/"), typeof(global::Microsoft.Schemas.SharePoint.CommandUI));
             elementDictionary.Add(System.Xml.Linq.XName.Get("Feature", "http://schemas.microsoft.com/sharepoint/"), typeof(global::Microsoft.Schemas.SharePoint.Feature));
             elementDictionary.Add(System.Xml.Linq.XName.Get("Elements", "http://schemas.microsoft.com/sharepoint/"), typeof(global::Microsoft.Schemas.SharePoint.Elements));
@@ -56987,6 +62740,31 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         private static void BuildWrapperDictionary() {
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.View), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Query), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Where), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.OrderBy), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Eq), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Geq), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Gt), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Leq), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Lt), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Neq), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.And), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Or), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Membership), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.IsNull), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.IsNotNull), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.DateRangesOverlap), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.BeginsWith), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Contains), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.@In), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Field), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.ListProperty), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.LookupColumn), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.Column), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.GetVar), typeof(void));
+            wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Caml.GroupBy), typeof(void));
             wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.CommandUI), typeof(global::Microsoft.Schemas.SharePoint.CommandUIType));
             wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Feature), typeof(global::Microsoft.Schemas.SharePoint.FeatureDefinition));
             wrapperDictionary.Add(typeof(Microsoft.Schemas.SharePoint.Elements), typeof(global::Microsoft.Schemas.SharePoint.ElementDefinitionCollection));
@@ -57000,7 +62778,7 @@ namespace Microsoft.Schemas.SharePoint {
         }
         
         public static System.Type GetRootType() {
-            return elementDictionary[System.Xml.Linq.XName.Get("CommandUI", "http://schemas.microsoft.com/sharepoint/")];
+            return elementDictionary[System.Xml.Linq.XName.Get("View", "http://schemas.microsoft.com/sharepoint/caml")];
         }
     }
     
@@ -57013,47 +62791,180 @@ namespace Microsoft.Schemas.SharePoint {
         private XTypedElement rootObject;
         
 
-    public CommandUI CommandUI {  get {return rootObject as CommandUI; } }
+    public View View {  get {return rootObject as View; } }
 
-    public Feature Feature {  get {return rootObject as Feature; } }
+    public Query Query {  get {return rootObject as Query; } }
 
-    public Elements Elements {  get {return rootObject as Elements; } }
+    public Where Where {  get {return rootObject as Where; } }
 
-    public Solution Solution {  get {return rootObject as Solution; } }
+    public OrderBy OrderBy {  get {return rootObject as OrderBy; } }
 
-    public Project Project {  get {return rootObject as Project; } }
+    public Eq Eq {  get {return rootObject as Eq; } }
 
-    public List List {  get {return rootObject as List; } }
+    public Geq Geq {  get {return rootObject as Geq; } }
+
+    public Gt Gt {  get {return rootObject as Gt; } }
+
+    public Leq Leq {  get {return rootObject as Leq; } }
+
+    public Lt Lt {  get {return rootObject as Lt; } }
+
+    public Neq Neq {  get {return rootObject as Neq; } }
+
+    public And And {  get {return rootObject as And; } }
+
+    public Or Or {  get {return rootObject as Or; } }
+
+    public Membership Membership {  get {return rootObject as Membership; } }
+
+    public IsNull IsNull {  get {return rootObject as IsNull; } }
+
+    public IsNotNull IsNotNull {  get {return rootObject as IsNotNull; } }
+
+    public DateRangesOverlap DateRangesOverlap {  get {return rootObject as DateRangesOverlap; } }
+
+    public BeginsWith BeginsWith {  get {return rootObject as BeginsWith; } }
+
+    public Contains Contains {  get {return rootObject as Contains; } }
+
+    public @In @In {  get {return rootObject as @In; } }
+
+    public Field Field {  get {return rootObject as Field; } }
+
+    public ListProperty ListProperty {  get {return rootObject as ListProperty; } }
+
+    public LookupColumn LookupColumn {  get {return rootObject as LookupColumn; } }
+
+    public Column Column {  get {return rootObject as Column; } }
+
+    public GetVar GetVar {  get {return rootObject as GetVar; } }
+
+    public GroupBy GroupBy {  get {return rootObject as GroupBy; } }
         
         private XRootNamespace() {
         }
         
-        public XRootNamespace(CommandUI root) {
+        public XRootNamespace(View root) {
             this.doc = new XDocument(root.Untyped);
             this.rootObject = root;
         }
         
-        public XRootNamespace(Feature root) {
+        public XRootNamespace(Query root) {
             this.doc = new XDocument(root.Untyped);
             this.rootObject = root;
         }
         
-        public XRootNamespace(Elements root) {
+        public XRootNamespace(Where root) {
             this.doc = new XDocument(root.Untyped);
             this.rootObject = root;
         }
         
-        public XRootNamespace(Solution root) {
+        public XRootNamespace(OrderBy root) {
             this.doc = new XDocument(root.Untyped);
             this.rootObject = root;
         }
         
-        public XRootNamespace(Project root) {
+        public XRootNamespace(Eq root) {
             this.doc = new XDocument(root.Untyped);
             this.rootObject = root;
         }
         
-        public XRootNamespace(List root) {
+        public XRootNamespace(Geq root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Gt root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Leq root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Lt root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Neq root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(And root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Or root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Membership root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(IsNull root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(IsNotNull root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(DateRangesOverlap root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(BeginsWith root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Contains root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(@In root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Field root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(ListProperty root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(LookupColumn root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(Column root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(GetVar root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRootNamespace(GroupBy root) {
             this.doc = new XDocument(root.Untyped);
             this.rootObject = root;
         }
@@ -57067,7 +62978,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRootNamespace Load(string xmlFile) {
             XRootNamespace root = new XRootNamespace();
             root.doc = XDocument.Load(xmlFile);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57078,7 +62989,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRootNamespace Load(string xmlFile, LoadOptions options) {
             XRootNamespace root = new XRootNamespace();
             root.doc = XDocument.Load(xmlFile, options);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57089,7 +63000,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRootNamespace Load(TextReader textReader) {
             XRootNamespace root = new XRootNamespace();
             root.doc = XDocument.Load(textReader);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57100,7 +63011,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRootNamespace Load(TextReader textReader, LoadOptions options) {
             XRootNamespace root = new XRootNamespace();
             root.doc = XDocument.Load(textReader, options);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57111,7 +63022,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRootNamespace Load(XmlReader xmlReader) {
             XRootNamespace root = new XRootNamespace();
             root.doc = XDocument.Load(xmlReader);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57122,7 +63033,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRootNamespace Parse(string text) {
             XRootNamespace root = new XRootNamespace();
             root.doc = XDocument.Parse(text);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57133,7 +63044,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRootNamespace Parse(string text, LoadOptions options) {
             XRootNamespace root = new XRootNamespace();
             root.doc = XDocument.Parse(text, options);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57171,6 +63082,56 @@ namespace Microsoft.Schemas.SharePoint {
         private XTypedElement rootObject;
         
 
+    public global::Microsoft.Schemas.SharePoint.Caml.View View {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.View; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Query Query {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Query; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Where Where {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Where; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.OrderBy OrderBy {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.OrderBy; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Eq Eq {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Eq; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Geq Geq {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Geq; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Gt Gt {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Gt; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Leq Leq {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Leq; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Lt Lt {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Lt; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Neq Neq {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Neq; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.And And {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.And; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Or Or {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Or; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Membership Membership {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Membership; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.IsNull IsNull {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.IsNull; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.IsNotNull IsNotNull {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.IsNotNull; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.DateRangesOverlap DateRangesOverlap {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.DateRangesOverlap; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.BeginsWith BeginsWith {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.BeginsWith; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Contains Contains {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Contains; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.@In @In {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.@In; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Field Field {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Field; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.ListProperty ListProperty {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.ListProperty; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.LookupColumn LookupColumn {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.LookupColumn; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.Column Column {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.Column; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.GetVar GetVar {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.GetVar; } }
+
+    public global::Microsoft.Schemas.SharePoint.Caml.GroupBy GroupBy {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Caml.GroupBy; } }
+
     public global::Microsoft.Schemas.SharePoint.CommandUI CommandUI {  get {return rootObject as global::Microsoft.Schemas.SharePoint.CommandUI; } }
 
     public global::Microsoft.Schemas.SharePoint.Feature Feature {  get {return rootObject as global::Microsoft.Schemas.SharePoint.Feature; } }
@@ -57184,6 +63145,131 @@ namespace Microsoft.Schemas.SharePoint {
     public global::Microsoft.Schemas.SharePoint.List List {  get {return rootObject as global::Microsoft.Schemas.SharePoint.List; } }
         
         private XRoot() {
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.View root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Query root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Where root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.OrderBy root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Eq root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Geq root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Gt root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Leq root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Lt root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Neq root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.And root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Or root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Membership root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.IsNull root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.IsNotNull root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.DateRangesOverlap root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.BeginsWith root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Contains root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.@In root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Field root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.ListProperty root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.LookupColumn root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.Column root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.GetVar root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
+        }
+        
+        public XRoot(global::Microsoft.Schemas.SharePoint.Caml.GroupBy root) {
+            this.doc = new XDocument(root.Untyped);
+            this.rootObject = root;
         }
         
         public XRoot(global::Microsoft.Schemas.SharePoint.CommandUI root) {
@@ -57225,7 +63311,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRoot Load(string xmlFile) {
             XRoot root = new XRoot();
             root.doc = XDocument.Load(xmlFile);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57236,7 +63322,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRoot Load(string xmlFile, LoadOptions options) {
             XRoot root = new XRoot();
             root.doc = XDocument.Load(xmlFile, options);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57247,7 +63333,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRoot Load(TextReader textReader) {
             XRoot root = new XRoot();
             root.doc = XDocument.Load(textReader);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57258,7 +63344,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRoot Load(TextReader textReader, LoadOptions options) {
             XRoot root = new XRoot();
             root.doc = XDocument.Load(textReader, options);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57269,7 +63355,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRoot Load(XmlReader xmlReader) {
             XRoot root = new XRoot();
             root.doc = XDocument.Load(xmlReader);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57280,7 +63366,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRoot Parse(string text) {
             XRoot root = new XRoot();
             root.doc = XDocument.Parse(text);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }
@@ -57291,7 +63377,7 @@ namespace Microsoft.Schemas.SharePoint {
         public static XRoot Parse(string text, LoadOptions options) {
             XRoot root = new XRoot();
             root.doc = XDocument.Parse(text, options);
-            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, LinqToXsdTypeManager.Instance);
+            XTypedElement typedRoot = XTypedServices.ToXTypedElement(root.doc.Root, global::Microsoft.Schemas.SharePoint.Caml.LinqToXsdTypeManager.Instance);
             if ((typedRoot == null)) {
                 throw new LinqToXsdException("Invalid root element in xml document.");
             }

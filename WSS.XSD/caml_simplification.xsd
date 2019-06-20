@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified" id="caml_simplie"
+    targetNamespace="http://schemas.microsoft.com/sharepoint/caml" version="1"
+    xmlns="http://schemas.microsoft.com/sharepoint/caml"
+    xmlns:wss="http://schemas.microsoft.com/sharepoint/">
+    <xs:import schemaLocation="wss.xsd" id="wss"
+        namespace="http://schemas.microsoft.com/sharepoint/"/>
+    <xs:element name="View" type="wss:ViewDefinition"/>
+    <xs:element name="Query" type="wss:CamlQueryRoot"/>
+    <xs:element name="Where" type="wss:LogicalJoinDefinition"/>
+    <xs:element name="OrderBy" type="wss:OrderByDefinition"/>
+    <xs:element name="Eq" type="wss:LogicalTestDefinition"/>
+    <xs:element name="Geq" type="wss:LogicalTestDefinition"/>
+    <xs:element name="Gt" type="wss:LogicalTestDefinition"/>
+    <xs:element name="Leq" type="wss:LogicalTestDefinition"/>
+    <xs:element name="Lt" type="wss:LogicalTestDefinition"/>
+    <xs:element name="Neq" type="wss:LogicalTestDefinition"/>
+    <xs:element name="And" type="wss:ExtendedLogicalJoinDefinition"/>
+    <xs:element name="Or" type="wss:ExtendedLogicalJoinDefinition"/>
+    <xs:element name="Membership" type="wss:MembershipDefinition"/>
+    <xs:element name="IsNull" type="wss:LogicalTestDefinition"/>
+    <xs:element name="IsNotNull" type="wss:LogicalTestDefinition"/>
+    <xs:element name="DateRangesOverlap" type="wss:UnlimitedLogicalTestDefinition"/>
+    <xs:element name="BeginsWith" type="wss:LogicalTestDefinition"/>
+    <xs:element name="Contains" type="wss:LogicalTestDefinition"/>
+    <xs:element name="In" type="wss:LogicalTestDefinition"/>
+    <xs:element name="Field" type="wss:SimpleFieldRef"/>
+    <xs:element name="ListProperty" type="wss:ListPropertyDefinition"/>
+    <xs:element name="LookupColumn" type="wss:LookupColumnDefinition"/>
+    <xs:element name="Column" type="wss:QueryColumnDefinition"/>
+    <xs:element name="GetVar" type="wss:QueryGetVarDefinition"/>
+    <xs:element name="GroupBy" type="wss:GroupByDefinition"/>
+</xs:schema>

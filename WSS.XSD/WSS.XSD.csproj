@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wss.xsd.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="XObjectsCore" Version="3.0.0.2" />
   </ItemGroup>
 
