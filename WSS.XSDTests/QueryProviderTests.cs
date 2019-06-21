@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Microsoft.Schemas.SharePoint;
 using NUnit.Framework;
+using Remotion.Linq.Parsing.Structure;
 
 namespace Tests
 {
@@ -10,9 +11,10 @@ namespace Tests
         [Test]
         public void Test()
         {
-            var ctx = new Queryable<string>(new CustomContext());
-
-            var query = from s in ctx where s.StartsWith("T") select s;
+            var queryParser = QueryParser.CreateDefault();
+            var context = new WssQuery<IWssQueryableListItem>(queryParser, new WssQueryExecutor());
+            
+            var query = from s in context where s.Id > 0 select s;
 
             var list = query.ToList();
         }
