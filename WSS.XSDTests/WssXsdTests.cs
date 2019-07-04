@@ -1,49 +1,36 @@
-using System.Collections.Generic;
-using System.Xml.Linq;
 using Microsoft.Schemas.SharePoint;
-using Microsoft.Schemas.SharePoint.Caml;
+using Microsoft.Schemas.SharePoint.Extensions;
 using NUnit.Framework;
+using Xml.Schema.Linq.Extensions;
 
-namespace Tests
+namespace WSS.XSD.Tests
 {
     public class WssXsdTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void TestViewDefinitionQuery()
         {
-            var valueDefinition = new ValueDefinition {
-                Untyped = XElement.Parse("<Value>Queensland </Value>"),
-                XML = new List<string>() { "<XML>This is custom xml</XML>" }
-            };
+            var fieldRefDefinitions = FieldRefDefinitions.FromNames("Id", "Title", "Date Modified", "Date Created");
 
-            var empty = new EmptyQueryDefinition();
-
-            var queryDef = new CamlQueryRoot {
-                Where = new LogicalJoinDefinition {
-                    Eq = new List<LogicalTestDefinition> {
-                        new LogicalTestDefinition {
-                            FieldRef = new List<FieldRefDefinition> {
-                                new FieldRefDefinition {Name = "State"}
-                            },
-                            Value = new List<ValueDefinition> {
-                                valueDefinition
+            var viewDef = new ViewDefinition {
+                List = 1,
+                DisplayName = "Common fields view",
+                ViewFields = fieldRefDefinitions,
+                Query = new CamlQueryRoot {
+                    Where = new LogicalJoinDefinition {
+                        BeginsWith = {
+                            new LogicalTestDefinition {
+                                FieldRef = { fieldRefDefinitions.FieldRef[1] },
+                                Value = { ValueDefinition.NewTextValue("Anti-") }
                             }
                         }
                     }
                 }
             };
 
-            var query = new Query(queryDef);
+            var caml = viewDef.ToCamlString();
 
-            var queryString = query.ToString();
-
-            Assert.IsFalse(string.IsNullOrWhiteSpace(queryString));
-            Assert.IsFalse(string.IsNullOrEmpty(queryString));
+            Assert.IsTrue(caml.IsNotEmpty());
         }
     }
 }

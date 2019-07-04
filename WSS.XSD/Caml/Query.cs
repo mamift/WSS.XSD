@@ -1,8 +1,5 @@
-﻿using System;
-using System.Linq;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 using Microsoft.Schemas.SharePoint.Extensions;
-using Xml.Schema.Linq;
 
 namespace Microsoft.Schemas.SharePoint.Caml
 {

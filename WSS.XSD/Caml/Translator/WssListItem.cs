@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Schemas.SharePoint
+﻿namespace Microsoft.Schemas.SharePoint.Caml.Translator
 {
     public class WssListItem: IWssQueryableListItem
     {

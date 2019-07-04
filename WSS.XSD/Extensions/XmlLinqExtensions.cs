@@ -1,5 +1,5 @@
-﻿using System.Linq;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
+using Xml.Schema.Linq;
 
 namespace Microsoft.Schemas.SharePoint.Extensions
 {
@@ -13,28 +13,34 @@ namespace Microsoft.Schemas.SharePoint.Extensions
         /// <param name="xmlns"></param>
         public static void SetDefaultXmlNamespace(this XElement el, XNamespace xmlns)
         {
-            if (el.Name.NamespaceName == string.Empty)
+            if (string.IsNullOrWhiteSpace(el.Name.NamespaceName))
                 el.Name = xmlns + el.Name.LocalName;
             foreach (var e in el.Elements())
                 e.SetDefaultXmlNamespace(xmlns);
         }
 
         /// <summary>
-        /// Returns a new <see cref="XElement"/> with the given <see cref="XNamespace"/> (<paramref name="xmlns"/>).
-        /// <para>https://stackoverflow.com/questions/2874422/how-to-set-the-default-xml-namespace-for-an-xdocument</para>
+        /// Removes any and all namespaces present on the current <paramref name="el"/> and children.
         /// </summary>
         /// <param name="el"></param>
-        /// <param name="xmlns"></param>
-        /// <returns></returns>
-        public static XElement WithDefaultXmlNamespace(this XElement el, XNamespace xmlns)
+        public static void RemoveXmlns(this XElement el)
         {
-            var name = string.IsNullOrWhiteSpace(el.Name.NamespaceName)
-                ? xmlns + el.Name.LocalName
-                : el.Name;
+            if (!string.IsNullOrWhiteSpace(el.Name.NamespaceName))
+                el.Name = el.Name.LocalName;
+            foreach (var e in el.Elements())
+                e.RemoveXmlns();
+        }
 
-            return new XElement(name,
-                from e in el.Elements()
-                select e.WithDefaultXmlNamespace(xmlns));
+        /// <summary>
+        /// Returns the XML element as a string without namespace declarations.
+        /// </summary>
+        /// <param name="xTypedElement"></param>
+        /// <returns></returns>
+        public static string ToCamlString(this XTypedElement xTypedElement)
+        {
+            xTypedElement.Untyped.RemoveXmlns();
+
+            return xTypedElement.Untyped.ToString(SaveOptions.OmitDuplicateNamespaces);
         }
     }
 }

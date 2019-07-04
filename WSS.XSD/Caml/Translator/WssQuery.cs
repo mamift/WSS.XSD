@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using Remotion.Linq;
 using Remotion.Linq.Parsing.Structure;
 
-namespace Microsoft.Schemas.SharePoint
+namespace Microsoft.Schemas.SharePoint.Caml.Translator
 {
     public class WssQuery<T> : QueryableBase<T>
     {
@@ -12,5 +12,13 @@ namespace Microsoft.Schemas.SharePoint
         public WssQuery(IQueryProvider provider) : base(provider) { }
 
         public WssQuery(IQueryProvider provider, Expression expression) : base(provider, expression) { }
+    }
+
+    public class WssQueryContext
+    {
+        public WssQueryContext()
+        {
+
+        }
     }
 }
