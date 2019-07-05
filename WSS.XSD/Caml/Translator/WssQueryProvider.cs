@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Linq.Expressions;
 
-namespace Microsoft.Schemas.SharePoint.Caml.Translator
+namespace Microsoft.Schemas.SharePoint.Caml
 {
     public class WssQueryProvider<T>: IQueryProvider
     {

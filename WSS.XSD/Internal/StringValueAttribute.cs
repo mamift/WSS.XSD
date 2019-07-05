@@ -10,6 +10,6 @@ namespace Microsoft.Schemas.SharePoint.Internal
             StringValue = stringValue;
         }
 
-        public string StringValue { get; set; }
+        public string StringValue { get; }
     }
 }

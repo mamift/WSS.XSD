@@ -1,8 +1,7 @@
 ﻿using System.Linq;
 using AgileObjects.ReadableExpressions;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.Schemas.SharePoint;
-using Microsoft.Schemas.SharePoint.Caml.Translator;
+using Microsoft.Schemas.SharePoint.Caml;
 using NUnit.Framework;
 using Remotion.Linq.Parsing.Structure;
 

@@ -5,7 +5,7 @@ using AgileObjects.ReadableExpressions;
 using Remotion.Linq;
 using Remotion.Linq.Clauses;
 
-namespace Microsoft.Schemas.SharePoint.Caml.Translator
+namespace Microsoft.Schemas.SharePoint.Caml
 {
     public class WssCamlVisitor : QueryModelVisitorBase
     {

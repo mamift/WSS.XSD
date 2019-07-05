@@ -32,7 +32,8 @@ namespace Microsoft.Schemas.SharePoint.Extensions
         }
 
         /// <summary>
-        /// Returns the XML element as a string without namespace declarations.
+        /// Returns the XML element as a string without namespace declarations. Use this over the regular <see cref="object.ToString"/>
+        /// for passing the CAML XML to SharePoint.
         /// </summary>
         /// <param name="xTypedElement"></param>
         /// <returns></returns>

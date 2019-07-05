@@ -52,6 +52,8 @@ namespace WSS.XSD.Tests
                 Value = ValueDefinition.NewTextValues("Australia")
             });
 
+            var andClauses = queryDef.Untyped.Descendants().Where(d => d.Name.LocalName == "And").ToList();
+
             var query = new Query(queryDef);
 
             var queryString = query.ToString();

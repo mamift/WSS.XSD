@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Microsoft.Schemas.SharePoint
+namespace Microsoft.Schemas.SharePoint.Caml
 {
     internal static class TypeSystem
     {

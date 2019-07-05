@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Remotion.Linq;
 using Remotion.Linq.Clauses;
 
-namespace Microsoft.Schemas.SharePoint.Caml.Translator
+namespace Microsoft.Schemas.SharePoint.Caml
 {
     public class WssQueryExecutor : IQueryExecutor
     {
