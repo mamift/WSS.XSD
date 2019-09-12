@@ -1,7 +1,6 @@
 ﻿using System.Linq;
-using AgileObjects.ReadableExpressions;
-using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.Schemas.SharePoint.Caml;
+using Microsoft.Schemas.SharePoint.Extensions;
 using NUnit.Framework;
 using Remotion.Linq.Parsing.Structure;
 
@@ -18,9 +17,7 @@ namespace WSS.XSD.Tests
             
             var query = context.Where(item => item.Id > 0 && string.IsNullOrWhiteSpace(item.Title));
 
-            var exprString = query.Expression.ToReadableString();
-
-            var csharpTree = CSharpSyntaxTree.ParseText(exprString);
+            var camlVersion = query.ToCamlTree();
 
             var list = query.ToList();
         }

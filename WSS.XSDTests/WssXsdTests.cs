@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using Microsoft.Schemas.SharePoint;
+using Microsoft.Schemas.SharePoint.Caml;
 using Microsoft.Schemas.SharePoint.Extensions;
 using NUnit.Framework;
 using Xml.Schema.Linq.Extensions;
@@ -31,6 +33,33 @@ namespace WSS.XSD.Tests
             var caml = viewDef.ToCamlString();
 
             Assert.IsTrue(caml.IsNotEmpty());
+        }
+
+        [Test]
+        public void JoinTest()
+        {
+            var joins = new Joins {
+                Join = {
+                    new Join {
+                        Eq = new EqType {
+                            FieldRef = {
+                                new FieldRef {
+                                    Name = "CapitalCity",
+                                    RefType = "Text"
+                                },
+                                new FieldRef {
+                                    Name = "ReferencedCity",
+                                    RefType = "Text"
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            var str = joins.ToCamlString();
+
+            Assert.IsNotNull(str);
         }
     }
 }
