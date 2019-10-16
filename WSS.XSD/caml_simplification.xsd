@@ -31,4 +31,35 @@
     <xs:element name="Column" type="wss:QueryColumnDefinition"/>
     <xs:element name="GetVar" type="wss:QueryGetVarDefinition"/>
     <xs:element name="GroupBy" type="wss:GroupByDefinition"/>
+    <xs:element name="Joins">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="Join"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Join">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Eq">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="2" minOccurs="2" ref="FieldRef"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Type" type="wss:JoinType"/>
+            <xs:attribute name="ListAlias" type="wss:ReferenceType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="FieldRef">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="wss:FieldRefDefinition">
+                    <xs:attribute name="List" type="xs:string"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
