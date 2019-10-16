@@ -20,4 +20,10 @@
     <ProjectReference Include="..\WSS.XSD\WSS.XSD.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="SitePagesSchema.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

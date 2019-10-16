@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.Schemas.SharePoint;
 using Microsoft.Schemas.SharePoint.Caml;
 using Microsoft.Schemas.SharePoint.Extensions;
 using NUnit.Framework;
 using Xml.Schema.Linq.Extensions;
+using List = Microsoft.Schemas.SharePoint.List;
 
 namespace WSS.XSD.Tests
 {
@@ -33,6 +35,20 @@ namespace WSS.XSD.Tests
             var caml = viewDef.ToCamlString();
 
             Assert.IsTrue(caml.IsNotEmpty());
+        }
+
+        [Test]
+        public void ListSchemaTest()
+        {
+            var xml = List.Load(@"SitePagesSchema.xml");
+
+            Assert.IsNotNull(xml);
+
+            Assert.IsNotNull(xml.Name);
+            var guid = Guid.Parse(xml.Name);
+            Assert.IsNotNull(guid);
+
+            Assert.IsTrue(xml.Title == "Site Pages");
         }
 
         [Test]
